@@ -80,6 +80,116 @@ const LandingPage = () => {
       </div>
     </div>
   </section>
+
+  <section className="section-wrap-career">
+    <div className="container">
+      <div className="navy-line"></div>
+      <div className="my-career">My Career</div>
+
+      <div className="lambda">
+        <div className="icon-wrapper"><i className="fa fa-plus-square"></i></div>
+        <div className="vertical-container"></div>
+        <div className="left">
+          <span 
+            ><h2>Lambda School</h2>
+            <br
+          /></span>
+          <p>
+            <span>
+              Designed and developed full-stack applications utilizing MERN
+              stack technology. Optimized user authentication by applying JWT.
+              Hands-on experience with unit testing. Implemented payment system
+              using Stripe API. Utilized Agile software development methodology
+              and Git workflows on every project.
+            </span>
+          </p>
+          <span className="date-line">
+            <span> Mar. 2018 to Oct. 2018</span> <br />
+            <small><span>Web Developer</span></small>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div className="container">
+      <div className="lambda-left">
+        <div className="icon-wrapper"><i className="fa fa-plus-square"></i></div>
+        <div className="left">
+          <span>
+            <h2>Handyman</h2>
+            <br
+          /></span>
+          <p>
+            <span>
+              Relocated to U.S. and was waiting on work permit.<br />
+              Contract construction and painting jobs.
+            </span>
+          </p>
+          <span className="date-line">
+            <span> Jan. 2009 to Mar. 2018</span> <br />
+            <small><span>Contractor</span></small>
+          </span>
+        </div>
+      </div>
+
+      {/* <!--
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className = "animated rotateInDownLeft">First content for animation</div>
+            </div>
+            <div className="col">
+              <div className = "animated rotateInDownLeft">Second content for animation</div>
+            </div>
+          </div>
+        </div>
+      --> */}
+    </div>
+    <div className="container">
+      <div className="lambda-test">
+        <div className="icon-wrapper"><i className="fa fa-plus-square"></i></div>
+        <div className="left">
+          <span>
+            <h2>Tethys-Plantgeria</h2>
+            <br
+          /></span>
+          <p>
+            <span>
+              Diving Services –Inspection Repair and Maintenance (IRM)<br />
+              of offshore Installations, GVI, CVI and NDT Inspections.<br />
+              Retrofit/Replacement of Sacrificial Anodes and CPM System.<br />
+              Pipeline Repair, Installation of TIE-IN/Spool pieces.<br />
+              Tanker Loading and Terminal Maintenance.
+            </span>
+          </p>
+          <span className="date-line">
+            <span> Apr. 2006 to Sept. 2008</span> <br />
+            <small><span>Commercial Diver</span></small>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div className="container">
+      <div className="lambda-left">
+        <div class="icon-wrapper"><i class="fa fa-plus-square"></i></div>
+        <div class="left">
+          <span>
+            <h2>Powernet</h2>
+            <br
+          /></span>
+          <p>
+            <span>
+              Designed and built PC games Using C++, OpenGL, and Blender.
+            </span>
+          </p>
+          <span class="date-line">
+            <span> Feb. 2004 to Apr. 2006</span> <br />
+            <small><span>Game Developer</span></small>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
        </div>
    )
 }
