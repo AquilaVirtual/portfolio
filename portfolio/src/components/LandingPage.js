@@ -4,7 +4,7 @@ import "../css/LandingPage.css";
 
 import dave from "../img/dave.jpg";
 import currentaffairs from "../img/currentaffairs.png";
-import notes from "../img/notes.png";
+import notes from "../img/note.png";
 import skill from "../img/skill.png";
 import realbusiness from "../img/realbusiness.png";
 
@@ -59,8 +59,8 @@ const LandingPage = () => {
               alt=""
             />
             <div className="fontawesome-right">
-              <i className="fab fa-node" />
-              <i className="fab fa-react" />
+              <i class="fab fa-angular" />
+              <i class="fab fa-js-square" />
             </div>
           </div>
           <div className="my-name">
@@ -256,81 +256,66 @@ const LandingPage = () => {
         <div className="projects-wrap">
           <div className="business-wrap">
             <a href="https://realbusinessreviews.net" target="blank">
-              <img
-              height="139"
-              width= "230px"
-               src={realbusiness}
-               alt=""
-                />
+              <img height="152" width="291px" src={realbusiness} alt="" />
             </a>
             <div className="project-description">
-            This is a web application that          
-            facilitates review of businesses.
+              This is a web application that facilitates review of businesses.
             </div>
             <div className="buttons-wrap">
-            <a
-              className="repo-link"
-              href="https://github.com/Lambda-School-Labs/CS10-business-review"
-              target="blank"
-            >
-              <button>CODE</button>
-            </a>
-            <a href="https://realbusinessreviews.net" target="blank">
-              <button>DEMO</button>
-            </a>
+              <a
+                className="repo-link"
+                href="https://github.com/Lambda-School-Labs/CS10-business-review"
+                target="blank"
+              >
+                <button>CODE</button>
+              </a>
+              <a href="https://realbusinessreviews.net" target="blank">
+                <button>DEMO</button>
+              </a>
             </div>
           </div>
 
           <div className="current-affairs-wrap">
             <a href="https://currentaffairs.netlify.com" target="blank">
-              <img
-              height="139"
-              width= "230px"            
-              src={currentaffairs}
-              alt=""
-               />
+              <img src={currentaffairs} alt="" />
             </a>
             <div className="project-description">
-            Current Affairs allows users to search and view trending news by
-            countries.
-            <br />
+              Current Affairs allows users to search and view trending news by
+              countries.
+              <br />
             </div>
             <div className="buttons-wrap">
-            <a
-              className="repo-link"
-              href="https://github.com/AquilaVirtual/current-affairs"
-              target="blank"
-            >
-              <button>CODE</button>
-            </a>
-            <a href="https://currentaffairs.netlify.com" target="blank">
-              <button>DEMO</button>
-            </a>
+              <a
+                className="repo-link"
+                href="https://github.com/AquilaVirtual/current-affairs"
+                target="blank"
+              >
+                <button>CODE</button>
+              </a>
+              <a href="https://currentaffairs.netlify.com" target="blank">
+                <button>DEMO</button>
+              </a>
             </div>
           </div>
           <div className="notes-wrap">
             <a href="https://lambnotes.netlify.com" target="blank">
-              <img 
-              height="139"
-              width= "230px"
-              src={notes} 
-              alt="" />
+              <img src={notes} alt="" />
             </a>
             <div className="project-description">
-            This is a note taking app that
-            <br /> allows users to make notes.
+              This is a note taking app that
+              <br /> allows users to make notes.
             </div>
             <div className="buttons-wrap">
-            <a
-              className="repo-link"
-              href="https://github.com/AquilaVirtual/front-end-project-week"
-              target="blank"
-            >
-              <button>CODE</button>
-            </a>
-            <a href="https://lambnotes.netlify.com" target="blank">
-              <button>DEMO</button>
-            </a>
+              <a
+                className="repo-link"
+                href="https://github.com/AquilaVirtual/front-end-project-week"
+                target="blank"
+              >
+                <button>CODE</button>
+              </a>
+              <a href="https://lambnotes.netlify.com" target="blank">
+                <button>DEMO</button>
+              </a>
             </div>
           </div>
         </div>
