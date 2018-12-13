@@ -67,18 +67,13 @@ const LandingPage = () => {
             <span style={navyFont}>David</span> Loveday
           </div>
           <div className="social-media">
-            <ul>
-              <li>
-                <a href="#">
-                  <i className="fab fa-twitter" />
-                </a>
-              </li>
+            <ul>            
               <li>
                 <a
-                  href="https://www.facebook.com/ad.loveday?ref=bookmarks"
+                  href="https://resume.creddle.io/resume/aodc6tswpqo"
                   target="blank"
                 >
-                  <i className="fab fa-facebook-f" />
+                  <i class="far fa-file"/>
                 </a>
               </li>
               <li>
@@ -92,6 +87,11 @@ const LandingPage = () => {
               <li>
                 <a href="https://github.com/AquilaVirtual" target="blank">
                   <i className="fab fa-github" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fab fa-twitter" />
                 </a>
               </li>
             </ul>
@@ -323,18 +323,13 @@ const LandingPage = () => {
       <section class="footer">
         <strong>© 2018 David Loveday</strong>
         <div class="social-media-footer">
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fab fa-twitter" />
-              </a>
-            </li>
+          <ul>           
             <li>
               <a
-                href="https://www.facebook.com/ad.loveday?ref=bookmarks"
+                href="https://resume.creddle.io/resume/aodc6tswpqo"
                 target="blank"
               >
-                <i class="fab fa-facebook-f" />
+                <i class="far fa-file"/>
               </a>
             </li>
             <li>
@@ -348,6 +343,11 @@ const LandingPage = () => {
             <li>
               <a href="https://github.com/AquilaVirtual" target="blank">
                 <i class="fab fa-github" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter" />
               </a>
             </li>
           </ul>
