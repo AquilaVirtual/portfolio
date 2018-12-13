@@ -237,59 +237,87 @@ const LandingPage = () => {
     <div className="skills-header">My Skills</div>
     <img className="skills" alt="skills" src={skill} />    
   </section>
-  <section class="section-wrap-projects">
-    <div class="navy-line"></div>
-    <div class="projects-header">My Projects</div>
-    <div class="projects-wrap">
-      <div class="business-wrap">
+  <section className="section-wrap-projects">
+    <div className="navy-line"></div>
+    <div className="projects-header">My Projects</div>
+    <div className="projects-wrap">
+      <div className="business-wrap">
         <a
-          class="domain-link"
+          className="domain-link"
           href="https://realbusinessreviews.net"
           target="blank"
           ><img src={realbusiness}
         /></a>
-        <div class="projects-repo">
+        <div className="projects-repo">
           This is a web application that<br/>
           facilitates review of businesses.<a
-            class="repo-link"
+            className="repo-link"
             href="https://github.com/Lambda-School-Labs/CS10-business-review"
             target="blank"
-            ><i class="fas fa-link"></i></a>
+            ><i className="fas fa-link"></i></a>
         </div>
       </div>
-      <div class="current-affairs-wrap">
+      <div className="current-affairs-wrap">
         <a
-          class="domain-link"
+          className="domain-link"
           href="https://currentaffairs.netlify.com"
           target="blank"
           ><img src={currentaffairs}
         /></a>
-        <div class="projects-repo">
+        <div className="projects-repo">
           Current Affairs allows users to search<br/> and view trending news by countries.<a
-            class="repo-link"
+            className="repo-link"
             href="https://github.com/AquilaVirtual/current-affairs"
             target="blank"
-            ><i class="fas fa-link"></i></a>
+            ><i className="fas fa-link"></i></a>
         </div>
       </div>
-      <div class="notes-wrap">
+      <div className="notes-wrap">
         <a
-          class="domain-link"
+          className="domain-link"
           href="https://lambnotes.netlify.com"
           target="blank"
           ><img src={notes}
         /></a>
-        <div class="projects-repo">
+        <div className="projects-repo">
           This is a note taking app that<br/> allows users to make notes.<a
-            class="repo-link"
+            className="repo-link"
             href="https://github.com/AquilaVirtual/front-end-project-week"
             target="blank"
-            ><i class="fas fa-link"></i></a>
+            ><i className="fas fa-link"></i></a>
         </div>
       </div>
     </div>    
   </section>
-    
+  <section class="footer">
+    <strong>© 2018 David Loveday</strong>
+    <div class="social-media-footer">
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/ad.loveday?ref=bookmarks"
+            target="blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/david-loveday-110a8a172/"
+            target="blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/AquilaVirtual" target="blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </section>    
     </div>
   );
 };
