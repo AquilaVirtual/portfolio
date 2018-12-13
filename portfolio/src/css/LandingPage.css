@@ -310,7 +310,7 @@
   align-items: center;
   padding: 40px;
   margin-top: 40px;
-  height: 400px;
+  height: 452px;
   background: #f4f4f4;
 }
 .main-container .section-wrap-projects .navy-line {
@@ -337,60 +337,89 @@
 }
 .main-container .section-wrap-projects .projects-wrap {
   display: flex;
-  margin-top: 40px;
+  justify-content: center;
 }
 .main-container .section-wrap-projects .projects-wrap .business-wrap {
-  width: 223px;
-  height: 210px;
+  color: grey;
+  width: 230px;
+  height: 238px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-  margin: 1%;
+  margin: 6%;
+  border-radius: 5px;
 }
-.main-container .section-wrap-projects .projects-wrap .business-wrap .projects-repo {
-  margin-top: 5px;
-  padding-left: 20px;
-  color: #676a6c;
-  border: 1px solid red;
+.main-container .section-wrap-projects .projects-wrap .business-wrap .project-description {
+  margin: 10px;
 }
-.main-container .section-wrap-projects .projects-wrap .business-wrap .projects-repo button {
+.main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap {
+  margin: 10px 0 0 10px;
+}
+.main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap button {
+  background: #2364b7;
+  color: white;
+  height: 24px;
+  width: 52px;
+  font-size: 11px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap button:hover {
   cursor: pointer;
-}
-.main-container .section-wrap-projects .projects-wrap .business-wrap .projects-repo button:hover {
-  color: darkgray;
 }
 .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
-  width: 223px;
-  height: 176px;
+  color: grey;
+  width: 230px;
+  height: 238px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-  margin: 1%;
+  margin: 6%;
   margin-top: 178px;
+  border-radius: 5px;
 }
-.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .projects-repo {
-  margin-top: 5px;
-  padding-left: 20px;
-  color: #676a6c;
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .project-description {
+  margin: 10px;
 }
-.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .projects-repo button {
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap {
+  margin: 10px 0 0 10px;
+}
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap button {
+  background: #2364b7;
+  color: white;
+  height: 24px;
+  width: 52px;
+  font-size: 11px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap button:hover {
   cursor: pointer;
-}
-.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .projects-repo button:hover {
-  color: darkgray;
 }
 .main-container .section-wrap-projects .projects-wrap .notes-wrap {
-  width: 224px;
-  height: 210px;
+  color: grey;
+  width: 230px;
+  height: 238px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-  margin: 1%;
+  margin: 6%;
+  border-radius: 5px;
 }
-.main-container .section-wrap-projects .projects-wrap .notes-wrap .projects-repo {
-  margin-top: 5px;
-  padding-left: 20px;
-  color: #676a6c;
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .project-description {
+  margin: 10px;
 }
-.main-container .section-wrap-projects .projects-wrap .notes-wrap .projects-repo button {
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap {
+  margin: 10px 0 0 10px;
+}
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap button {
+  background: #2364b7;
+  color: white;
+  height: 24px;
+  width: 52px;
+  font-size: 11px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap button:hover {
   cursor: pointer;
-}
-.main-container .section-wrap-projects .projects-wrap .notes-wrap .projects-repo button:hover {
-  color: darkgray;
 }
 .main-container .footer {
   display: flex;

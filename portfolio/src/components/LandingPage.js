@@ -56,6 +56,7 @@ const LandingPage = () => {
               width="11%"
               height="144"
               src={dave}
+              alt=""
             />
             <div className="fontawesome-right">
               <i className="fab fa-node" />
@@ -255,11 +256,18 @@ const LandingPage = () => {
         <div className="projects-wrap">
           <div className="business-wrap">
             <a href="https://realbusinessreviews.net" target="blank">
-              <img src={realbusiness} />
+              <img
+              height="139"
+              width= "230px"
+               src={realbusiness}
+               alt=""
+                />
             </a>
-            This is a web application that
-            <br />
+            <div className="project-description">
+            This is a web application that          
             facilitates review of businesses.
+            </div>
+            <div className="buttons-wrap">
             <a
               className="repo-link"
               href="https://github.com/Lambda-School-Labs/CS10-business-review"
@@ -270,15 +278,24 @@ const LandingPage = () => {
             <a href="https://realbusinessreviews.net" target="blank">
               <button>DEMO</button>
             </a>
+            </div>
           </div>
 
           <div className="current-affairs-wrap">
             <a href="https://currentaffairs.netlify.com" target="blank">
-              <img src={currentaffairs} />
+              <img
+              height="139"
+              width= "230px"            
+              src={currentaffairs}
+              alt=""
+               />
             </a>
+            <div className="project-description">
             Current Affairs allows users to search and view trending news by
             countries.
             <br />
+            </div>
+            <div className="buttons-wrap">
             <a
               className="repo-link"
               href="https://github.com/AquilaVirtual/current-affairs"
@@ -289,13 +306,21 @@ const LandingPage = () => {
             <a href="https://currentaffairs.netlify.com" target="blank">
               <button>DEMO</button>
             </a>
+            </div>
           </div>
           <div className="notes-wrap">
             <a href="https://lambnotes.netlify.com" target="blank">
-              <img src={notes} alt="" />
+              <img 
+              height="139"
+              width= "230px"
+              src={notes} 
+              alt="" />
             </a>
+            <div className="project-description">
             This is a note taking app that
             <br /> allows users to make notes.
+            </div>
+            <div className="buttons-wrap">
             <a
               className="repo-link"
               href="https://github.com/AquilaVirtual/front-end-project-week"
@@ -306,6 +331,7 @@ const LandingPage = () => {
             <a href="https://lambnotes.netlify.com" target="blank">
               <button>DEMO</button>
             </a>
+            </div>
           </div>
         </div>
       </section>
