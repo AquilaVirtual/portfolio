@@ -10,7 +10,7 @@ import realbusiness from "../img/realbusiness.png";
 
 const LandingPage = () => {
   const bioStyle = {
-    fontSize: "25px"
+    fontSize: "22px"
   };
   const darkGreyFont = {
     color: "#676a6c"
