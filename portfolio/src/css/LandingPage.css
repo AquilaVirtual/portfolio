@@ -1,0 +1,108 @@
+.main-container {
+  max-width: 100vw;
+}
+.main-container nav {
+  display: flex;
+  justify-content: flex-end;
+  background: #3c6aad;
+  width: 100%;
+  opacity: 0.9;
+  border-bottom: 2px solid #708199;
+  position: fixed;
+  z-index: 1;
+}
+.main-container nav ul {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  margin: 40px;
+  color: white;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  list-style: none;
+}
+.main-container nav ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container nav ul a {
+  margin: 0 30px;
+  color: white;
+  text-decoration: none;
+}
+.main-container nav ul :hover {
+  color: #706f77;
+}
+.main-container .section-wrap-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .section-wrap-bio .container {
+  max-width: 884px;
+  width: 86%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .section-wrap-bio .container .about-me-wrap {
+  margin-top: 131px;
+}
+.main-container .section-wrap-bio .container .about-me-wrap .navy-line {
+  width: 102px;
+  position: absolute;
+  left: 47.2%;
+  border-top: 3px solid #0f6ee6;
+}
+.main-container .section-wrap-bio .container .about-me-wrap .about-me {
+  font-size: 2rem;
+  color: #676a6c;
+  padding-top: 16px;
+  position: relative;
+}
+.main-container .section-wrap-bio .container .temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.main-container .section-wrap-bio .container .temp .fontawesome-left {
+  padding-top: 64px;
+}
+.main-container .section-wrap-bio .container .temp .fontawesome-right {
+  padding-top: 64px;
+}
+.main-container .section-wrap-bio .container .temp .fab {
+  color: grey;
+  font-size: 50px;
+  margin: 10% 40px 20%;
+  opacity: 0.3;
+}
+.main-container .section-wrap-bio .container .temp .profile-image {
+  margin-top: 40px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.main-container .section-wrap-bio .container .my-name {
+  font-size: 2rem;
+  margin-top: 8px;
+  color: #676a6c;
+}
+.main-container .section-wrap-bio .container .social-media ul {
+  display: flex;
+}
+.main-container .section-wrap-bio .container .social-media ul i {
+  font-size: 0.8rem;
+  border-radius: 50%;
+  background-color: #0f6ee6;
+  color: white;
+  width: 56%;
+  height: 20px;
+  text-align: center;
+  padding-top: 8px;
+  opacity: 0.3;
+  margin: 20px;
+}
+.main-container .section-wrap-bio .container .bio {
+  color: #aeaeae;
+}

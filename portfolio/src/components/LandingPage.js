@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import '../css/LandingPage.css';
+
 import dave from '../img/dave.jpg'
 import currentaffairs from '../img/currentaffairs.png'
 import notes from '../img/notes.png'
