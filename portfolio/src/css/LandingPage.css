@@ -382,3 +382,25 @@
 .main-container .section-wrap-projects .projects-wrap .notes-wrap .projects-repo button:hover {
   color: darkgray;
 }
+.main-container .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+}
+.main-container .footer .social-media-footer ul {
+  display: flex;
+  padding-right: 15px;
+}
+.main-container .footer .social-media-footer ul i {
+  font-size: 0.8rem;
+  border-radius: 50%;
+  background-color: #0f6ee6;
+  color: white;
+  width: 56%;
+  height: 20px;
+  text-align: center;
+  padding-top: 8px;
+  opacity: 0.3;
+  margin: 20px;
+}
