@@ -285,3 +285,22 @@
   border-radius: 10%;
   font-size: 19px;
 }
+.main-container .section-wrap-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .section-wrap-skills .navy-line {
+  width: 102px;
+  border-top: 3px solid #0f6ee6;
+  margin-bottom: 14px;
+}
+.main-container .section-wrap-skills .skills-header {
+  font-size: 2rem;
+  color: #676a6c;
+}
+.main-container .section-wrap-skills .navy-line {
+  width: 102px;
+  border-top: 3px solid #0f6ee6;
+  margin-top: 40px;
+}
