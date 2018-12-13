@@ -304,3 +304,81 @@
   border-top: 3px solid #0f6ee6;
   margin-top: 40px;
 }
+.main-container .section-wrap-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin-top: 40px;
+  height: 400px;
+  background: #f4f4f4;
+}
+.main-container .section-wrap-projects .navy-line {
+  width: 102px;
+  border-top: 3px solid #0f6ee6;
+  margin-bottom: 14px;
+}
+.main-container .section-wrap-projects .domain-link {
+  margin: 20px;
+  text-decoration: none;
+  color: #676a6c;
+}
+.main-container .section-wrap-projects .repo-link {
+  margin: 5px;
+  text-decoration: none;
+  color: #676a6c;
+}
+.main-container .section-wrap-projects .repo-link:hover {
+  color: #0f6ee6;
+}
+.main-container .section-wrap-projects .projects-header {
+  font-size: 2rem;
+  color: #676a6c;
+}
+.main-container .section-wrap-projects .projects-wrap {
+  display: flex;
+  margin-top: 40px;
+}
+.main-container .section-wrap-projects .projects-wrap .business-wrap {
+  margin: 1%;
+}
+.main-container .section-wrap-projects .projects-wrap .business-wrap .projects-repo {
+  margin-top: 5px;
+  padding-left: 20px;
+  color: #676a6c;
+}
+.main-container .section-wrap-projects .projects-wrap .business-wrap .projects-repo button {
+  cursor: pointer;
+}
+.main-container .section-wrap-projects .projects-wrap .business-wrap .projects-repo button:hover {
+  color: darkgray;
+}
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+  margin: 1%;
+  margin-top: 178px;
+}
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .projects-repo {
+  margin-top: 5px;
+  padding-left: 20px;
+  color: #676a6c;
+}
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .projects-repo button {
+  cursor: pointer;
+}
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .projects-repo button:hover {
+  color: darkgray;
+}
+.main-container .section-wrap-projects .projects-wrap .notes-wrap {
+  margin: 1%;
+}
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .projects-repo {
+  margin-top: 5px;
+  padding-left: 20px;
+  color: #676a6c;
+}
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .projects-repo button {
+  cursor: pointer;
+}
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .projects-repo button:hover {
+  color: darkgray;
+}
