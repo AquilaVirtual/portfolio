@@ -1,14 +1,23 @@
 import React, { Component } from "react";
 
-import '../css/LandingPage.css';
+import "../css/LandingPage.css";
 
-import dave from '../img/dave.jpg'
-import currentaffairs from '../img/currentaffairs.png'
-import notes from '../img/notes.png'
-import skill from '../img/skill.png'
-import realbusiness from '../img/realbusiness.png'
+import dave from "../img/dave.jpg";
+import currentaffairs from "../img/currentaffairs.png";
+import notes from "../img/notes.png";
+import skill from "../img/skill.png";
+import realbusiness from "../img/realbusiness.png";
 
 const LandingPage = () => {
+  const bioStyle = {
+    fontSize: "25px"
+  };
+  const darkGreyFont = {
+    color: "#676a6c"
+  };
+  const navyFont = {
+    color: "#3385FF"
+  };
   return (
     <div className="main-container">
       <nav>
@@ -29,7 +38,7 @@ const LandingPage = () => {
             <a routerLink="/">Projects</a>
           </li>
         </ul>
-      </nav>    
+      </nav>
       <section className="section-wrap-bio">
         <div className="container">
           <div className="about-me-wrap">
@@ -54,7 +63,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="my-name">
-            <span>David</span> Loveday
+            <span style={navyFont}>David</span> Loveday
           </div>
           <div className="social-media">
             <ul>
@@ -87,7 +96,7 @@ const LandingPage = () => {
             </ul>
           </div>
           <div className="bio">
-            <p>
+            <p style={bioStyle}>
               The idea that one can use software to build software has been
               fascinating to me.
               <br />
@@ -116,7 +125,7 @@ const LandingPage = () => {
             </div>
             <div className="vertical-container" />
             <div className="left">
-              <span>
+              <span style={darkGreyFont}>
                 <h2>Lambda School</h2>
                 <br />
               </span>
@@ -132,7 +141,7 @@ const LandingPage = () => {
               <span className="date-line">
                 <span> Mar. 2018 to Oct. 2018</span> <br />
                 <small>
-                  <span>Web Developer</span>
+                  <span style={navyFont}>Web Developer</span>
                 </small>
               </span>
             </div>
@@ -144,7 +153,7 @@ const LandingPage = () => {
               <i className="fa fa-plus-square" />
             </div>
             <div className="left">
-              <span>
+              <span style={darkGreyFont}>
                 <h2>Handyman</h2>
                 <br />
               </span>
@@ -158,7 +167,7 @@ const LandingPage = () => {
               <span className="date-line">
                 <span> Jan. 2009 to Mar. 2018</span> <br />
                 <small>
-                  <span>Contractor</span>
+                  <span style={navyFont}>Contractor</span>
                 </small>
               </span>
             </div>
@@ -183,7 +192,7 @@ const LandingPage = () => {
               <i className="fa fa-plus-square" />
             </div>
             <div className="left">
-              <span>
+              <span style={darkGreyFont}>
                 <h2>Tethys-Plantgeria</h2>
                 <br />
               </span>
@@ -203,7 +212,7 @@ const LandingPage = () => {
               <span className="date-line">
                 <span> Apr. 2006 to Sept. 2008</span> <br />
                 <small>
-                  <span>Commercial Diver</span>
+                  <span style={navyFont}>Commercial Diver</span>
                 </small>
               </span>
             </div>
@@ -216,7 +225,7 @@ const LandingPage = () => {
               <i class="fa fa-plus-square" />
             </div>
             <div className="left">
-              <span>
+              <span style={darkGreyFont}>
                 <h2>Powernet</h2>
                 <br />
               </span>
@@ -228,7 +237,7 @@ const LandingPage = () => {
               <span className="date-line">
                 <span> Feb. 2004 to Apr. 2006</span> <br />
                 <small>
-                  <span>Game Developer</span>
+                  <span style={navyFont}>Game Developer</span>
                 </small>
               </span>
             </div>
@@ -236,91 +245,103 @@ const LandingPage = () => {
         </div>
       </section>
       <section className="section-wrap-skills">
-    <div className="navy-line"></div>
-    <div className="skills-header">My Skills</div>
-    <img className="skills" alt="skills" src={skill} />    
-  </section>
-  <section className="section-wrap-projects">
-    <div className="navy-line"></div>
-    <div className="projects-header">My Projects</div>
-    <div className="projects-wrap">
-      <div className="business-wrap">
-        <a
-          className="domain-link"
-          href="https://realbusinessreviews.net"
-          target="blank"
-          ><img src={realbusiness}
-        /></a>
-        <div className="projects-repo">
-          This is a web application that<br/>
-          facilitates review of businesses.<a
-            className="repo-link"
-            href="https://github.com/Lambda-School-Labs/CS10-business-review"
-            target="blank"
-            ><i className="fas fa-link"></i></a>
+        <div className="navy-line" />
+        <div className="skills-header">My Skills</div>
+        <img className="skills" alt="skills" src={skill} />
+      </section>
+      <section className="section-wrap-projects">
+        <div className="navy-line" />
+        <div className="projects-header">My Projects</div>
+        <div className="projects-wrap">
+          <div className="business-wrap">
+            <a href="https://realbusinessreviews.net" target="blank">
+              <img src={realbusiness} />
+            </a>
+            This is a web application that
+            <br />
+            facilitates review of businesses.
+            <a
+              className="repo-link"
+              href="https://github.com/Lambda-School-Labs/CS10-business-review"
+              target="blank"
+            >
+              <button>CODE</button>
+            </a>
+            <a href="https://realbusinessreviews.net" target="blank">
+              <button>DEMO</button>
+            </a>
+          </div>
+
+          <div className="current-affairs-wrap">
+            <a href="https://currentaffairs.netlify.com" target="blank">
+              <img src={currentaffairs} />
+            </a>
+            Current Affairs allows users to search and view trending news by
+            countries.
+            <br />
+            <a
+              className="repo-link"
+              href="https://github.com/AquilaVirtual/current-affairs"
+              target="blank"
+            >
+              <button>CODE</button>
+            </a>
+            <a href="https://currentaffairs.netlify.com" target="blank">
+              <button>DEMO</button>
+            </a>
+          </div>
+          <div className="notes-wrap">
+            <a href="https://lambnotes.netlify.com" target="blank">
+              <img src={notes} alt="" />
+            </a>
+            This is a note taking app that
+            <br /> allows users to make notes.
+            <a
+              className="repo-link"
+              href="https://github.com/AquilaVirtual/front-end-project-week"
+              target="blank"
+            >
+              <button>CODE</button>
+            </a>
+            <a href="https://lambnotes.netlify.com" target="blank">
+              <button>DEMO</button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div className="current-affairs-wrap">
-        <a
-          className="domain-link"
-          href="https://currentaffairs.netlify.com"
-          target="blank"
-          ><img src={currentaffairs}
-        /></a>
-        <div className="projects-repo">
-          Current Affairs allows users to search<br/> and view trending news by countries.<a
-            className="repo-link"
-            href="https://github.com/AquilaVirtual/current-affairs"
-            target="blank"
-            ><i className="fas fa-link"></i></a>
+      </section>
+      <section class="footer">
+        <strong>© 2018 David Loveday</strong>
+        <div class="social-media-footer">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/ad.loveday?ref=bookmarks"
+                target="blank"
+              >
+                <i class="fab fa-facebook-f" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/david-loveday-110a8a172/"
+                target="blank"
+              >
+                <i class="fab fa-linkedin-in" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/AquilaVirtual" target="blank">
+                <i class="fab fa-github" />
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div className="notes-wrap">
-        <a
-          className="domain-link"
-          href="https://lambnotes.netlify.com"
-          target="blank"
-          ><img src={notes}
-        /></a>
-        <div className="projects-repo">
-          This is a note taking app that<br/> allows users to make notes.<a
-            className="repo-link"
-            href="https://github.com/AquilaVirtual/front-end-project-week"
-            target="blank"
-            ><i className="fas fa-link"></i></a>
-        </div>
-      </div>
-    </div>    
-  </section>
-  <section class="footer">
-    <strong>© 2018 David Loveday</strong>
-    <div class="social-media-footer">
-      <ul>
-        <li>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/ad.loveday?ref=bookmarks"
-            target="blank"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/david-loveday-110a8a172/"
-            target="blank"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/AquilaVirtual" target="blank"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
-  </section>    
+      </section>
     </div>
   );
 };
