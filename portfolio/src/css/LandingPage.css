@@ -484,4 +484,14 @@
   .main-container .section-wrap-career .container .lambda-test .icon-wrapper {
     left: 10%;
   }
+  .main-container .section-wrap-projects .projects-wrap .notes-wrap {
+    margin: 2%;
+  }
+  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+    margin: 2%;
+    margin-top: 178px;
+  }
+  .main-container .section-wrap-projects .projects-wrap .business-wrap {
+    margin: 2%;
+  }
 }
