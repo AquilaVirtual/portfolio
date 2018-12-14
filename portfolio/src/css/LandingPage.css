@@ -445,8 +445,8 @@
   margin: 20px;
 }
 @media (max-width: 1170px) {
-  .main-container .main-container nav {
-    display: none;
+  .main-container .section-wrap-career {
+    height: 962px;
   }
   .main-container .section-wrap-career .vertical-container {
     left: 12.2%;
