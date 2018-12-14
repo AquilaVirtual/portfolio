@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component } from "react";
+import $ from 'jquery';
 
 import "../css/LandingPage.css";
 
@@ -7,20 +8,31 @@ import currentaffairs from "../img/currentaffairs.png";
 import notes from "../img/note.png";
 import skill from "../img/skill.png";
 import realbusiness from "../img/realbusiness.png";
+import menue from "../img/menu.png";
 
-const LandingPage = () => {
-  const bioStyle = {
-    fontSize: "22px"
-  };
-  const darkGreyFont = {
-    color: "#676a6c"
-  };
-  const navyFont = {
-    color: "#3385FF"
-  };
+
+
+class LandingPage extends Component { 
+  constructor (props) {
+   super (props)
+  }
+   componentDidMount = () => { 
+
+   }
+  render () {
+    const bioStyle = {
+      fontSize: "22px"
+    };
+    const darkGreyFont = {
+      color: "#676a6c"
+    };
+    const navyFont = {
+      color: "#3385FF"
+    };
+
   return (
     <div className="main-container">
-      <nav>
+      <nav >
         <ul class="nav nav-pills">
           <li>
             <a class="nav-link" href="#">
@@ -49,8 +61,8 @@ const LandingPage = () => {
           </li>
         </ul>
       </nav>
-      <div data-spy="scroll" data-target="#main-wrap" data-offset="0">
-        <h4 id="About" />
+      <div  data-spy="scroll" data-target="#main-wrap" data-offset="0">
+        <section id="About" />
         <section className="section-wrap-bio">
           <div className="container">
             <div className="about-me-wrap">
@@ -115,7 +127,7 @@ const LandingPage = () => {
                 <br />
                 From my childhood, I have learned things with a concentration in
                 quantitative <br />
-                <h4 id="Career" />
+                <section id="Career" />
                 methods, and applying this in software development means an
                 ability to tackle
                 <br />
@@ -247,7 +259,7 @@ const LandingPage = () => {
                   <span>
                     Designed and built PC games Using C++, OpenGL, and Blender.
                   </span>
-                  <h4 id="Skills" />
+                  <section id="Skills" />
                 </p>
                 <span className="date-line">
                   <span> Feb. 2004 to Apr. 2006</span> <br />
@@ -259,21 +271,25 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
-        <h4 id="Skills" />
+        <section id="Skills" />
         <section className="section-wrap-skills">
           <div className="navy-line" />
           <div className="skills-header">My Skills</div>
           <img className="skills" alt="skills" src={skill} />
         </section>
 
-        <h4 id="Projects" />
+        <section id="Projects" />
         <section className="section-wrap-projects">
           <div className="navy-line" />
           <div className="projects-header">My Projects</div>
           <div className="projects-wrap">
             <div className="business-wrap">
               <a href="https://realbusinessreviews.net" target="blank">
-                <img height="152" width="291px" src={realbusiness} alt="" />
+                <img 
+                height="152" 
+                width="291px" 
+                src={realbusiness} 
+                alt="" />
               </a>
               <div className="project-description">
                 This is a web application that facilitates review of businesses.
@@ -373,6 +389,7 @@ const LandingPage = () => {
       </div>
     </div>
   );
+}
 };
 
 export default LandingPage;
