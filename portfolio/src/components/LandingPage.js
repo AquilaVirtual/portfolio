@@ -12,8 +12,7 @@ import menue from "../img/menu.png";
 
 class LandingPage extends Component {
   componentDidMount = () => {
- 
-    $("a").click(function() {
+    $("a.nav-link").click(function() {
       let target = $(this.hash);
       $("html, body").animate(
         {
@@ -66,7 +65,7 @@ class LandingPage extends Component {
           </ul>
         </nav>
         <div data-spy="scroll" data-target="#main-wrap" data-offset="0">
-        <section id="Home" />
+          <section id="Home" />
           <section id="About" />
           <section className="section-wrap-bio">
             <div className="container">
