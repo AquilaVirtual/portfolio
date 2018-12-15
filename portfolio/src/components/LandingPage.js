@@ -39,8 +39,8 @@ class LandingPage extends Component {
         <nav>
           <ul class="nav nav-pills">
             <li>
-              <a class="nav-link" href="#Home">
-                Home
+              <a class="nav-link home" href="#Home">
+                David Loveday
               </a>
             </li>
             <li>
@@ -85,7 +85,7 @@ class LandingPage extends Component {
                   width="11%"
                   height="144"
                   src={dave}
-                  alt=""
+                  alt="David_Loveday"
                 />
                 <div className="fontawesome-right">
                   <i class="fab fa-angular" />
