@@ -25,7 +25,7 @@
   display: flex;
   justify-content: space-between;
 }
-.main-container nav ul li .home {
+.main-container nav ul li .home-button {
   position: absolute;
   border: 1px solid;
   height: 24px;
@@ -38,6 +38,9 @@
   padding: 10px 0 0 9px;
   border-radius: 7px;
   font-weight: 600;
+}
+.main-container nav ul li .home-button:hover {
+  border: 2px solid lightgray;
 }
 .main-container nav ul a {
   margin: 0 30px;
@@ -460,6 +463,9 @@
   margin: 20px;
 }
 @media (max-width: 1170px) {
+  .main-container nav ul li .home-button {
+    left: 11%;
+  }
   .main-container .section-wrap-career {
     height: 962px;
   }

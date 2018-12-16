@@ -38,7 +38,7 @@ class LandingPage extends Component {
         <nav>
           <ul class="nav nav-pills">
             <li>
-              <a class="nav-link home" href="#Home">
+              <a class="nav-link home-button" href="#Home">
                 David Loveday
               </a>
             </li>
