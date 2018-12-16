@@ -75,7 +75,7 @@ class LandingPage extends Component {
                   <div className="about-me">About Me</div>
                 </div>
               </div>
-              <div className="temp">
+              <div className="profile-image-wrap">
                 <div className="fontawesome-left">
                   <i className="fab fa-react" /> <i className="fab fa-node" />
                 </div>

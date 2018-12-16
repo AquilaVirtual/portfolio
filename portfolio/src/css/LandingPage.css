@@ -78,25 +78,25 @@
   padding-top: 16px;
   position: relative;
 }
-.main-container .section-wrap-bio .container .temp {
+.main-container .section-wrap-bio .container .profile-image-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80%;
 }
-.main-container .section-wrap-bio .container .temp .fontawesome-left {
+.main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-left {
   padding-top: 64px;
 }
-.main-container .section-wrap-bio .container .temp .fontawesome-right {
+.main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-right {
   padding-top: 64px;
 }
-.main-container .section-wrap-bio .container .temp .fab {
+.main-container .section-wrap-bio .container .profile-image-wrap .fab {
   color: grey;
   font-size: 50px;
   margin: 10% 40px 20%;
   opacity: 0.3;
 }
-.main-container .section-wrap-bio .container .temp .profile-image {
+.main-container .section-wrap-bio .container .profile-image-wrap .profile-image {
   margin-top: 40px;
   border-radius: 50%;
   height: 150px;
