@@ -1,0 +1,26 @@
+@color: grey;
+@boxShadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+.projects-card-wrap(@color: @color, @margin: 6%, @border-radius: 5px, @width:291px, @height: 244px, ) {
+  color: @color;
+  width: @width;
+  height: @height;
+  box-shadow: @boxShadow;
+  margin: @margin;
+  border-radius: @border-radius;
+}
+
+.buttons(@background: #2364b7, @color: white,  @height: 24px, @width: 52px,   @font-size: 11px, @border: none, @border-radius: 3px) {
+  background: @background;
+  color: @color;
+  height: @height;
+  width: @width;
+  font-size: @font-size;
+  border: @border;
+  border-radius: @border-radius;
+  box-shadow: @boxShadow;
+  &:hover {
+    cursor: pointer;
+  }
+}
