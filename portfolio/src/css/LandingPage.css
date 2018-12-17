@@ -66,17 +66,20 @@
 .main-container .section-wrap-bio .container .about-me-wrap {
   margin-top: 131px;
 }
-.main-container .section-wrap-bio .container .about-me-wrap .navy-line {
-  width: 102px;
-  position: absolute;
-  left: 47.2%;
-  border-top: 3px solid #0f6ee6;
+.main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.main-container .section-wrap-bio .container .about-me-wrap .about-me {
+.main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap .navy-line {
+  width: 102px;
+  border-top: 3px solid #0f6ee6;
+  margin-bottom: 0px;
+}
+.main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap .about-me {
   font-size: 2rem;
   color: #676a6c;
   padding-top: 16px;
-  position: relative;
 }
 .main-container .section-wrap-bio .container .profile-image-wrap {
   display: flex;
@@ -151,9 +154,10 @@
 .main-container .section-wrap-career .container .navy-line {
   width: 102px;
   border-top: 3px solid #0f6ee6;
-  left: 47.5%;
+  margin-bottom: 14px;
   position: absolute;
-  margin-top: 40px;
+  left: 47.5%;
+  margin-top: 36px;
 }
 .main-container .section-wrap-career .container .my-career {
   font-size: 30px;
@@ -313,6 +317,7 @@
   width: 102px;
   border-top: 3px solid #0f6ee6;
   margin-bottom: 14px;
+  margin-top: 40px;
 }
 .main-container .section-wrap-skills .skills-header {
   font-size: 2rem;
@@ -321,6 +326,7 @@
 .main-container .section-wrap-skills .navy-line {
   width: 102px;
   border-top: 3px solid #0f6ee6;
+  margin-bottom: 14px;
   margin-top: 40px;
 }
 .main-container .section-wrap-projects {
