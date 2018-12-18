@@ -290,7 +290,13 @@ class LandingPage extends Component {
             <div className="projects-wrap">
               <div className="business-wrap">
                 <a href="https://realbusinessreviews.net" target="blank">
-                  <img height="152" width="291px" src={realbusiness} alt="" />
+                  <img
+                    className="project-image"
+                    height="152"
+                    width="291px"
+                    src={realbusiness}
+                    alt=""
+                  />
                 </a>
                 <div className="project-description">
                   This is a web application that facilitates review of
@@ -312,7 +318,7 @@ class LandingPage extends Component {
 
               <div className="current-affairs-wrap">
                 <a href="https://currentaffairs.netlify.com" target="blank">
-                  <img src={currentaffairs} alt="" />
+                  <img className="project-image" src={currentaffairs} alt="" />
                 </a>
                 <div className="project-description">
                   Current Affairs allows users to search and view trending news
@@ -334,7 +340,7 @@ class LandingPage extends Component {
               </div>
               <div className="notes-wrap">
                 <a href="https://lambnotes.netlify.com" target="blank">
-                  <img src={notes} alt="" />
+                  <img className="project-image" src={notes} alt="" />
                 </a>
                 <div className="project-description">
                   This is a note taking app that

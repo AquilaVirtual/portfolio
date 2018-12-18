@@ -509,13 +509,51 @@
     left: 10%;
   }
   .main-container .section-wrap-projects .projects-wrap .notes-wrap {
-    margin: 2%;
+    margin: 3%;
   }
   .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
-    margin: 2%;
+    margin: 3%;
     margin-top: 178px;
   }
   .main-container .section-wrap-projects .projects-wrap .business-wrap {
-    margin: 2%;
+    margin: 3%;
+  }
+}
+@media (max-width: 1000px) {
+  .main-container .skills {
+    width: 688px;
+    height: 302px;
+  }
+  .main-container .section-wrap-projects {
+    height: 363px;
+  }
+  .main-container .section-wrap-projects .projects-wrap {
+    width: 220px;
+  }
+  .main-container .section-wrap-projects .projects-wrap .business-wrap {
+    height: 218px;
+    margin: 6%;
+  }
+  .main-container .section-wrap-projects .projects-wrap .business-wrap .project-image {
+    height: 110px;
+    width: 220px;
+  }
+  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+    width: 220px;
+    height: 218px;
+    margin: 6%;
+    margin-top: 100px;
+  }
+  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .project-image {
+    height: 110px;
+    width: 220px;
+  }
+  .main-container .section-wrap-projects .projects-wrap .notes-wrap {
+    height: 218px;
+    margin: 6%;
+  }
+  .main-container .section-wrap-projects .projects-wrap .notes-wrap .project-image {
+    height: 110px;
+    width: 220px;
   }
 }
