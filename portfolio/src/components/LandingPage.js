@@ -12,14 +12,19 @@ import menue from "../img/menu.png";
 
 class LandingPage extends Component {
   componentDidMount = () => {
-    $("a.nav-link").click(function() {
-      let target = $(this.hash);
-      $("html, body").animate(
-        {
-          scrollTop: target.offset().top
-        },
-        500
-      );
+    $(document).ready(function() {
+      $("a.nav-link").click(function() {
+        let target = $(this.hash);
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top
+          },
+          500
+        );
+      });
+      $("#flip").click(function() {
+        $("#nav").slideToggle(500);
+      });
     });
   };
   render() {
@@ -35,7 +40,10 @@ class LandingPage extends Component {
 
     return (
       <div className="main-container">
-        <nav>
+        <div id="flip">
+          <img src={menue} alt=""/>
+        </div>
+        <nav id="nav">
           <ul class="nav nav-pills">
             <li>
               <a class="nav-link home-button" href="#Home">

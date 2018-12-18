@@ -1,6 +1,16 @@
 .main-container {
   max-width: 100vw;
 }
+.main-container #flip {
+  color: white;
+  background: #3c6aad;
+  width: 100%;
+  position: fixed;
+  display: none;
+  height: 40px;
+  border-bottom: 2px solid white;
+  z-index: 1;
+}
 .main-container nav {
   display: flex;
   justify-content: flex-end;
@@ -555,5 +565,22 @@
   .main-container .section-wrap-projects .projects-wrap .notes-wrap .project-image {
     height: 110px;
     width: 220px;
+  }
+}
+@media (max-width: 768px) {
+  .main-container #flip {
+    display: block;
+  }
+  .main-container #nav {
+    width: 100%;
+    height: 8%;
+    margin-top: 40px;
+    display: none;
+  }
+  .main-container nav {
+    font-size: 17px;
+  }
+  .main-container nav ul li .home-button {
+    display: none;
   }
 }
