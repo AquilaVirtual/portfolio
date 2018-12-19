@@ -582,10 +582,8 @@
     height: 1106px;
   }
   .main-container .section-wrap-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 820px;
+    height: 880px;
+    padding: 40px 25% 0 0;
   }
   .main-container .section-wrap-projects .projects-wrap {
     display: flex;
@@ -646,5 +644,10 @@
   }
   .main-container nav ul li .home-button {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .main-container .section-wrap-career {
+    height: 1300px;
   }
 }
