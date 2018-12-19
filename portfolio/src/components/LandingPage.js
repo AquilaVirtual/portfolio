@@ -288,7 +288,7 @@ class LandingPage extends Component {
           <section className="section-wrap-skills">
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
-            <img className="skills" alt="skills" src={skill} />
+            <img className="skills-image" alt="skills" src={skill} />
           </section>
 
           <section id="Projects" />

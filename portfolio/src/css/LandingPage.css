@@ -481,7 +481,7 @@
     left: 11%;
   }
   .main-container .section-wrap-career {
-    height: 962px;
+    height: 1100px;
   }
   .main-container .section-wrap-career .vertical-container {
     left: 12.2%;
@@ -534,9 +534,8 @@
   .main-container {
     transition: all 1s ease;
   }
-  .main-container .skills {
-    width: 688px;
-    height: 302px;
+  .main-container .skills-image {
+    width: 90%;
     transition: all 1s ease;
   }
   .main-container .section-wrap-projects {
@@ -578,8 +577,8 @@
   }
 }
 @media (max-width: 768px) {
-  .main-container .section-wrap-career {
-    height: 1106px;
+  .main-container .main-container .section-wrap-career {
+    height: 1100px;
   }
   .main-container .section-wrap-projects {
     height: 880px;
@@ -644,10 +643,5 @@
   }
   .main-container nav ul li .home-button {
     display: none;
-  }
-}
-@media (max-width: 1000px) {
-  .main-container .section-wrap-career {
-    height: 1300px;
   }
 }
