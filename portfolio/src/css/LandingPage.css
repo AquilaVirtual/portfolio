@@ -56,6 +56,7 @@
   margin: 0 30px;
   color: white;
   text-decoration: none;
+  transition: all 1s ease;
 }
 .main-container nav ul :hover {
   color: #706f77;
@@ -530,17 +531,24 @@
   }
 }
 @media (max-width: 1000px) {
+  .main-container {
+    transition: all 1s ease;
+  }
   .main-container .skills {
     width: 688px;
     height: 302px;
+    transition: all 1s ease;
   }
   .main-container .section-wrap-projects {
+    transition: all 1s ease;
     height: 363px;
   }
   .main-container .section-wrap-projects .projects-wrap {
+    transition: all 1s ease;
     width: 220px;
   }
   .main-container .section-wrap-projects .projects-wrap .business-wrap {
+    transition: all 1s ease;
     height: 218px;
     margin: 6%;
   }
@@ -549,6 +557,7 @@
     width: 220px;
   }
   .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+    transition: all 1s ease;
     width: 220px;
     height: 218px;
     margin: 6%;
@@ -559,6 +568,7 @@
     width: 220px;
   }
   .main-container .section-wrap-projects .projects-wrap .notes-wrap {
+    transition: all 1s ease;
     height: 218px;
     margin: 6%;
   }
@@ -568,6 +578,9 @@
   }
 }
 @media (max-width: 768px) {
+  .main-container p {
+    font-size: 19px;
+  }
   .main-container #flip {
     display: block;
   }
