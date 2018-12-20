@@ -578,11 +578,11 @@
 }
 @media (max-width: 768px) {
   .main-container .main-container .section-wrap-career {
-    height: 1100px;
+    height: 1117px;
   }
   .main-container .section-wrap-projects {
-    height: 880px;
-    padding: 40px 25% 0 0;
+    height: 920px;
+    padding: 40px 10% 0 0;
   }
   .main-container .section-wrap-projects .projects-wrap {
     display: flex;
@@ -643,5 +643,10 @@
   }
   .main-container nav ul li .home-button {
     display: none;
+  }
+}
+@media (max-width: 5520x) {
+  .main-container .main-container .section-wrap-career {
+    height: 1160px;
   }
 }

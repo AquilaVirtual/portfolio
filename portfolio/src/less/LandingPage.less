@@ -498,8 +498,11 @@
   }
   @media (max-width: 1000px) {
     transition: all 1s ease;
+    .section-wrap-skills { 
+      // height: 600px;
+    }
     .skills-image {
-      width: 90%;  
+      width: 90%;
       transition: all 1s ease;
     }
     .section-wrap-projects {
@@ -543,13 +546,13 @@
   }
   @media (max-width: 768px) {
     .main-container {
-       .section-wrap-career {
-      height: 1100px;
+      .section-wrap-career {
+        height: 1117px;
+      }
     }
-  }
     .section-wrap-projects {
-      height: 880px;
-      padding: 40px 25% 0 0;
+      height: 920px;
+      padding: 40px 10% 0 0;
 
       .projects-wrap {
         display: flex;
@@ -599,6 +602,14 @@
             display: none;
           }
         }
+      }
+    }
+  }
+
+  @media (max-width: 5520x) {
+    .main-container {
+      .section-wrap-career {
+        height: 1160px;
       }
     }
   }

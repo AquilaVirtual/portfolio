@@ -26,6 +26,9 @@ class LandingPage extends Component {
         $("#nav").slideToggle(500);
       });
     });
+    alert(
+      "This site is still under construction. Please click on ok to view on desktop and tablet. Thanks!"
+    );
   };
   render() {
     const bioStyle = {
@@ -41,7 +44,7 @@ class LandingPage extends Component {
     return (
       <div className="main-container">
         <div id="flip">
-          <img src={menue} alt=""/>
+          <img src={menue} alt="" />
         </div>
         <nav id="nav">
           <ul class="nav nav-pills">
