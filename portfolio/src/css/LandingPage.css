@@ -489,7 +489,7 @@
     left: 11%;
   }
   .main-container .section-wrap-career {
-    height: 1100px;
+    height: 1038px;
   }
   .main-container .section-wrap-career .vertical-container {
     left: 12.2%;
@@ -544,6 +544,9 @@
   .main-container {
     transition: all 1s ease;
   }
+  .main-container .section-wrap-career {
+    height: 1100px;
+  }
   .main-container .section-wrap-career .vertical-container {
     left: 13.2%;
   }
@@ -595,6 +598,10 @@
 @media (max-width: 768px) {
   .main-container .main-container .section-wrap-career {
     height: 1117px;
+  }
+  .main-container .main-container .section-wrap-skills {
+    height: 306px;
+    width: 100%;
   }
   .main-container .section-wrap-projects {
     height: 920px;
@@ -664,5 +671,9 @@
 @media (max-width: 5520x) {
   .main-container .main-container .section-wrap-career {
     height: 1160px;
+  }
+  .main-container .main-container .section-wrap-skills {
+    height: 306px;
+    width: 100%;
   }
 }
