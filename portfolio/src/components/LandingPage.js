@@ -32,7 +32,7 @@ class LandingPage extends Component {
   };
   render() {
     const bioStyle = {
-      fontSize: "14px"
+      fontSize: "18px"
     };
     const darkGreyFont = {
       color: "#676a6c"

@@ -1,6 +1,6 @@
 @import "mixins.less";
 
-.main-container {
+.main-container { 
   max-width: 100vw;
   #flip {
     color: white;
@@ -426,7 +426,15 @@
       }
     }
   }
+  @media (max-width: 1371px) {
+     .section-wrap-career {
+        .vertical-container {
+    left: 50.6%;
+  }
+}
+  }
   @media (max-width: 1170px) {
+     transition: all 1s ease;
     nav {
       ul {
         li {
@@ -443,6 +451,7 @@
         height: 90%;
       }
       .container {
+        transition: all 1s ease;
         width: 65%;
         .lambda {
           .left {        
@@ -459,7 +468,7 @@
         .lambda-left {
           .left {
             width: 89%;      
-            left: 6%;
+            left: 2%;
             .date-line {
               position: static;
             }
@@ -504,9 +513,15 @@
 
       .vertical-container {
         left: 13.2%;
-
+      }
+    .container {
+      .lambda-left {
+        .left {         
+          left: 6%;        
+        }
       }
     }
+  }
     .section-wrap-skills { 
       // height: 600px;
     }
