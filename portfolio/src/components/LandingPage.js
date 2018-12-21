@@ -32,7 +32,7 @@ class LandingPage extends Component {
   };
   render() {
     const bioStyle = {
-      fontSize: "22px"
+      fontSize: "14px"
     };
     const darkGreyFont = {
       color: "#676a6c"
@@ -170,7 +170,7 @@ class LandingPage extends Component {
                     <br />
                   </span>
                   <p>
-                    <span>
+                    <span style={bioStyle}> 
                       Designed and developed full-stack applications utilizing
                       MERN stack technology. Optimized user authentication by
                       applying JWT. Hands-on experience with unit testing.
@@ -199,7 +199,7 @@ class LandingPage extends Component {
                     <br />
                   </span>
                   <p>
-                    <span>
+                    <span style={bioStyle}>
                       Relocated to U.S. and was waiting on work permit.
                       <br />
                       Contract construction and painting jobs.
@@ -238,7 +238,7 @@ class LandingPage extends Component {
                     <br />
                   </span>
                   <p>
-                    <span>
+                    <span style={bioStyle}>
                       Diving Services –Inspection Repair and Maintenance (IRM)
                       <br />
                       of offshore Installations, GVI, CVI and NDT Inspections.
@@ -271,7 +271,7 @@ class LandingPage extends Component {
                     <br />
                   </span>
                   <p>
-                    <span>
+                    <span style={bioStyle}>
                       Designed and built PC games Using C++, OpenGL, and
                       Blender.
                     </span>
