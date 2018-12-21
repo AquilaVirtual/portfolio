@@ -484,14 +484,15 @@
     height: 1100px;
   }
   .main-container .section-wrap-career .vertical-container {
-    left: 12.2%;
+    left: 13.2%;
+    height: 90%;
   }
   .main-container .section-wrap-career .container {
     width: 65%;
   }
   .main-container .section-wrap-career .container .lambda .left {
-    width: auto;
-    position: static;
+    width: 89%;
+    left: 6%;
   }
   .main-container .section-wrap-career .container .lambda .left .date-line {
     position: static;
@@ -500,8 +501,8 @@
     left: 10%;
   }
   .main-container .section-wrap-career .container .lambda-left .left {
-    width: 92%;
-    position: static;
+    width: 89%;
+    left: 6%;
   }
   .main-container .section-wrap-career .container .lambda-left .left .date-line {
     position: static;
@@ -510,8 +511,8 @@
     left: 10%;
   }
   .main-container .section-wrap-career .container .lambda-test .left {
-    width: auto;
-    position: static;
+    width: 88%;
+    left: 6%;
   }
   .main-container .section-wrap-career .container .lambda-test .left .date-line {
     position: static;

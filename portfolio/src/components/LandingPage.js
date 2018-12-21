@@ -27,7 +27,7 @@ class LandingPage extends Component {
       });
     });
     alert(
-      "This site is still under construction. Please click on ok to view on desktop and tablet. Thanks!"
+      "This site is still under construction. Please click ok to view on desktop and tablet. Thanks!"
     );
   };
   render() {
@@ -296,8 +296,10 @@ class LandingPage extends Component {
 
           <section id="Projects" />
           <section className="section-wrap-projects">
+          
             <div className="navy-line" />
             <div className="projects-header">My Projects</div>
+          
             <div className="projects-wrap">
               <div className="business-wrap">
                 <a href="https://realbusinessreviews.net" target="blank">
