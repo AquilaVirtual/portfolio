@@ -94,7 +94,6 @@
 .main-container .section-wrap-bio .container .profile-image-wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-left {
   padding-top: 64px;
