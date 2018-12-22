@@ -275,8 +275,8 @@ class LandingPage extends Component {
                       Designed and built PC games Using C++, OpenGL, and
                       Blender.
                     </span>
-                    <section id="Skills" />
                   </p>
+                    <section id="Skills" />
                   <span className="date-line">
                     <span> Feb. 2004 to Apr. 2006</span> <br />
                     <small>
@@ -296,10 +296,10 @@ class LandingPage extends Component {
 
           <section id="Projects" />
           <section className="section-wrap-projects">
-          
+            <div className="projects-header-wrap">
             <div className="navy-line" />
             <div className="projects-header">My Projects</div>
-          
+            </div>
             <div className="projects-wrap">
               <div className="business-wrap">
                 <a href="https://realbusinessreviews.net" target="blank">
