@@ -139,15 +139,15 @@ class LandingPage extends Component {
                 <p style={bioStyle}>
                   The idea that one can use software to build software has been
                   fascinating to me.
-                  <br />
+                 
                   From my childhood, I have learned things with a concentration
-                  in quantitative <br />
+                  in quantitative 
                   <section id="Career" />
                   methods, and applying this in software development means an
                   ability to tackle
-                  <br />
+                 
                   complex challenges. Writing software, to me, is a
-                  materialization of logic. <br />
+                  materialization of logic. 
                   Having the knowledge to write software has given me a sense of
                   purpose.
                 </p>

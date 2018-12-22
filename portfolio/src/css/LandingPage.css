@@ -135,6 +135,8 @@
   margin: 20px;
 }
 .main-container .section-wrap-bio .container .bio {
+  width: 585px;
+  text-align: center;
   color: #aeaeae;
 }
 .main-container .section-wrap-career {
@@ -365,7 +367,12 @@
 .main-container .section-wrap-projects .repo-link:hover {
   color: #0f6ee6;
 }
-.main-container .section-wrap-projects .projects-header {
+.main-container .section-wrap-projects .projects-header-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .section-wrap-projects .projects-header-wrap .projects-header {
   font-size: 2rem;
   color: #676a6c;
 }
