@@ -45,6 +45,7 @@ class LandingPage extends Component {
       <div className="main-container">
         <div id="flip">
           <img src={menue} alt="" />
+        <h4>MENU</h4>
         </div>
         <nav id="nav">
           <ul class="nav nav-pills">
@@ -271,12 +272,12 @@ class LandingPage extends Component {
                     <br />
                   </span>
                   <p>
+                    <section id="Skills" />
                     <span style={bioStyle}>
                       Designed and built PC games Using C++, OpenGL, and
                       Blender.
                     </span>
                   </p>
-                    <section id="Skills" />
                   <span className="date-line">
                     <span> Feb. 2004 to Apr. 2006</span> <br />
                     <small>
@@ -285,16 +286,15 @@ class LandingPage extends Component {
                   </span>
                 </div>
               </div>
-            </div>
+            </div>     
           </section>
-          <section id="Skills" />
           <section className="section-wrap-skills">
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
             <img className="skills-image" alt="skills" src={skill} />
+          <section id="Projects" />
           </section>
 
-          <section id="Projects" />
           <section className="section-wrap-projects">
             <div className="projects-header-wrap">
             <div className="navy-line" />

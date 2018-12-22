@@ -667,7 +667,19 @@
     font-size: 19px;
   }
   .main-container #flip {
-    display: block;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  .main-container #flip img {
+    cursor: pointer;
+  }
+  .main-container #flip h4 {
+    margin-left: 6px;
+    font-size: 0.8rem;
+  }
+  .main-container #flip h4:hover {
+    cursor: pointer;
   }
   .main-container #nav {
     width: 100%;
