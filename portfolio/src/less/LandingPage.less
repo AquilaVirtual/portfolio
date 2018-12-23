@@ -91,7 +91,7 @@
       }
       .profile-image-wrap {
         display: flex;
-        align-items: center;    
+        align-items: center;
         .fontawesome-left {
           padding-top: 64px;
         }
@@ -133,7 +133,7 @@
           }
         }
       }
-      .bio {        
+      .bio {
         width: 585px;
         text-align: center;
         color: #aeaeae;
@@ -361,7 +361,7 @@
     .projects-header-wrap {
       display: flex;
       flex-direction: column;
-      align-items: center;  
+      align-items: center;
       .projects-header {
         font-size: 2rem;
         color: #676a6c;
@@ -573,7 +573,18 @@
       }
     }
   }
-  @media (max-width: 768px) {   
+  @media (max-width: 768px) {
+
+     .section-wrap-bio {
+     .container  {
+      .profile-image-wrap .fab {
+      color: grey;
+      font-size: 50px;
+      margin: 10% 27px 20%;
+      opacity: 0.3;
+    }
+  }
+    }
     .projects-header-wrap {
       display: flex;
       flex-direction: column;
@@ -631,13 +642,13 @@
       img {
         cursor: pointer;
       }
-    h4 {
-      margin-left: 6px;
-      font-size: 0.8rem;
-      &:hover {
-       cursor: pointer;
+      h4 {
+        margin-left: 6px;
+        font-size: 0.8rem;
+        &:hover {
+          cursor: pointer;
+        }
       }
-    }
     }
     #nav {
       width: 100%;
@@ -670,6 +681,7 @@
   }
   @media (max-width: 375px) {
     max-width: 100%;
+    text-align: center;   
     .section-wrap-career {
       height: 1290px;
     }

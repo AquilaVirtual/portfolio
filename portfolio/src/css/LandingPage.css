@@ -603,6 +603,12 @@
   }
 }
 @media (max-width: 768px) {
+  .main-container .section-wrap-bio .container .profile-image-wrap .fab {
+    color: grey;
+    font-size: 50px;
+    margin: 10% 27px 20%;
+    opacity: 0.3;
+  }
   .main-container .projects-header-wrap {
     display: flex;
     flex-direction: column;
@@ -706,6 +712,7 @@
 @media (max-width: 375px) {
   .main-container {
     max-width: 100%;
+    text-align: center;
   }
   .main-container .section-wrap-career {
     height: 1290px;
