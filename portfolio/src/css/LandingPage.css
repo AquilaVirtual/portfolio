@@ -717,6 +717,10 @@
   .main-container .section-wrap-career {
     height: 1348px;
   }
+  .main-container .section-wrap-career .vertical-container {
+    left: 17%;
+    height: 107%;
+  }
   .main-container .section-wrap-skills {
     height: 244px;
     width: 100%;
