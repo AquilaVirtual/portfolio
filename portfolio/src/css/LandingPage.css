@@ -133,6 +133,9 @@
   opacity: 0.3;
   margin: 20px;
 }
+.main-container .section-wrap-bio .container .social-media ul i:hover {
+  background-color: #00060c;
+}
 .main-container .section-wrap-bio .container .bio {
   width: 585px;
   text-align: center;
@@ -387,6 +390,9 @@
   margin: 6%;
   border-radius: 5px;
 }
+.main-container .section-wrap-projects .projects-wrap .business-wrap img {
+  background: #0f0101;
+}
 .main-container .section-wrap-projects .projects-wrap .business-wrap .project-description {
   margin: 10px;
 }
@@ -405,6 +411,7 @@
 }
 .main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap button:hover {
   cursor: pointer;
+  background: #154079;
 }
 .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
   color: grey;
@@ -433,6 +440,7 @@
 }
 .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap button:hover {
   cursor: pointer;
+  background: #154079;
 }
 .main-container .section-wrap-projects .projects-wrap .notes-wrap {
   color: grey;
@@ -460,6 +468,7 @@
 }
 .main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap button:hover {
   cursor: pointer;
+  background: #154079;
 }
 .main-container .footer {
   display: flex;
@@ -482,6 +491,9 @@
   padding-top: 8px;
   opacity: 0.3;
   margin: 20px;
+}
+.main-container .footer .social-media-footer ul i:hover {
+  background-color: #00060c;
 }
 @media (max-width: 1371px) {
   .main-container .section-wrap-career .vertical-container {

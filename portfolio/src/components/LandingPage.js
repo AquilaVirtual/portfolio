@@ -48,29 +48,29 @@ class LandingPage extends Component {
         <h4>MENU</h4>
         </div>
         <nav id="nav">
-          <ul class="nav nav-pills">
+          <ul className="nav nav-pills">
             <li>
-              <a class="nav-link home-button" href="#Home">
+              <a className="nav-link home-button" href="#Home">
                 David Loveday
               </a>
             </li>
             <li>
-              <a class="nav-link" href="#About">
+              <a className="nav-link" href="#About">
                 About
               </a>
             </li>
             <li>
-              <a class="nav-link" href="#Career">
+              <a className="nav-link" href="#Career">
                 Career
               </a>
             </li>
             <li>
-              <a class="nav-link" href="#Skills">
+              <a className="nav-link" href="#Skills">
                 Skills
               </a>
             </li>
             <li>
-              <a class="nav-link" href="#Projects">
+              <a className="nav-link" href="#Projects">
                 Projects
               </a>
             </li>
@@ -99,8 +99,8 @@ class LandingPage extends Component {
                   alt="David_Loveday"
                 />
                 <div className="fontawesome-right">
-                  <i class="fab fa-angular" />
-                  <i class="fab fa-js-square" />
+                  <i className="fab fa-angular" />
+                  <i className="fab fa-js-square" />
                 </div>
               </div>
               <div className="my-name">
@@ -113,7 +113,7 @@ class LandingPage extends Component {
                       href="https://resume.creddle.io/resume/aodc6tswpqo"
                       target="blank"
                     >
-                      <i class="far fa-file" />
+                      <i className="far fa-file" />
                     </a>
                   </li>
                   <li>
@@ -263,8 +263,8 @@ class LandingPage extends Component {
 
             <div className="container">
               <div className="lambda-left">
-                <div class="icon-wrapper">
-                  <i class="fa fa-plus-square" />
+                <div className="icon-wrapper">
+                  <i className="fa fa-plus-square" />
                 </div>
                 <div className="left">
                   <span style={darkGreyFont}>
@@ -374,16 +374,16 @@ class LandingPage extends Component {
               </div>
             </div>
           </section>
-          <section class="footer">
+          <section className="footer">
             <strong>© 2018 David Loveday</strong>
-            <div class="social-media-footer">
+            <div className="social-media-footer">
               <ul>
                 <li>
                   <a
                     href="https://resume.creddle.io/resume/aodc6tswpqo"
                     target="blank"
                   >
-                    <i class="far fa-file" />
+                    <i className="far fa-file" />
                   </a>
                 </li>
                 <li>
@@ -391,17 +391,17 @@ class LandingPage extends Component {
                     href="https://www.linkedin.com/in/david-loveday-110a8a172/"
                     target="blank"
                   >
-                    <i class="fab fa-linkedin-in" />
+                    <i className="fab fa-linkedin-in" />
                   </a>
                 </li>
                 <li>
                   <a href="https://github.com/AquilaVirtual" target="blank">
-                    <i class="fab fa-github" />
+                    <i className="fab fa-github" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fab fa-twitter" />
+                    <i className="fab fa-twitter" />
                   </a>
                 </li>
               </ul>
