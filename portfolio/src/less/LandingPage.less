@@ -37,15 +37,16 @@
         .home-button {
           position: absolute;
           border: 1px solid;
-          height: 24px;
-          width: 111px;
+          height: 3rem;
+          width: 9rem;
           left: 20%;
           top: 28%;
+          padding-top: 1rem;
           font-size: 0.9rem;
           background: white;
-          color: #5178b5;
-          padding: 10px 0 0 9px;
-          border-radius: 7px;
+          text-align: center;
+          color: #5178b5;      
+          border-radius: .6rem;
           font-weight: 600;
           &:hover {
             border: 2px solid lightgray;
@@ -125,7 +126,7 @@
             background-color: #0f6ee6;
             color: white;
             width: 56%;
-            height: 20px;
+            height: 1.7rem;
             text-align: center;
             padding-top: 8px;
             opacity: 0.3;
@@ -192,9 +193,9 @@
     z-index: 0;
     margin-top: 40px;
     background: #f4f4f4;
-    height: 904px;
+    height: 948px;
     .vertical-container {
-      left: 50.2%;
+      left: 50%;
       height: 75%;
       width: 4px;
       position: absolute;
@@ -294,7 +295,7 @@
           width: 40%;
           background: white;
           margin-left: 0;
-          padding: 1.6em;
+          padding: 1.2rem;
           border-radius: 3px;
           color: #aeaeae;
           box-shadow: 1px 1px 2px 0px;
@@ -346,7 +347,7 @@
       .navy-line();
     }
     margin-top: 40px;
-    height: 452px;
+    // height: 452px;
     background: #f4f4f4;
     .domain-link {
       margin: 20px;
@@ -430,7 +431,7 @@
           background-color: #0f6ee6;
           color: white;
           width: 56%;
-          height: 20px;
+          height: 1.7rem;
           text-align: center;
           padding-top: 8px;
           opacity: 0.3;
@@ -463,7 +464,7 @@
     .section-wrap-career {
       height: 1038px;
       .vertical-container {
-        left: 12.2%;
+        left: 12%;
         height: 90%;
       }
       .container {
@@ -484,7 +485,7 @@
         .lambda-left {
           .left {
             width: 89%;
-            left: 2%;
+            left: -5%;
             .date-line {
               position: static;
             }
@@ -529,15 +530,8 @@
       height: 1100px;
 
       .vertical-container {
-        left: 13.2%;
-      }
-      .container {
-        .lambda-left {
-          .left {
-            left: 6%;
-          }
-        }
-      }
+        left: 12%;
+      }   
     }
     .skills-image {
       width: 90%;
@@ -545,7 +539,7 @@
     }
     .section-wrap-projects {
       transition: all 1s ease;
-      height: 363px;
+      // height: 363px;
       .projects-wrap {
         transition: all 1s ease;
         width: 220px;
@@ -675,17 +669,86 @@
       }
     }
   }
-  @media (max-width: 545x) {
-    .main-container .section-wrap-career {
-      height: 1162px;
+
+  @media (max-width: 734px) {
+      .section-wrap-career {
+      height: 1184px
+     
     }
   }
-  @media (max-width: 520x) {
-    .main-container {
+
+  @media (max-width: 680px) {
       .section-wrap-career {
-        height: 1160px;
+      height: 1184px;   
+   
+    }
+  }
+  @media (max-width: 580px) {  
+      .section-wrap-career {
+        height: 1271px;
+      }  
+  }
+  @media (max-width: 530px) {  
+      .section-wrap-career {
+        height: 1332px;
+      }  
+  }
+  @media (max-width: 500px) {  
+      .section-wrap-career {
+        height: 1388px;
+      }  
+  }
+  @media (max-width: 450px) {  
+      .section-wrap-career {
+        height: 1480px;
+      }  
+  }
+  @media (max-width: 428px) {  
+      .section-wrap-career {
+        height: 1517px;
+      }  
+  }
+  @media (max-width: 414px) {  
+      .section-wrap-career {
+        height: 1300px
+      }  
+      .section-wrap-career {
+        .vertical-container {
+        left: 15%;
+        height: 113%
+        }
+    }
+    .section-wrap-career {
+     .container {
+        .lambda {
+           .left {
+      width: 124%;
+      left: 6%;
+        }
       }
     }
+  }
+  .section-wrap-career {
+     .container {
+        .lambda-left {
+           .left {
+    width: 124%;
+    left: 30%;
+           }
+          }
+        }
+}
+.section-wrap-career {
+   .container {
+      .lambda-test{
+         .left {
+  width: 124%;
+  left: 6%;
+  margin-top: 264px;
+         }
+        }
+      }
+}
   }
   @media (max-width: 375px) {
     max-width: 100%;

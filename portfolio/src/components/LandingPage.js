@@ -375,7 +375,7 @@ class LandingPage extends Component {
             </div>
           </section>
           <section className="footer">
-            <strong>© 2018 David Loveday</strong>
+            <strong>© 2019 David Loveday</strong>
             <div className="social-media-footer">
               <ul>
                 <li>
