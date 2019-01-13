@@ -45,7 +45,7 @@ class LandingPage extends Component {
       <div className="main-container">
         <div id="flip">
           <img src={menue} alt="" />
-        <h4>MENU</h4>
+          <h4>MENU</h4>
         </div>
         <nav id="nav">
           <ul className="nav nav-pills">
@@ -139,18 +139,13 @@ class LandingPage extends Component {
               <div className="bio">
                 <p style={bioStyle}>
                   The idea that one can use software to build software has been
-                  fascinating to me.
-                 
-                  From my childhood, I have learned things with a concentration
-                  in quantitative 
+                  fascinating to me. From my childhood, I have learned things
+                  with a concentration in quantitative
                   <section id="Career" />
                   methods, and applying this in software development means an
-                  ability to tackle
-                 
-                  complex challenges. Writing software, to me, is a
-                  materialization of logic. 
-                  Having the knowledge to write software has given me a sense of
-                  purpose.
+                  ability to tackle complex challenges. Writing software, to me,
+                  is a materialization of logic. Having the knowledge to write
+                  software has given me a sense of purpose.
                 </p>
               </div>
             </div>
@@ -171,7 +166,7 @@ class LandingPage extends Component {
                     <br />
                   </span>
                   <p>
-                    <span style={bioStyle}> 
+                    <span style={bioStyle}>
                       Designed and developed full-stack applications utilizing
                       MERN stack technology. Optimized user authentication by
                       applying JWT. Hands-on experience with unit testing.
@@ -286,19 +281,19 @@ class LandingPage extends Component {
                   </span>
                 </div>
               </div>
-            </div>     
+            </div>
           </section>
           <section className="section-wrap-skills">
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
             <img className="skills-image" alt="skills" src={skill} />
-          <section id="Projects" />
+            <section id="Projects" />
           </section>
 
           <section className="section-wrap-projects">
             <div className="projects-header-wrap">
-            <div className="navy-line" />
-            <div className="projects-header">My Projects</div>
+              <div className="navy-line" />
+              <div className="projects-header">My Projects</div>
             </div>
             <div className="projects-wrap">
               <div className="business-wrap">
