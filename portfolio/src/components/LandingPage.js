@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import $ from "jquery";
-import { Bar } from "react-chartjs-2"
+
 import "../css/LandingPage.css";
 
 import dave from "../img/dave.jpg";
@@ -11,23 +11,6 @@ import realbusiness from "../img/realbusiness.png";
 import menue from "../img/menu.png";
 
 class LandingPage extends Component {
-  constructor() {
-    super();
-    this.state = {
-       barData : {
-        labels : ["JavaScript","React/Redux","HTML","CSS","LESS","Bootstrap","C/C++"],
-        datasets : [         
-            {
-              fillColor : "rgba(172,194,132,0.4)",
-              strokeColor : "#ACC26D",
-              pointColor : "#fff",
-              pointStrokeColor : "#9DB86D",
-                data : [700,700,700,600,700,700,700,700]
-            }
-        ]
-    } 
-    }
-  }
   componentDidMount = () => {
     $(document).ready(function() {
       $("a.nav-link").click(function() {
@@ -46,9 +29,6 @@ class LandingPage extends Component {
     alert(
       "This site is still under construction. Please click ok to view on desktop and tablet. Thanks!"
     );
-
-    // var skills= document.getElementById("skills").getContext("2d");
- 
   };
   render() {
     const bioStyle = {
@@ -311,9 +291,7 @@ class LandingPage extends Component {
           <section className="section-wrap-skills">
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
-            {/* <img className="skills-image" alt="skills" src={skill} /> */}
-            {/* <canvas id="skills" width="600" height="400"></canvas> */}
-            <Bar data={this.state.barData}  width="400" height="300" />
+            <img className="skills-image" alt="skills" src={skill} />
           <section id="Projects" />
           </section>
 
