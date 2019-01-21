@@ -6,6 +6,7 @@ import "../css/LandingPage.css";
 import dave from "../img/dave.jpg";
 import currentaffairs from "../img/currentaffairs.png";
 import notes from "../img/note.png";
+import familylife from "../img/familylife.png";
 import skill from "../img/skill.png";
 import realbusiness from "../img/realbusiness.png";
 import menue from "../img/menu.png";
@@ -323,6 +324,30 @@ class LandingPage extends Component {
                   </a>
                 </div>
               </div>
+
+               
+              <div className="current-affairs-wrap">
+                <a href="https://familylife.netlify.com" target="blank">
+                  <img className="project-image"  height="152"  width="291px"src={familylife} alt="" />
+                </a>
+                <div className="project-description">
+                  Family Life is a web app that helps families organize their events. 
+                  <br />
+                </div>
+                <div className="buttons-wrap">
+                  <a
+                    className="repo-link"
+                    href="https://github.com/AquilaVirtual/family_life_organizer"
+                    target="blank"
+                  >
+                    <button>CODE</button>
+                  </a>
+                  <a href="https://familylife.netlify.com" target="blank">
+                    <button>DEMO</button>
+                  </a>
+                </div>
+              </div>
+
 
               <div className="current-affairs-wrap">
                 <a href="https://currentaffairs.netlify.com" target="blank">
