@@ -503,6 +503,19 @@ body {
 .main-container .footer .social-media-footer ul i:hover {
   background-color: #00060c;
 }
+@media (max-width: 1660px) {
+  .main-container .section-wrap-projects .projects-wrap .business-wrap {
+    margin: 0;
+  }
+  .main-container .section-wrap-projects .projects-wrap .notes-wrap {
+    margin: 0;
+  }
+}
+@media (max-width: 1530px) {
+  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+    margin: 2%;
+  }
+}
 @media (max-width: 1371px) {
   .main-container .section-wrap-career .vertical-container {
     left: 50.6%;
