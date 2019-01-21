@@ -179,7 +179,7 @@ class LandingPage extends Component {
                   <span className="date-line">
                     <span> Mar. 2018 to Oct. 2018</span> <br />
                     <small>
-                      <span style={navyFont}>Web Developer</span>
+                      <span style={navyFont}>Web Development Track</span>
                     </small>
                   </span>
                 </div>
@@ -205,7 +205,7 @@ class LandingPage extends Component {
                   <span className="date-line">
                     <span> Jan. 2009 to Mar. 2018</span> <br />
                     <small>
-                      <span style={navyFont}>Contractor</span>
+                      <span style={navyFont}>Independent Contractor</span>
                     </small>
                   </span>
                 </div>
@@ -325,13 +325,19 @@ class LandingPage extends Component {
                 </div>
               </div>
 
-               
               <div className="current-affairs-wrap">
                 <a href="https://familylife.netlify.com" target="blank">
-                  <img className="project-image"  height="152"  width="291px"src={familylife} alt="" />
+                  <img
+                    className="project-image"
+                    height="152"
+                    width="291px"
+                    src={familylife}
+                    alt=""
+                  />
                 </a>
                 <div className="project-description">
-                  Family Life is a web app that helps families organize their events. 
+                  Family Life is a web app that helps families organize their
+                  events.
                   <br />
                 </div>
                 <div className="buttons-wrap">
@@ -347,7 +353,6 @@ class LandingPage extends Component {
                   </a>
                 </div>
               </div>
-
 
               <div className="current-affairs-wrap">
                 <a href="https://currentaffairs.netlify.com" target="blank">

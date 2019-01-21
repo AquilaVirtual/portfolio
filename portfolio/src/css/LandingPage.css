@@ -586,7 +586,7 @@ body {
 }
 @media (max-width: 1000px) {
   .main-container {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
   }
   .main-container .section-wrap-career {
     height: 1100px;
@@ -620,8 +620,11 @@ body {
     width: 100%;
   }
   .main-container .section-wrap-projects {
-    height: 1190px;
+    height: 1270px;
     padding: 40px 10% 0 0;
+  }
+  .main-container .section-wrap-projects .projects-header-wrap {
+    padding-left: 5%;
   }
   .main-container .section-wrap-projects .projects-wrap {
     display: flex;
@@ -721,9 +724,18 @@ body {
     height: 1388px;
   }
 }
+@media (max-width: 733px) {
+  .main-container .section-wrap-career .vertical-container {
+    left: 13%;
+  }
+}
 @media (max-width: 450px) {
   .main-container .section-wrap-career {
     height: 1480px;
+  }
+  .main-container .section-wrap-career .vertical-container {
+    left: 15%;
+    height: 136%;
   }
 }
 @media (max-width: 428px) {
@@ -784,14 +796,38 @@ body {
     text-align: center;
   }
   .main-container .section-wrap-career {
-    height: 1348px;
+    height: 1441px;
   }
   .main-container .section-wrap-career .vertical-container {
-    left: 17%;
-    height: 107%;
+    height: 175%;
+    left: 15.2%;
   }
-  .main-container .section-wrap-skills {
-    height: 244px;
-    width: 100%;
+  .main-container .section-wrap-career .container .my-career {
+    left: 0;
+  }
+  .main-container .section-wrap-career .container .navy-line {
+    left: 34.5%;
+  }
+  .main-container .section-wrap-career .container .lambda-test .icon-wrapper i {
+    left: 41%;
+  }
+  .main-container .section-wrap-career .container .lambda-left .icon-wrapper i {
+    left: 41%;
+    top: 48%;
+  }
+  .main-container .section-wrap-career .container .lambda .icon-wrapper i {
+    left: 40%;
+  }
+}
+@media (max-width: 360px) {
+  .main-container .section-wrap-career .vertical-container {
+    height: 182%;
+    left: 15.2%;
+  }
+}
+@media (max-width: 320px) {
+  .main-container .section-wrap-career .vertical-container {
+    height: 218%;
+    left: 16%;
   }
 }

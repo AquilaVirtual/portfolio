@@ -453,21 +453,20 @@ body {
     }
   }
   @media (max-width: 1660px) {
-    .section-wrap-projects {  
-
-      .projects-wrap {       
+    .section-wrap-projects {
+      .projects-wrap {
         .business-wrap {
-          margin: 0;          
+          margin: 0;
         }
         .notes-wrap {
-         margin: 0;
+          margin: 0;
         }
       }
     }
   }
   @media (max-width: 1530px) {
-    .section-wrap-projects { 
-      .projects-wrap {       
+    .section-wrap-projects {
+      .projects-wrap {
         .current-affairs-wrap {
           margin: 2%;
         }
@@ -475,18 +474,18 @@ body {
     }
   }
   @media (max-width: 1346px) {
-    .section-wrap-projects { 
-      .projects-wrap {      
-       flex-wrap: wrap;
-       .notes-wrap {
-        margin: 6%;
-       }
-       .current-affairs-wrap {
-        margin: 6%;
-    }
-    .business-wrap {
-      margin: 6%;          
-    }
+    .section-wrap-projects {
+      .projects-wrap {
+        flex-wrap: wrap;
+        .notes-wrap {
+          margin: 6%;
+        }
+        .current-affairs-wrap {
+          margin: 6%;
+        }
+        .business-wrap {
+          margin: 6%;
+        }
       }
     }
   }
@@ -555,12 +554,9 @@ body {
         }
       }
     }
-    .section-wrap-projects {
-     
-    }
   }
   @media (max-width: 1000px) {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 
     .section-wrap-career {
       height: 1100px;
@@ -572,9 +568,6 @@ body {
     .skills-image {
       width: 90%;
       transition: all 1s ease;
-    }
-    .section-wrap-projects {
-
     }
   }
   @media (max-width: 768px) {
@@ -604,8 +597,11 @@ body {
       }
     }
     .section-wrap-projects {
-      height: 1190px;
+      height: 1270px;
       padding: 40px 10% 0 0;
+      .projects-header-wrap {
+        padding-left: 5%;
+      }
 
       .projects-wrap {
         display: flex;
@@ -687,6 +683,7 @@ body {
       height: 1271px;
     }
   }
+
   @media (max-width: 530px) {
     .section-wrap-career {
       height: 1332px;
@@ -697,9 +694,20 @@ body {
       height: 1388px;
     }
   }
+  @media (max-width: 733px) {
+    .section-wrap-career {
+      .vertical-container {
+        left: 13%;
+      }
+    }
+  }
   @media (max-width: 450px) {
     .section-wrap-career {
       height: 1480px;
+      .vertical-container {
+        left: 15%;
+        height: 136%;
+      }
     }
   }
   @media (max-width: 428px) {
@@ -787,16 +795,51 @@ body {
     max-width: 100%;
     text-align: center;
     .section-wrap-career {
-      height: 1348px;
+      height: 1441px;
       .vertical-container {
-        left: 17%;
-        height: 107%;
+        height: 175%;
+        left: 15.2%;
+      }
+      .container {
+        .my-career {
+          left: 0;
+        }
+        .navy-line {
+          left: 34.5%;
+        }
+        .lambda-test {
+          .icon-wrapper i {
+            left: 41%;
+          }
+        }
+        .lambda-left {
+          .icon-wrapper i {
+            left: 41%;
+            top: 48%;
+          }
+        }
+        .lambda {
+          .icon-wrapper i {
+            left: 40%;
+          }
+        }
       }
     }
-
-    .section-wrap-skills {
-      height: 244px;
-      width: 100%;
+  }
+  @media (max-width: 360px) {
+    .section-wrap-career {
+      .vertical-container {
+        height: 182%;
+        left: 15.2%;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .section-wrap-career {
+      .vertical-container {
+        height: 218%;
+        left: 16%;
+      }
     }
   }
 }
