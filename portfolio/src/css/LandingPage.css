@@ -516,6 +516,20 @@ body {
     margin: 2%;
   }
 }
+@media (max-width: 1346px) {
+  .main-container .section-wrap-projects .projects-wrap {
+    flex-wrap: wrap;
+  }
+  .main-container .section-wrap-projects .projects-wrap .notes-wrap {
+    margin: 6%;
+  }
+  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+    margin: 6%;
+  }
+  .main-container .section-wrap-projects .projects-wrap .business-wrap {
+    margin: 6%;
+  }
+}
 @media (max-width: 1371px) {
   .main-container .section-wrap-career .vertical-container {
     left: 50.6%;
@@ -568,16 +582,6 @@ body {
   }
   .main-container .section-wrap-career .container .lambda-test .icon-wrapper {
     left: 10%;
-  }
-  .main-container .section-wrap-projects .projects-wrap .notes-wrap {
-    margin: 3%;
-  }
-  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
-    margin: 3%;
-    margin-top: 178px;
-  }
-  .main-container .section-wrap-projects .projects-wrap .business-wrap {
-    margin: 3%;
   }
 }
 @media (max-width: 1000px) {
