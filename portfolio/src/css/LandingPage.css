@@ -598,42 +598,6 @@ body {
     width: 90%;
     transition: all 1s ease;
   }
-  .main-container .section-wrap-projects {
-    transition: all 1s ease;
-  }
-  .main-container .section-wrap-projects .projects-wrap {
-    transition: all 1s ease;
-    width: 220px;
-  }
-  .main-container .section-wrap-projects .projects-wrap .business-wrap {
-    transition: all 1s ease;
-    height: 218px;
-    margin: 6%;
-  }
-  .main-container .section-wrap-projects .projects-wrap .business-wrap .project-image {
-    height: 110px;
-    width: 220px;
-  }
-  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
-    transition: all 1s ease;
-    width: 220px;
-    height: 218px;
-    margin: 6%;
-    margin-top: 100px;
-  }
-  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .project-image {
-    height: 110px;
-    width: 220px;
-  }
-  .main-container .section-wrap-projects .projects-wrap .notes-wrap {
-    transition: all 1s ease;
-    height: 218px;
-    margin: 6%;
-  }
-  .main-container .section-wrap-projects .projects-wrap .notes-wrap .project-image {
-    height: 110px;
-    width: 220px;
-  }
 }
 @media (max-width: 768px) {
   .main-container .section-wrap-bio .container .profile-image-wrap .fab {
