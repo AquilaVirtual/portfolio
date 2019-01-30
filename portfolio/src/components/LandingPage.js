@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import $ from "jquery";
 
 import "../css/LandingPage.css";
@@ -41,7 +42,6 @@ class LandingPage extends Component {
     const navyFont = {
       color: "#3385FF"
     };
-
     return (
       <div className="main-container">
         <div id="flip">
@@ -51,29 +51,29 @@ class LandingPage extends Component {
         <nav id="nav">
           <ul className="nav nav-pills">
             <li>
-              <a className="nav-link home-button" href="#Home">
+              <NavLink to="/#Home" className="nav-link home-button" >
                 David Loveday
-              </a>
+              </NavLink >
             </li>
             <li>
-              <a className="nav-link" href="#About">
+              <NavLink to="/#About" className="nav-link" >
                 About
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="nav-link" href="#Career">
+              <NavLink to="/#Career" className="nav-link">
                 Career
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="nav-link" href="#Skills">
+              <NavLink to="/#Skills" className="nav-link" >
                 Skills
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="nav-link" href="#Projects">
+              <NavLink to="/#Projects" className="nav-link" >
                 Projects
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>
