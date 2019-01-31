@@ -1,36 +1,32 @@
 html,
 body {
   height: 100%;
-  width: 90%;
 }
-.App {
-  width: 100vw;
-}
-.App .main-container {
+.main-container {
   width: 100%;
 }
-.App .main-container #flip {
+.main-container #flip {
   color: white;
   background: #3c6aad;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   display: none;
   height: 40px;
   border-bottom: 2px solid white;
   z-index: 1;
 }
-.App .main-container nav {
+.main-container nav {
   display: flex;
   justify-content: flex-end;
   background: #3c6aad;
-  width: 100vw;
+  width: 100%;
   height: 85px;
   opacity: 0.9;
   border-bottom: 2px solid #708199;
   position: fixed;
   z-index: 1;
 }
-.App .main-container nav ul {
+.main-container nav ul {
   font-family: "Raleway", sans-serif;
   display: flex;
   margin: 40px;
@@ -39,11 +35,11 @@ body {
   justify-content: space-between;
   list-style: none;
 }
-.App .main-container nav ul li {
+.main-container nav ul li {
   display: flex;
   justify-content: space-between;
 }
-.App .main-container nav ul li .home-button {
+.main-container nav ul li .home-button {
   position: absolute;
   border: 1px solid;
   height: 3rem;
@@ -58,80 +54,79 @@ body {
   border-radius: 0.6rem;
   font-weight: 600;
 }
-.App .main-container nav ul li .home-button:hover {
+.main-container nav ul li .home-button:hover {
   border: 2px solid lightgray;
 }
-.App .main-container nav ul a {
+.main-container nav ul a {
   margin: 0 30px;
   color: white;
   text-decoration: none;
   transition: all 1s ease;
 }
-.App .main-container nav ul :hover {
+.main-container nav ul :hover {
   color: #79838f;
   cursor: pointer;
   padding-top: 2px;
 }
-.App .main-container .section-wrap-bio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 95vw;
-}
-.App .main-container .section-wrap-bio .container {
+.main-container .section-wrap-bio {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.App .main-container .section-wrap-bio .container .about-me-wrap {
+.main-container .section-wrap-bio .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .section-wrap-bio .container .about-me-wrap {
   margin-top: 131px;
 }
-.App .main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap {
+.main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.App .main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap .navy-line {
+.main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap .navy-line {
   width: 102px;
   border-top: 3px solid #0f6ee6;
   margin-bottom: 0px;
 }
-.App .main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap .about-me {
+.main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap .about-me {
   font-size: 2rem;
   color: #676a6c;
   padding-top: 16px;
 }
-.App .main-container .section-wrap-bio .container .profile-image-wrap {
+.main-container .section-wrap-bio .container .profile-image-wrap {
   display: flex;
   align-items: center;
 }
-.App .main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-left {
+.main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-left {
   padding-top: 64px;
 }
-.App .main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-right {
+.main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-right {
   padding-top: 64px;
 }
-.App .main-container .section-wrap-bio .container .profile-image-wrap .fab {
+.main-container .section-wrap-bio .container .profile-image-wrap .fab {
   color: grey;
   font-size: 50px;
   margin: 10% 40px 20%;
   opacity: 0.3;
 }
-.App .main-container .section-wrap-bio .container .profile-image-wrap .profile-image {
+.main-container .section-wrap-bio .container .profile-image-wrap .profile-image {
   margin-top: 40px;
   border-radius: 50%;
   height: 150px;
   width: 150px;
 }
-.App .main-container .section-wrap-bio .container .my-name {
+.main-container .section-wrap-bio .container .my-name {
   font-size: 2rem;
   margin-top: 8px;
   color: #676a6c;
 }
-.App .main-container .section-wrap-bio .container .social-media ul {
+.main-container .section-wrap-bio .container .social-media ul {
   display: flex;
 }
-.App .main-container .section-wrap-bio .container .social-media ul i {
+.main-container .section-wrap-bio .container .social-media ul i {
   font-size: 0.8rem;
   border-radius: 50%;
   background-color: #0f6ee6;
@@ -143,22 +138,22 @@ body {
   opacity: 0.3;
   margin: 20px;
 }
-.App .main-container .section-wrap-bio .container .social-media ul i:hover {
+.main-container .section-wrap-bio .container .social-media ul i:hover {
   background-color: #00060c;
 }
-.App .main-container .section-wrap-bio .container .bio {
-  width: 95vw;
+.main-container .section-wrap-bio .container .bio {
+  width: 585px;
   text-align: center;
   color: #aeaeae;
+  width: 100%;
 }
-.App .main-container .section-wrap-career {
+.main-container .section-wrap-career {
   z-index: 0;
   margin-top: 40px;
   background: #f4f4f4;
   height: 948px;
-  width: 110vw;
 }
-.App .main-container .section-wrap-career .vertical-container {
+.main-container .section-wrap-career .vertical-container {
   left: 50%;
   height: 75%;
   width: 4px;
@@ -166,15 +161,16 @@ body {
   background: #e7eaec;
   margin-top: 42px;
 }
-.App .main-container .section-wrap-career .container {
+.main-container .section-wrap-career .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   margin: 0 auto;
-  width: 70vw;
+  width: 100%;
+  max-width: 1170px;
 }
-.App .main-container .section-wrap-career .container .navy-line {
+.main-container .section-wrap-career .container .navy-line {
   width: 102px;
   border-top: 3px solid #0f6ee6;
   margin-bottom: 14px;
@@ -182,7 +178,7 @@ body {
   left: 47.5%;
   margin-top: 36px;
 }
-.App .main-container .section-wrap-career .container .my-career {
+.main-container .section-wrap-career .container .my-career {
   font-size: 30px;
   font-weight: 200;
   left: 50%;
@@ -191,10 +187,10 @@ body {
   position: relative;
   padding-top: 50px;
 }
-.App .main-container .section-wrap-career .container .lambda {
+.main-container .section-wrap-career .container .lambda {
   margin-top: 40px;
 }
-.App .main-container .section-wrap-career .container .lambda .left {
+.main-container .section-wrap-career .container .lambda .left {
   position: relative;
   width: 45.5%;
   background: white;
@@ -204,19 +200,19 @@ body {
   color: #aeaeae;
   box-shadow: 1px 1px 2px 0px;
 }
-.App .main-container .section-wrap-career .container .lambda .left h2 {
+.main-container .section-wrap-career .container .lambda .left h2 {
   font-size: 18px;
   margin-top: 5px;
   font-weight: 400;
 }
-.App .main-container .section-wrap-career .container .lambda .left .date-line {
+.main-container .section-wrap-career .container .lambda .left .date-line {
   position: absolute;
   left: 120%;
   top: 2px;
   font-size: 14px;
   width: 100%;
 }
-.App .main-container .section-wrap-career .container .lambda .icon-wrapper {
+.main-container .section-wrap-career .container .lambda .icon-wrapper {
   position: absolute;
   width: 44px;
   height: 44px;
@@ -226,7 +222,7 @@ body {
   border-radius: 50%;
   border: 3px solid #f1f1f1;
 }
-.App .main-container .section-wrap-career .container .lambda .icon-wrapper i {
+.main-container .section-wrap-career .container .lambda .icon-wrapper i {
   display: block;
   width: 24px;
   height: 24px;
@@ -238,7 +234,7 @@ body {
   border-radius: 10%;
   font-size: 19px;
 }
-.App .main-container .section-wrap-career .container .lambda-test .left {
+.main-container .section-wrap-career .container .lambda-test .left {
   position: relative;
   width: 46%;
   background: white;
@@ -249,19 +245,19 @@ body {
   box-shadow: 1px 1px 2px 0px;
   margin-top: 217px;
 }
-.App .main-container .section-wrap-career .container .lambda-test .left h2 {
+.main-container .section-wrap-career .container .lambda-test .left h2 {
   font-size: 18px;
   margin-top: 5px;
   font-weight: 400;
 }
-.App .main-container .section-wrap-career .container .lambda-test .left .date-line {
+.main-container .section-wrap-career .container .lambda-test .left .date-line {
   position: absolute;
   left: 120%;
   top: 2px;
   font-size: 14px;
   width: 100%;
 }
-.App .main-container .section-wrap-career .container .lambda-test .icon-wrapper {
+.main-container .section-wrap-career .container .lambda-test .icon-wrapper {
   position: absolute;
   width: 44px;
   height: 44px;
@@ -271,7 +267,7 @@ body {
   border-radius: 50%;
   border: 3px solid #f1f1f1;
 }
-.App .main-container .section-wrap-career .container .lambda-test .icon-wrapper i {
+.main-container .section-wrap-career .container .lambda-test .icon-wrapper i {
   display: block;
   width: 24px;
   height: 24px;
@@ -283,10 +279,10 @@ body {
   border-radius: 10%;
   font-size: 19px;
 }
-.App .main-container .section-wrap-career .container .lambda-left {
+.main-container .section-wrap-career .container .lambda-left {
   margin-top: 40px;
 }
-.App .main-container .section-wrap-career .container .lambda-left .left {
+.main-container .section-wrap-career .container .lambda-left .left {
   position: relative;
   width: 45%;
   background: white;
@@ -297,19 +293,19 @@ body {
   box-shadow: 1px 1px 2px 0px;
   float: right;
 }
-.App .main-container .section-wrap-career .container .lambda-left .left h2 {
+.main-container .section-wrap-career .container .lambda-left .left h2 {
   font-size: 18px;
   margin-top: 5px;
   font-weight: 400;
 }
-.App .main-container .section-wrap-career .container .lambda-left .left .date-line {
+.main-container .section-wrap-career .container .lambda-left .left .date-line {
   position: absolute;
   left: -45%;
   top: 2px;
   font-size: 14px;
   width: 100%;
 }
-.App .main-container .section-wrap-career .container .lambda-left .icon-wrapper {
+.main-container .section-wrap-career .container .lambda-left .icon-wrapper {
   position: absolute;
   width: 44px;
   height: 44px;
@@ -319,7 +315,7 @@ body {
   border-radius: 50%;
   border: 3px solid #f1f1f1;
 }
-.App .main-container .section-wrap-career .container .lambda-left .icon-wrapper i {
+.main-container .section-wrap-career .container .lambda-left .icon-wrapper i {
   display: block;
   width: 24px;
   height: 24px;
@@ -331,33 +327,32 @@ body {
   border-radius: 10%;
   font-size: 19px;
 }
-.App .main-container .section-wrap-skills {
+.main-container .section-wrap-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95vw;
 }
-.App .main-container .section-wrap-skills .navy-line {
+.main-container .section-wrap-skills .navy-line {
   width: 102px;
   border-top: 3px solid #0f6ee6;
   margin-bottom: 14px;
   margin-top: 40px;
 }
-.App .main-container .section-wrap-skills .skills-header {
+.main-container .section-wrap-skills .skills-header {
   font-size: 2rem;
   color: #676a6c;
 }
-.App .main-container .section-wrap-skills .chart-wrapper {
+.main-container .section-wrap-skills .chart-wrapper {
   width: 50%;
   height: 40%;
 }
-.App .main-container .section-wrap-skills .navy-line {
+.main-container .section-wrap-skills .navy-line {
   width: 102px;
   border-top: 3px solid #0f6ee6;
   margin-bottom: 14px;
   margin-top: 40px;
 }
-.App .main-container .section-wrap-projects {
+.main-container .section-wrap-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,38 +360,38 @@ body {
   margin-top: 40px;
   background: #f4f4f4;
 }
-.App .main-container .section-wrap-projects .navy-line {
+.main-container .section-wrap-projects .navy-line {
   width: 102px;
   border-top: 3px solid #0f6ee6;
   margin-bottom: 14px;
 }
-.App .main-container .section-wrap-projects .domain-link {
+.main-container .section-wrap-projects .domain-link {
   margin: 20px;
   text-decoration: none;
   color: #676a6c;
 }
-.App .main-container .section-wrap-projects .repo-link {
+.main-container .section-wrap-projects .repo-link {
   margin: 5px;
   text-decoration: none;
   color: #676a6c;
 }
-.App .main-container .section-wrap-projects .repo-link:hover {
+.main-container .section-wrap-projects .repo-link:hover {
   color: #0f6ee6;
 }
-.App .main-container .section-wrap-projects .projects-header-wrap {
+.main-container .section-wrap-projects .projects-header-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.App .main-container .section-wrap-projects .projects-header-wrap .projects-header {
+.main-container .section-wrap-projects .projects-header-wrap .projects-header {
   font-size: 2rem;
   color: #676a6c;
 }
-.App .main-container .section-wrap-projects .projects-wrap {
+.main-container .section-wrap-projects .projects-wrap {
   display: flex;
   justify-content: center;
 }
-.App .main-container .section-wrap-projects .projects-wrap .business-wrap {
+.main-container .section-wrap-projects .projects-wrap .business-wrap {
   color: grey;
   width: 291px;
   height: 244px;
@@ -404,16 +399,16 @@ body {
   margin: 6%;
   border-radius: 5px;
 }
-.App .main-container .section-wrap-projects .projects-wrap .business-wrap img {
+.main-container .section-wrap-projects .projects-wrap .business-wrap img {
   background: #0f0101;
 }
-.App .main-container .section-wrap-projects .projects-wrap .business-wrap .project-description {
+.main-container .section-wrap-projects .projects-wrap .business-wrap .project-description {
   margin: 10px;
 }
-.App .main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap {
+.main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap {
   margin: 10px 0 0 10px;
 }
-.App .main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap button {
+.main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap button {
   background: #2364b7;
   color: white;
   height: 24px;
@@ -423,11 +418,11 @@ body {
   border-radius: 3px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
-.App .main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap button:hover {
+.main-container .section-wrap-projects .projects-wrap .business-wrap .buttons-wrap button:hover {
   cursor: pointer;
   background: #154079;
 }
-.App .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
   color: grey;
   width: 291px;
   height: 244px;
@@ -436,13 +431,13 @@ body {
   border-radius: 5px;
   margin-top: 178px;
 }
-.App .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .project-description {
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .project-description {
   margin: 10px;
 }
-.App .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap {
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap {
   margin: 10px 0 0 10px;
 }
-.App .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap button {
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap button {
   background: #2364b7;
   color: white;
   height: 24px;
@@ -452,11 +447,11 @@ body {
   border-radius: 3px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
-.App .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap button:hover {
+.main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .buttons-wrap button:hover {
   cursor: pointer;
   background: #154079;
 }
-.App .main-container .section-wrap-projects .projects-wrap .notes-wrap {
+.main-container .section-wrap-projects .projects-wrap .notes-wrap {
   color: grey;
   width: 291px;
   height: 244px;
@@ -464,13 +459,13 @@ body {
   margin: 6%;
   border-radius: 5px;
 }
-.App .main-container .section-wrap-projects .projects-wrap .notes-wrap .project-description {
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .project-description {
   margin: 10px;
 }
-.App .main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap {
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap {
   margin: 10px 0 0 10px;
 }
-.App .main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap button {
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap button {
   background: #2364b7;
   color: white;
   height: 24px;
@@ -480,22 +475,21 @@ body {
   border-radius: 3px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
-.App .main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap button:hover {
+.main-container .section-wrap-projects .projects-wrap .notes-wrap .buttons-wrap button:hover {
   cursor: pointer;
   background: #154079;
 }
-.App .main-container .footer {
+.main-container .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95vw;
   margin: 2%;
 }
-.App .main-container .footer .social-media-footer ul {
+.main-container .footer .social-media-footer ul {
   display: flex;
   padding-right: 15px;
 }
-.App .main-container .footer .social-media-footer ul i {
+.main-container .footer .social-media-footer ul i {
   font-size: 0.8rem;
   border-radius: 50%;
   background-color: #0f6ee6;
@@ -507,138 +501,139 @@ body {
   opacity: 0.3;
   margin: 20px;
 }
-.App .main-container .footer .social-media-footer ul i:hover {
+.main-container .footer .social-media-footer ul i:hover {
   background-color: #00060c;
 }
 @media (max-width: 1660px) {
-  .App .main-container .section-wrap-projects .projects-wrap .business-wrap {
+  .main-container .section-wrap-projects .projects-wrap .business-wrap {
     margin: 0;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .notes-wrap {
+  .main-container .section-wrap-projects .projects-wrap .notes-wrap {
     margin: 0;
   }
 }
 @media (max-width: 1530px) {
-  .App .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
     margin: 2%;
   }
 }
 @media (max-width: 1346px) {
-  .App .main-container .section-wrap-projects .projects-wrap {
+  .main-container .section-wrap-projects .projects-wrap {
     flex-wrap: wrap;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .notes-wrap {
+  .main-container .section-wrap-projects .projects-wrap .notes-wrap {
     margin: 6%;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
     margin: 6%;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .business-wrap {
+  .main-container .section-wrap-projects .projects-wrap .business-wrap {
     margin: 6%;
   }
 }
 @media (max-width: 1371px) {
-  .App .main-container .section-wrap-career .vertical-container {
+  .main-container .section-wrap-career .vertical-container {
     left: 50.6%;
   }
 }
 @media (max-width: 1170px) {
-  .App .main-container {
+  .main-container {
     transition: all 1s ease;
   }
-  .App .main-container nav ul li .home-button {
+  .main-container nav ul li .home-button {
     left: 11%;
   }
-  .App .main-container .section-wrap-career {
+  .main-container .section-wrap-career {
     height: 1038px;
   }
-  .App .main-container .section-wrap-career .vertical-container {
+  .main-container .section-wrap-career .vertical-container {
     left: 12%;
     height: 90%;
   }
-  .App .main-container .section-wrap-career .container {
+  .main-container .section-wrap-career .container {
     transition: all 1s ease;
-    width: 65%;
+    width: 50%;
   }
-  .App .main-container .section-wrap-career .container .lambda .left {
+  .main-container .section-wrap-career .container .lambda .left {
     width: 89%;
     left: 6%;
   }
-  .App .main-container .section-wrap-career .container .lambda .left .date-line {
+  .main-container .section-wrap-career .container .lambda .left .date-line {
     position: static;
   }
-  .App .main-container .section-wrap-career .container .lambda .icon-wrapper {
+  .main-container .section-wrap-career .container .lambda .icon-wrapper {
     left: 10%;
   }
-  .App .main-container .section-wrap-career .container .lambda-left .left {
+  .main-container .section-wrap-career .container .lambda-left .left {
     width: 89%;
     left: -5%;
   }
-  .App .main-container .section-wrap-career .container .lambda-left .left .date-line {
+  .main-container .section-wrap-career .container .lambda-left .left .date-line {
     position: static;
   }
-  .App .main-container .section-wrap-career .container .lambda-left .icon-wrapper {
+  .main-container .section-wrap-career .container .lambda-left .icon-wrapper {
     left: 10%;
   }
-  .App .main-container .section-wrap-career .container .lambda-test .left {
+  .main-container .section-wrap-career .container .lambda-test .left {
     width: 88%;
     left: 6%;
   }
-  .App .main-container .section-wrap-career .container .lambda-test .left .date-line {
+  .main-container .section-wrap-career .container .lambda-test .left .date-line {
     position: static;
   }
-  .App .main-container .section-wrap-career .container .lambda-test .icon-wrapper {
+  .main-container .section-wrap-career .container .lambda-test .icon-wrapper {
     left: 10%;
   }
 }
 @media (max-width: 1000px) {
-  .App .main-container {
+  .main-container {
     transition: all 0.5s ease;
   }
-  .App .main-container .section-wrap-career {
+  .main-container .section-wrap-career {
     height: 1100px;
   }
-  .App .main-container .section-wrap-career .vertical-container {
+  .main-container .section-wrap-career .vertical-container {
     left: 12%;
   }
-  .App .main-container .skills-image {
+  .main-container .skills-image {
     width: 90%;
     transition: all 1s ease;
   }
 }
 @media (max-width: 768px) {
-  .App .main-container .section-wrap-bio .container .profile-image-wrap .fab {
+  .main-container .section-wrap-bio .container .profile-image-wrap .fab {
     color: grey;
     font-size: 50px;
     margin: 10% 27px 20%;
     opacity: 0.3;
   }
-  .App .main-container .projects-header-wrap {
+  .main-container .projects-header-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 96px;
   }
-  .App .main-container .main-container .section-wrap-career {
+  .main-container .main-container .section-wrap-career {
     height: 1117px;
   }
-  .App .main-container .main-container .section-wrap-skills {
+  .main-container .main-container .section-wrap-skills {
     height: 306px;
     width: 100%;
   }
-  .App .main-container .section-wrap-projects {
+  .main-container .section-wrap-projects {
     height: 1270px;
+    width: 100%;
     padding: 40px 10% 0 0;
   }
-  .App .main-container .section-wrap-projects .projects-header-wrap {
+  .main-container .section-wrap-projects .projects-header-wrap {
     padding-left: 5%;
   }
-  .App .main-container .section-wrap-projects .projects-wrap {
+  .main-container .section-wrap-projects .projects-wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .business-wrap {
+  .main-container .section-wrap-projects .projects-wrap .business-wrap {
     color: grey;
     width: 291px;
     height: 254px;
@@ -646,11 +641,11 @@ body {
     margin: 6%;
     border-radius: 5px;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .business-wrap .project-image {
+  .main-container .section-wrap-projects .projects-wrap .business-wrap .project-image {
     height: 152px;
     width: 291px;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
+  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap {
     margin-top: 0;
     color: grey;
     width: 291px;
@@ -659,11 +654,11 @@ body {
     margin: 6%;
     border-radius: 5px;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .project-image {
+  .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .project-image {
     height: 152px;
     width: 291px;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .notes-wrap {
+  .main-container .section-wrap-projects .projects-wrap .notes-wrap {
     color: grey;
     width: 291px;
     height: 254px;
@@ -671,170 +666,176 @@ body {
     margin: 6%;
     border-radius: 5px;
   }
-  .App .main-container .section-wrap-projects .projects-wrap .notes-wrap .project-image {
+  .main-container .section-wrap-projects .projects-wrap .notes-wrap .project-image {
     height: 152px;
     width: 291px;
   }
-  .App .main-container p {
+  .main-container p {
     font-size: 19px;
   }
-  .App .main-container #flip {
+  .main-container #flip {
     display: flex;
     align-items: center;
     padding: 5px;
   }
-  .App .main-container #flip img {
+  .main-container #flip img {
     cursor: pointer;
   }
-  .App .main-container #flip h4 {
+  .main-container #flip h4 {
     margin-left: 6px;
     font-size: 0.8rem;
   }
-  .App .main-container #flip h4:hover {
+  .main-container #flip h4:hover {
     cursor: pointer;
   }
-  .App .main-container #nav {
+  .main-container #nav {
     width: 100%;
     height: 8%;
     margin-top: 40px;
     display: none;
   }
-  .App .main-container nav {
+  .main-container nav {
     font-size: 17px;
   }
-  .App .main-container nav ul li .home-button {
+  .main-container nav ul li .home-button {
     display: none;
   }
 }
 @media (max-width: 734px) {
-  .App .main-container .section-wrap-career {
+  .main-container .section-wrap-career {
     height: 1184px;
   }
 }
 @media (max-width: 680px) {
-  .App .main-container .section-wrap-career {
+  .main-container .section-wrap-career {
     height: 1184px;
   }
 }
 @media (max-width: 580px) {
-  .App .main-container .section-wrap-career {
+  .main-container .section-wrap-career {
     height: 1271px;
   }
 }
 @media (max-width: 530px) {
-  .App .main-container .section-wrap-career {
+  .main-container .section-wrap-career {
     height: 1332px;
   }
 }
 @media (max-width: 500px) {
-  .App .main-container .section-wrap-career {
+  .main-container .section-wrap-career {
     height: 1388px;
   }
 }
 @media (max-width: 733px) {
-  .App .main-container .section-wrap-career .vertical-container {
+  .main-container .section-wrap-career .vertical-container {
     left: 13%;
   }
 }
 @media (max-width: 450px) {
-  .App .main-container .section-wrap-career {
+  .main-container .section-wrap-career {
     height: 1480px;
   }
-  .App .main-container .section-wrap-career .vertical-container {
+  .main-container .section-wrap-career .vertical-container {
     left: 15%;
     height: 136%;
   }
 }
 @media (max-width: 428px) {
-  .App .main-container .section-wrap-career {
+  .main-container .section-wrap-career {
     height: 1517px;
   }
 }
 @media (max-width: 414px) {
-  .App .main-container .section-wrap-bio .container .profile-image-wrap .fab {
+  .main-container .section-wrap-bio .container .profile-image-wrap .fab {
     color: grey;
     font-size: 35px;
     margin: 4% 9px 20%;
     opacity: 0.3;
   }
-  .App .main-container .section-wrap-bio .container .profile-image-wrap .profile-image {
+  .main-container .section-wrap-bio .container .profile-image-wrap .profile-image {
     margin-top: 40px;
     border-radius: 50%;
     height: 136px;
     width: 136px;
   }
-  .App .main-container nav {
+  .main-container nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
-  .App .main-container nav ul {
+  .main-container nav ul {
     font-size: 1rem;
+    margin: 1.4rem 0.6rem 0.3rem 0;
   }
-  .App .main-container .bio p {
-    height: 203px;
-    width: 261px;
-    margin-left: 28%;
+  .main-container .bio p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0 3rem;
   }
-  .App .main-container .section-wrap-career {
-    height: 1300px;
+  .main-container .section-wrap-career {
+    height: 1467px;
+    width: 100%;
   }
-  .App .main-container .section-wrap-career .vertical-container {
+  .main-container .section-wrap-career .vertical-container {
     left: 15%;
-    height: 113%;
+    height: 150%;
   }
-  .App .main-container .section-wrap-career .container .lambda .left {
+  .main-container .section-wrap-career .container .lambda .left {
     width: 124%;
     left: 6%;
   }
-  .App .main-container .section-wrap-career .container .lambda-left .left {
+  .main-container .section-wrap-career .container .lambda-left .left {
     width: 124%;
     left: 30%;
   }
-  .App .main-container .section-wrap-career .container .lambda-test .left {
-    width: 124%;
-    left: 6%;
-    margin-top: 264px;
+  .main-container .section-wrap-career .container .lambda-test .left {
+    width: 163%;
+    left: -6%;
+    padding: 11px;
+    margin-top: 343px;
   }
 }
 @media (max-width: 375px) {
-  .App .main-container {
+  .main-container {
     max-width: 100%;
     text-align: center;
   }
-  .App .main-container .section-wrap-career {
-    height: 1441px;
+  .main-container .section-wrap-career {
+    height: 1979px;
   }
-  .App .main-container .section-wrap-career .vertical-container {
-    height: 175%;
+  .main-container .section-wrap-career .vertical-container {
+    height: 1978px;
     left: 15.2%;
   }
-  .App .main-container .section-wrap-career .container .my-career {
+  .main-container .section-wrap-career .container .my-career {
     left: 0;
   }
-  .App .main-container .section-wrap-career .container .navy-line {
+  .main-container .section-wrap-career .container .navy-line {
     left: 34.5%;
   }
-  .App .main-container .section-wrap-career .container .lambda-test .icon-wrapper i {
+  .main-container .section-wrap-career .container .lambda-test .icon-wrapper i {
     left: 41%;
   }
-  .App .main-container .section-wrap-career .container .lambda-left .icon-wrapper i {
+  .main-container .section-wrap-career .container .lambda-left .icon-wrapper i {
     left: 41%;
     top: 48%;
   }
-  .App .main-container .section-wrap-career .container .lambda .icon-wrapper i {
+  .main-container .section-wrap-career .container .lambda .icon-wrapper i {
     left: 40%;
   }
 }
 @media (max-width: 360px) {
-  .App .main-container .section-wrap-career .vertical-container {
-    height: 182%;
+  .main-container .section-wrap-career .vertical-container {
+    height: 216%;
     left: 15.2%;
   }
 }
 @media (max-width: 320px) {
-  .App .main-container .section-wrap-career .vertical-container {
-    height: 218%;
+  .main-container .section-wrap-career .vertical-container {
+    height: 303%;
     left: 16%;
   }
 }

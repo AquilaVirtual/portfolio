@@ -3,17 +3,14 @@
 html,
 body {
   height: 100%;
-  width: 90%;
 }
-.App {
 
-  width: 100vw;
 .main-container {
-  width: 100%;
+width: 100%;
   #flip {
     color: white;
     background: #3c6aad;
-    width:  100vw;
+    width: 100%;
     position: fixed;
     display: none;
     height: 40px;
@@ -24,7 +21,7 @@ body {
     display: flex;
     justify-content: flex-end;
     background: #3c6aad;
-    width:  100vw;
+    width: 100%;
     height: 85px;
     opacity: 0.9;
     border-bottom: 2px solid rgb(112, 129, 153);
@@ -78,7 +75,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:  95vw;
     .container {
       display: flex;
       flex-direction: column;
@@ -147,9 +143,10 @@ body {
         }
       }
       .bio {
-        width: 95vw;
+        width: 585px;
         text-align: center;
         color: #aeaeae;
+        width: 100%;
       }
     }
   }
@@ -203,7 +200,6 @@ body {
     margin-top: 40px;
     background: #f4f4f4;
     height: 948px;
-    width: 110vw;
     .vertical-container {
       left: 50%;
       height: 75%;
@@ -218,8 +214,8 @@ body {
       margin-right: auto;
       margin-left: auto;
       margin: 0 auto;
-      width:  70vw;
-      // max-width: 1170px;
+      width: 100%;
+      max-width: 1170px;
       .navy-line {
         .navy-line();
         position: absolute;
@@ -336,7 +332,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:  95vw;
     .navy-line {
       .navy-line();
     }
@@ -435,7 +430,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:  95vw;
     margin: 2%;
     .social-media-footer {
       ul {
@@ -522,7 +516,7 @@ body {
       }
       .container {
         transition: all 1s ease;
-        width: 65%;
+         width: 50%;
         .lambda {
           .left {
             width: 89%;
@@ -605,6 +599,7 @@ body {
     }
     .section-wrap-projects {
       height: 1270px;
+      width: 100%;
       padding: 40px 10% 0 0;
       .projects-header-wrap {
         padding-left: 5%;
@@ -745,25 +740,30 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
       ul {
         font-size: 1rem;
+        margin: 1.4rem 0.6rem 0.3rem 0;
       }
     }
     .bio {
-      p {
-        height: 203px;
-        width: 261px;
-        margin-left: 28%;
+      p {      
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 0 3rem;
       }
     }
 
     .section-wrap-career {
-      height: 1300px;
+      height:  1467px;
+      width: 100%;
     }
     .section-wrap-career {
       .vertical-container {
         left: 15%;
-        height: 113%;
+        height: 150%;
       }
     }
     .section-wrap-career {
@@ -790,9 +790,12 @@ body {
       .container {
         .lambda-test {
           .left {
-            width: 124%;
-            left: 6%;
-            margin-top: 264px;
+            width: 163%;
+            left: -6%;
+            width: 163%;
+            left: -6%;
+            padding: 11px;
+            margin-top: 343px;
           }
         }
       }
@@ -802,9 +805,9 @@ body {
     max-width: 100%;
     text-align: center;
     .section-wrap-career {
-      height: 1441px;
+      height: 1979px;
       .vertical-container {
-        height: 175%;
+        height: 1978px;
         left: 15.2%;
       }
       .container {
@@ -836,7 +839,7 @@ body {
   @media (max-width: 360px) {
     .section-wrap-career {
       .vertical-container {
-        height: 182%;
+        height: 216%;
         left: 15.2%;
       }
     }
@@ -844,10 +847,9 @@ body {
   @media (max-width: 320px) {
     .section-wrap-career {
       .vertical-container {
-        height: 218%;
+        height: 303%;
         left: 16%;
       }
     }
   }
-}
 }
