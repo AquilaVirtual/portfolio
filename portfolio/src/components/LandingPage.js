@@ -14,9 +14,10 @@ import menue from "../img/menu.png";
 
 class LandingPage extends Component {
   componentDidMount = () => {
+    let target
     $(document).ready(function() {
       $("a.nav-link").click(function() {
-        let target = $(this.hash);
+        target = $(this.hash);
         $("html, body").animate(
           {
             scrollTop: target.offset().top
@@ -31,6 +32,7 @@ class LandingPage extends Component {
     alert(
       "This site is still under construction. Please click ok to view on desktop and tablet. Thanks!"
     );
+    console.log("Some!!!!!!!!!!!!!! item this", target) 
   };
   render() {
     const bioStyle = {
@@ -104,6 +106,7 @@ class LandingPage extends Component {
                   <i className="fab fa-js-square" />
                 </div>
               </div>
+              <div className="name-and-social-media">
               <div className="my-name">
                 <span style={navyFont}>David</span> Loveday
               </div>
@@ -137,6 +140,7 @@ class LandingPage extends Component {
                   </li>
                 </ul>
               </div>
+              </div>
               <div className="bio">
                 <p style={bioStyle}>
                   The idea that one can use software to build software has been
@@ -153,9 +157,10 @@ class LandingPage extends Component {
           </section>
           <section className="section-wrap-career">
             <div className="container">
+              <div className="career-header">
               <div className="navy-line" />
               <div className="my-career">My Career</div>
-
+              </div>
               <div className="lambda">
                 <div className="icon-wrapper">
                   <i className="fa fa-plus-square" />
