@@ -17,6 +17,8 @@ import css from "../img/css.png";
 import git from "../img/git.png";
 import html from "../img/html.png";
 import cc from "../img/cc.png";
+import mongo from "../img/mongo.png";
+import express from "../img/express.png";
 import bootstrap from "../img/bootstrap.png";
 import javascript from "../img/javascript.png";
 import realbusiness from "../img/realbusiness.png";
@@ -308,10 +310,12 @@ class LandingPage extends Component {
             <img className="skills-image" alt="skills" src={jquery} />
             <img className="skills-image" alt="skills" src={react} />
             <img className="skills-image" alt="skills" src={redux} />
-            <img className="skills-image" alt="skills" src={less} />
             <img className="skills-image" alt="skills" src={node} />
+            <img className="skills-image" alt="skills" src={less} />
             <img className="skills-image" alt="skills" src={git} />
             <img className="skills-image" alt="skills" src={cc} />
+            <img className="skills-image" alt="skills" src={mongo} />
+            <img className="skills-image" alt="skills" src={express} />
             <img className="skills-image" alt="skills" src={bootstrap} />
             </span>
             <section id="Projects" />
