@@ -28,10 +28,7 @@ class LandingPage extends Component {
       $("#flip").click(function() {
         $("#nav").slideToggle(500);
       });
-    });
-    alert(
-      "This site is still under construction. Please click ok to view on desktop and tablet. Thanks!"
-    );
+    });    
     console.log("Some!!!!!!!!!!!!!! item this", target) 
   };
   render() {
