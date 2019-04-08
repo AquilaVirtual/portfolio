@@ -8,7 +8,17 @@ import dave from "../img/dave.jpg";
 import currentaffairs from "../img/currentaffairs.png";
 import notes from "../img/note.png";
 import familylife from "../img/familylife.png";
-import skill from "../img/skill.png";
+import redux from "../img/redux.png";
+import react from "../img/react.png";
+import less from "../img/less.png";
+import node from "../img/node.png";
+import jquery from "../img/jquery.png";
+import css from "../img/css.png";
+import git from "../img/git.png";
+import html from "../img/html.png";
+import cc from "../img/cc.png";
+import bootstrap from "../img/bootstrap.png";
+import javascript from "../img/javascript.png";
 import realbusiness from "../img/realbusiness.png";
 import menue from "../img/menu.png";
 
@@ -25,6 +35,8 @@ class LandingPage extends Component {
           500
         );
       });
+
+
       $("#flip").click(function() {
         $("#nav").slideToggle(500);
       });
@@ -289,7 +301,19 @@ class LandingPage extends Component {
           <section className="section-wrap-skills">
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
-            <img className="skills-image" alt="skills" src={skill} />
+            <span className="skils-images" style={{display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
+            <img className="skills-image" alt="skills" src={javascript} />
+            <img className="skills-image" alt="skills" src={html} />
+            <img className="skills-image" alt="skills" src={css} />
+            <img className="skills-image" alt="skills" src={jquery} />
+            <img className="skills-image" alt="skills" src={react} />
+            <img className="skills-image" alt="skills" src={redux} />
+            <img className="skills-image" alt="skills" src={less} />
+            <img className="skills-image" alt="skills" src={node} />
+            <img className="skills-image" alt="skills" src={git} />
+            <img className="skills-image" alt="skills" src={cc} />
+            <img className="skills-image" alt="skills" src={bootstrap} />
+            </span>
             <section id="Projects" />
           </section>
 
