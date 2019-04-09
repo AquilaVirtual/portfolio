@@ -38,12 +38,10 @@ class LandingPage extends Component {
         );
       });
 
-
       $("#flip").click(function() {
         $("#nav").slideToggle(500);
       });
-    });    
-    console.log("Some!!!!!!!!!!!!!! item this", target) 
+    });        
   };
   render() {
     const bioStyle = {

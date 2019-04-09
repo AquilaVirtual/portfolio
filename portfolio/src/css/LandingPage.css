@@ -634,6 +634,7 @@ body {
   .main-container .container {
     transition: all 1s ease;
     width: 50%;
+    margin-top: -50px;
   }
   .main-container .container .lambda .left {
     width: 600px;
@@ -843,20 +844,20 @@ body {
     width: 100%;
   }
   .main-container .section-wrap-career .vertical-container {
-    left: 15%;
+    left: 12%;
     height: 124%;
   }
   .main-container .section-wrap-career .container .lambda .left {
     width: 153%;
-    left: -6%;
+    left: -12%;
   }
   .main-container .section-wrap-career .container .lambda-left .left {
-    width: 162%;
-    left: -6%;
+    width: 153%;
+    left: -12%;
   }
   .main-container .section-wrap-career .container .tethys-timeline .left {
-    width: 163%;
-    left: -6%;
+    width: 153%;
+    left: -12%;
     padding: 11px;
     margin-top: 33px;
   }
@@ -907,8 +908,11 @@ body {
   }
 }
 @media (max-width: 320px) {
+  .main-container .section-wrap-career .career-header {
+    margin-top: 104px;
+  }
   .main-container .section-wrap-career .vertical-container {
-    height: 303%;
-    left: 16%;
+    height: 1668px;
+    left: 13%;
   }
 }
