@@ -8,19 +8,19 @@ import dave from "../img/dave.jpg";
 import currentaffairs from "../img/currentaffairs.png";
 import notes from "../img/note.png";
 import familylife from "../img/familylife.png";
-import redux from "../img/redux.png";
-import react from "../img/react.png";
-import less from "../img/less.png";
-import node from "../img/node.png";
-import jquery from "../img/jquery.png";
-import css from "../img/css.png";
-import git from "../img/git.png";
-import html from "../img/html.png";
-import cc from "../img/cc.png";
-import mongo from "../img/mongo.png";
-import express from "../img/express.png";
-import bootstrap from "../img/bootstrap.png";
-import javascript from "../img/javascript.png";
+import reduxImage from "../img/reduxImage.png";
+import reactImage from "../img/reactImage.png";
+import lessImage from "../img/lessImage.png";
+import nodeImage from "../img/nodeImage.png";
+import jqueryImage from "../img/jqueryImage.png";
+import cssImage from "../img/cssImage.png";
+import gitImage from "../img/gitImage.png";
+import htmlImage from "../img/htmlImage.png";
+import cppImage from "../img/cppImage.png";
+import mongoImage from "../img/mongoImage.png";
+import expressImage from "../img/expressImage.png";
+import bootstrapImage from "../img/bootstrapImage.png";
+import javascriptImage from "../img/javascriptImage.png";
 import realbusiness from "../img/realbusiness.png";
 import menue from "../img/menu.png";
 
@@ -103,7 +103,7 @@ class LandingPage extends Component {
               </div>
               <div className="profile-image-wrap">
                 <div className="fontawesome-left">
-                  <i className="fab fa-react" /> <i className="fab fa-node" />
+                  <i className="fab fa-reactImage" /> <i className="fab fa-node" />
                 </div>
                 <img
                   className="profile-image"
@@ -304,19 +304,19 @@ class LandingPage extends Component {
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
             <span className="skils-images" style={{display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
-            <img className="skills-image" alt="skills" src={javascript} />
-            <img className="skills-image" alt="skills" src={html} />
-            <img className="skills-image" alt="skills" src={css} />
-            <img className="skills-image" alt="skills" src={jquery} />
-            <img className="skills-image" alt="skills" src={react} />
-            <img className="skills-image" alt="skills" src={redux} />
-            <img className="skills-image" alt="skills" src={node} />
-            <img className="skills-image" alt="skills" src={less} />
-            <img className="skills-image" alt="skills" src={git} />
-            <img className="skills-image" alt="skills" src={cc} />
-            <img className="skills-image" alt="skills" src={mongo} />
-            <img className="skills-image" alt="skills" src={express} />
-            <img className="skills-image" alt="skills" src={bootstrap} />
+            <img className="skills-image" alt="skills" src={javascriptImage} />
+            <img className="skills-image" alt="skills" src={htmlImage} />
+            <img className="skills-image" alt="skills" src={cssImage} />
+            <img className="skills-image" alt="skills" src={jqueryImage} />
+            <img className="skills-image" alt="skills" src={reactImage} />
+            <img className="skills-image" alt="skills" src={reduxImage} />
+            <img className="skills-image" alt="skills" src={nodeImage} />
+            <img className="skills-image" alt="skills" src={lessImage} />
+            <img className="skills-image" alt="skills" src={gitImage} />
+            <img className="skills-image" alt="skills" src={cppImage} />
+            <img className="skills-image" alt="skills" src={mongoImage} />
+            <img className="skills-image" alt="skills" src={expressImage} />
+            <img className="skills-image" alt="skills" src={bootstrapImage} />
             </span>
             <section id="Projects" />
           </section>
