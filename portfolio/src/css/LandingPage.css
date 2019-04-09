@@ -347,13 +347,13 @@ body {
   margin-bottom: 14px;
   margin-top: 40px;
 }
+.main-container .section-wrap-skills .skills-image {
+  width: 114px;
+  height: 110px;
+}
 .main-container .section-wrap-skills .skills-header {
   font-size: 2rem;
   color: #676a6c;
-}
-.main-container .section-wrap-skills .chart-wrapper {
-  width: 50%;
-  height: 40%;
 }
 .main-container .section-wrap-skills .navy-line {
   width: 102px;

@@ -103,7 +103,7 @@ class LandingPage extends Component {
               </div>
               <div className="profile-image-wrap">
                 <div className="fontawesome-left">
-                  <i className="fab fa-reactImage" /> <i className="fab fa-node" />
+                  <i className="fab fa-react" /> <i className="fab fa-node" />
                 </div>
                 <img
                   className="profile-image"
@@ -303,16 +303,16 @@ class LandingPage extends Component {
           <section className="section-wrap-skills">
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
-            <span className="skils-images" style={{display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
+            <span className="skils-images" style={{display: "flex", justifyContent: "center", flexWrap: "wrap", width: "80%"}}>
             <img className="skills-image" alt="skills" src={javascriptImage} />
             <img className="skills-image" alt="skills" src={htmlImage} />
-            <img className="skills-image" alt="skills" src={cssImage} />
+            <img className="skills-image" alt="skills" style={{width: "78px"}} src={cssImage} />
             <img className="skills-image" alt="skills" src={jqueryImage} />
             <img className="skills-image" alt="skills" src={reactImage} />
             <img className="skills-image" alt="skills" src={reduxImage} />
             <img className="skills-image" alt="skills" src={nodeImage} />
             <img className="skills-image" alt="skills" src={lessImage} />
-            <img className="skills-image" alt="skills" src={gitImage} />
+            <img className="skills-image" alt="skills" style={{width: "122px"}} src={gitImage} />
             <img className="skills-image" alt="skills" src={cppImage} />
             <img className="skills-image" alt="skills" src={mongoImage} />
             <img className="skills-image" alt="skills" src={expressImage} />
