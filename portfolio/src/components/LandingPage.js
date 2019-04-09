@@ -70,12 +70,7 @@ class LandingPage extends Component {
               <NavLink to="/#About" className="nav-link" >
                 About
               </NavLink>
-            </li>
-            <li>
-              <NavLink to="/#Career" className="nav-link">
-                Career
-              </NavLink>
-            </li>
+            </li>            
             <li>
               <NavLink to="/#Skills" className="nav-link" >
                 Skills
@@ -155,7 +150,6 @@ class LandingPage extends Component {
                   The idea that one can use software to build software has been
                   fascinating to me. From my childhood, I have learned things
                   with a concentration in quantitative
-                  <section id="Career" />
                   methods, and applying this in software development means an
                   ability to tackle complex challenges. Writing software, to me,
                   is a materialization of logic. Having the knowledge to write
@@ -165,6 +159,7 @@ class LandingPage extends Component {
             </div>
           </section>
 
+                  <section id="Skills" />
           <section className="section-wrap-skills">
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
