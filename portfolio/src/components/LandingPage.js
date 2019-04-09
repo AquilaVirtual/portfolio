@@ -149,6 +149,7 @@ class LandingPage extends Component {
                 <p style={bioStyle}>
                   The idea that one can use software to build software has been
                   fascinating to me. From my childhood, I have learned things
+                  <section id="Skills" />
                   with a concentration in quantitative
                   methods, and applying this in software development means an
                   ability to tackle complex challenges. Writing software, to me,
@@ -159,7 +160,6 @@ class LandingPage extends Component {
             </div>
           </section>
 
-                  <section id="Skills" />
           <section className="section-wrap-skills">
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
