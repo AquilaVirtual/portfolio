@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 .main-container {
   width: 100%;
@@ -152,7 +153,7 @@ body {
   width: 585px;
   text-align: center;
   color: #aeaeae;
-  width: 100%;
+  width: 90%;
 }
 .main-container .section-wrap-career {
   z-index: 0;
@@ -243,7 +244,7 @@ body {
   border-radius: 10%;
   font-size: 19px;
 }
-.main-container .section-wrap-career .container .lambda-test .left {
+.main-container .section-wrap-career .container .tethys-timeline .left {
   position: relative;
   width: 46%;
   background: white;
@@ -254,19 +255,19 @@ body {
   box-shadow: 1px 1px 2px 0px;
   margin-top: 217px;
 }
-.main-container .section-wrap-career .container .lambda-test .left h2 {
+.main-container .section-wrap-career .container .tethys-timeline .left h2 {
   font-size: 18px;
   margin-top: 5px;
   font-weight: 400;
 }
-.main-container .section-wrap-career .container .lambda-test .left .date-line {
+.main-container .section-wrap-career .container .tethys-timeline .left .date-line {
   position: absolute;
   left: 120%;
   top: 2px;
   font-size: 14px;
   width: 100%;
 }
-.main-container .section-wrap-career .container .lambda-test .icon-wrapper {
+.main-container .section-wrap-career .container .tethys-timeline .icon-wrapper {
   position: absolute;
   width: 44px;
   height: 44px;
@@ -276,7 +277,7 @@ body {
   border-radius: 50%;
   border: 3px solid #f1f1f1;
 }
-.main-container .section-wrap-career .container .lambda-test .icon-wrapper i {
+.main-container .section-wrap-career .container .tethys-timeline .icon-wrapper i {
   display: block;
   width: 24px;
   height: 24px;
@@ -347,7 +348,14 @@ body {
   margin-bottom: 14px;
   margin-top: 40px;
 }
-.main-container .section-wrap-skills .skills-image {
+.main-container .section-wrap-skills .skils-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  width: 80%;
+}
+.main-container .section-wrap-skills .skils-images .skills-image {
   width: 114px;
   height: 110px;
 }
@@ -558,11 +566,11 @@ body {
     left: 11%;
   }
   .main-container .section-wrap-career {
-    height: 1083px;
+    height: 978px;
   }
   .main-container .section-wrap-career .vertical-container {
     left: 8.8%;
-    height: 54%;
+    height: 78%;
   }
   .main-container .section-wrap-career .container {
     transition: all 1s ease;
@@ -589,15 +597,15 @@ body {
   .main-container .section-wrap-career .container .lambda-left .icon-wrapper {
     left: 7%;
   }
-  .main-container .section-wrap-career .container .lambda-test .left {
+  .main-container .section-wrap-career .container .tethys-timeline .left {
     width: 753px;
     left: -26%;
     margin-top: 35px;
   }
-  .main-container .section-wrap-career .container .lambda-test .left .date-line {
+  .main-container .section-wrap-career .container .tethys-timeline .left .date-line {
     position: static;
   }
-  .main-container .section-wrap-career .container .lambda-test .icon-wrapper {
+  .main-container .section-wrap-career .container .tethys-timeline .icon-wrapper {
     left: 7%;
   }
 }
@@ -606,13 +614,13 @@ body {
     transition: all 0.5s ease;
   }
   .main-container .section-wrap-career {
-    height: 1100px;
+    height: 955px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .main-container .section-wrap-career .career-header {
-    margin-top: -160px;
+    margin-top: -47px;
   }
   .main-container .section-wrap-career .vertical-container {
     left: 9%;
@@ -648,15 +656,15 @@ body {
   .main-container .container .lambda-left .icon-wrapper {
     left: 7%;
   }
-  .main-container .container .lambda-test .left {
+  .main-container .container .tethys-timeline .left {
     width: 600px;
     left: -26%;
     margin-top: 35px;
   }
-  .main-container .container .lambda-test .left .date-line {
+  .main-container .container .tethys-timeline .left .date-line {
     position: static;
   }
-  .main-container .container .lambda-test .icon-wrapper {
+  .main-container .container .tethys-timeline .icon-wrapper {
     left: 7%;
   }
 }
@@ -846,7 +854,7 @@ body {
     width: 162%;
     left: -6%;
   }
-  .main-container .section-wrap-career .container .lambda-test .left {
+  .main-container .section-wrap-career .container .tethys-timeline .left {
     width: 163%;
     left: -6%;
     padding: 11px;
@@ -871,7 +879,7 @@ body {
   .main-container .section-wrap-career .container .navy-line {
     left: 34.5%;
   }
-  .main-container .section-wrap-career .container .lambda-test .icon-wrapper i {
+  .main-container .section-wrap-career .container .tethys-timeline .icon-wrapper i {
     left: 41%;
   }
   .main-container .section-wrap-career .container .lambda-left .icon-wrapper i {

@@ -241,7 +241,7 @@ class LandingPage extends Component {
       --> */}
             </div>
             <div className="container">
-              <div className="lambda-test">
+              <div className="tethys-timeline">
                 <div className="icon-wrapper">
                   <i className="fa fa-plus-square" />
                 </div>
@@ -303,7 +303,7 @@ class LandingPage extends Component {
           <section className="section-wrap-skills">
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
-            <span className="skils-images" style={{display: "flex", justifyContent: "center", flexWrap: "wrap", width: "80%"}}>
+            <span className="skils-images">
             <img className="skills-image" alt="skills" src={javascriptImage} />
             <img className="skills-image" alt="skills" src={htmlImage} />
             <img className="skills-image" alt="skills" style={{width: "78px"}} src={cssImage} />
