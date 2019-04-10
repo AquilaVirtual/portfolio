@@ -395,38 +395,6 @@ body {
     width: 50%;
     margin-top: -50px;
   }
-  .main-container .container .lambda .left {
-    width: 600px;
-    left: -26%;
-  }
-  .main-container .container .lambda .left .date-line {
-    position: static;
-  }
-  .main-container .container .lambda .icon-wrapper {
-    left: 7%;
-  }
-  .main-container .container .lambda-left .left {
-    width: 600px;
-    float: none;
-    left: -26%;
-  }
-  .main-container .container .lambda-left .left .date-line {
-    position: static;
-  }
-  .main-container .container .lambda-left .icon-wrapper {
-    left: 7%;
-  }
-  .main-container .container .tethys-timeline .left {
-    width: 600px;
-    left: -26%;
-    margin-top: 35px;
-  }
-  .main-container .container .tethys-timeline .left .date-line {
-    position: static;
-  }
-  .main-container .container .tethys-timeline .icon-wrapper {
-    left: 7%;
-  }
 }
 @media (max-width: 768px) {
   .main-container .section-wrap-bio .container .profile-image-wrap .fab {
@@ -438,9 +406,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding-left: 96px;
-  }
-  .main-container .main-container .section-wrap-career {
-    height: 1290px;
   }
   .main-container .main-container .section-wrap-skills {
     height: 306px;
@@ -527,50 +492,6 @@ body {
     display: none;
   }
 }
-@media (max-width: 734px) {
-  .main-container .section-wrap-career {
-    height: 1184px;
-  }
-}
-@media (max-width: 680px) {
-  .main-container .section-wrap-career {
-    height: 1184px;
-  }
-}
-@media (max-width: 580px) {
-  .main-container .section-wrap-career {
-    height: 1271px;
-  }
-}
-@media (max-width: 530px) {
-  .main-container .section-wrap-career {
-    height: 1332px;
-  }
-}
-@media (max-width: 500px) {
-  .main-container .section-wrap-career {
-    height: 1388px;
-  }
-}
-@media (max-width: 733px) {
-  .main-container .section-wrap-career .vertical-container {
-    left: 13%;
-  }
-}
-@media (max-width: 450px) {
-  .main-container .section-wrap-career {
-    height: 1480px;
-  }
-  .main-container .section-wrap-career .vertical-container {
-    left: 15%;
-    height: 136%;
-  }
-}
-@media (max-width: 428px) {
-  .main-container .section-wrap-career {
-    height: 1517px;
-  }
-}
 @media (max-width: 414px) {
   .main-container .section-wrap-bio .container .profile-image-wrap .fab {
     font-size: 35px;
@@ -598,63 +519,14 @@ body {
     text-align: center;
     justify-content: center;
   }
-  .main-container .section-wrap-career {
-    height: 1260px;
-    width: 100%;
-  }
-  .main-container .section-wrap-career .vertical-container {
-    left: 12%;
-    height: 124%;
-  }
-  .main-container .section-wrap-career .container .lambda .left {
-    width: 153%;
-    left: -12%;
-  }
-  .main-container .section-wrap-career .container .lambda-left .left {
-    width: 153%;
-    left: -12%;
-  }
-  .main-container .section-wrap-career .container .tethys-timeline .left {
-    width: 153%;
-    left: -12%;
-    padding: 11px;
-    margin-top: 33px;
-  }
 }
 @media (max-width: 375px) {
   .main-container {
     max-width: 100%;
     text-align: center;
   }
-  .main-container .section-wrap-career {
-    height: 1668px;
-  }
-  .main-container .section-wrap-career .vertical-container {
-    height: 1082px;
-    left: 12.2%;
-  }
-  .main-container .section-wrap-career .container .my-career {
-    left: 0;
-  }
-  .main-container .section-wrap-career .container .navy-line {
-    left: 34.5%;
-  }
-  .main-container .section-wrap-career .container .tethys-timeline .icon-wrapper i {
-    left: 41%;
-  }
-  .main-container .section-wrap-career .container .lambda-left .icon-wrapper i {
-    left: 41%;
-    top: 48%;
-  }
-  .main-container .section-wrap-career .container .lambda .icon-wrapper i {
-    left: 40%;
-  }
 }
 @media (max-width: 360px) {
-  .main-container .section-wrap-career .vertical-container {
-    height: 173%;
-    left: 12.2%;
-  }
   .main-container .section-wrap-bio .container {
     margin-top: -58px;
   }
@@ -664,11 +536,5 @@ body {
   }
   .main-container .section-wrap-bio .container .profile-image-wrap .fab {
     font-size: 29px;
-  }
-}
-@media (max-width: 320px) {
-  .main-container .section-wrap-career .vertical-container {
-    height: 230%;
-    left: 13%;
   }
 }

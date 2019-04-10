@@ -7,7 +7,7 @@ body {
 }
 
 .main-container {
-width: 100%;
+  width: 100%;
   #flip {
     color: white;
     background: #3c6aad;
@@ -100,62 +100,61 @@ width: 100%;
         display: flex;
         align-items: center;
         padding-left: 0;
-        margin-left: -38px;  
-        margin-top: 40px;  
+        margin-left: -38px;
+        margin-top: 40px;
         .fontawesome-left {
           display: flex;
-        } 
+        }
         .fontawesome-right {
-         display: flex;
-        } 
-       
+          display: flex;
+        }
+
         .fab {
           color: lightgrey;
           font-size: 50px;
           margin: 10% 40px 20%;
-          
         }
-        .profile-image {        
+        .profile-image {
           border-radius: 50%;
           height: 150px;
           width: 150px;
         }
       }
-   .name-and-social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-      .my-name {
-        font-size: 2rem;
-        margin-top: 8px;
-        color: #676a6c;
-      }
-      .social-media {
-        ul {
-          display: flex;
-          padding-left: 0;
-          margin-left: -16px;
-          i {
-            font-size: 0.8rem;
-            border-radius: 50%;
-            background-color: #4a90f7;
-            color: white;
-            width: 56%;
-            height: 1.7rem;
-            text-align: center;
-            padding-top: 8px;
-        
-            margin: 20px;
-            &:hover {
-              background-color: #527eaa;
+      .name-and-social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .my-name {
+          font-size: 2rem;
+          margin-top: 8px;
+          color: #676a6c;
+        }
+        .social-media {
+          ul {
+            display: flex;
+            padding-left: 0;
+            margin-left: -16px;
+            i {
+              font-size: 0.8rem;
+              border-radius: 50%;
+              background-color: #4a90f7;
+              color: white;
+              width: 56%;
+              height: 1.7rem;
+              text-align: center;
+              padding-top: 8px;
+
+              margin: 20px;
+              &:hover {
+                background-color: #527eaa;
+              }
             }
           }
         }
       }
-    }
       .bio {
-         width: 585px;
-       
+        width: 585px;
+
         text-align: center;
         color: #aeaeae;
         width: 80%;
@@ -207,7 +206,7 @@ width: 100%;
   //       animation-name: rotateInDownLeft;
   //    }
   // }
-  
+
   .section-wrap-skills {
     display: flex;
     flex-direction: column;
@@ -216,22 +215,22 @@ width: 100%;
       .navy-line();
     }
     .skils-images {
-      display: flex; 
+      display: flex;
       justify-content: center;
-       flex-wrap: wrap; 
-       margin-top: 28px;
-       width: 80%;
+      flex-wrap: wrap;
+      margin-top: 28px;
+      width: 80%;
       .skills-image {
         width: 114px;
-        height: 110px;  
-        margin: 3px;       
+        height: 110px;
+        margin: 3px;
       }
     }
     .skills-header {
       font-size: 2rem;
       color: #676a6c;
     }
-     .navy-line {
+    .navy-line {
       .navy-line();
       margin-top: 40px;
     }
@@ -245,7 +244,7 @@ width: 100%;
       .navy-line();
     }
     margin-top: 40px;
-       background: #f4f4f4;
+    background: #f4f4f4;
     .domain-link {
       margin: 20px;
       text-decoration: none;
@@ -331,7 +330,7 @@ width: 100%;
           height: 1.7rem;
           text-align: center;
           padding-top: 8px;
-          
+
           margin: 20px;
           &:hover {
             background-color: #527eaa;
@@ -378,7 +377,7 @@ width: 100%;
         }
       }
     }
-  }  
+  }
   @media (max-width: 1170px) {
     transition: all 1s ease;
     nav {
@@ -389,10 +388,10 @@ width: 100%;
           }
         }
       }
-    }   
+    }
   }
   @media (max-width: 1000px) {
-    transition: all 0.5s ease;    
+    transition: all 0.5s ease;
     .skills-image {
       width: 90%;
       transition: all 1s ease;
@@ -401,56 +400,16 @@ width: 100%;
   @media (max-width: 908px) {
     .container {
       transition: all 1s ease;
-        width: 50%;
-        margin-top: -50px;
-      .lambda {
-        .left {
-          width: 600px;
-          left: -26%;
-          .date-line {
-            position: static;
-          }
-        }
-        .icon-wrapper {
-          left: 7%;
-        }
-      }
-      .lambda-left {
-        .left {         
-         width: 600px;
-          // left: 212px;
-          float: none;
-          left: -26%;
-          .date-line {
-            position: static;
-          }
-        }
-        .icon-wrapper {
-          left: 7%;
-        }
-      }
-      .tethys-timeline {
-        .left {
-          width: 600px;
-          left: -26%;
-          margin-top: 35px;
-          .date-line {
-            position: static;
-          }
-        }
-        .icon-wrapper {
-          left: 7%;
-        }
-      }
+      width: 50%;
+      margin-top: -50px;
     }
   }
   @media (max-width: 768px) {
     .section-wrap-bio {
       .container {
         .profile-image-wrap .fab {
-                 font-size: 50px;
+          font-size: 50px;
           margin: 10% 27px 20%;
-          
         }
       }
     }
@@ -461,9 +420,6 @@ width: 100%;
       padding-left: 96px;
     }
     .main-container {
-      .section-wrap-career {
-        height: 1290px
-      }
       .section-wrap-skills {
         height: 306px;
         width: 100%;
@@ -540,63 +496,13 @@ width: 100%;
       }
     }
   }
-
-  @media (max-width: 734px) {
-    .section-wrap-career {
-      height: 1184px;
-    }
-  }
-
-  @media (max-width: 680px) {
-    .section-wrap-career {
-      height: 1184px;
-    }
-  }
-  @media (max-width: 580px) {
-    .section-wrap-career {
-      height: 1271px;
-    }
-  }
-
-  @media (max-width: 530px) {
-    .section-wrap-career {
-      height: 1332px;
-    }
-  }
-  @media (max-width: 500px) {
-    .section-wrap-career {
-      height: 1388px;
-    }
-  }
-  @media (max-width: 733px) {
-    .section-wrap-career {
-      .vertical-container {
-        left: 13%;
-      }
-    }
-  }
-  @media (max-width: 450px) {
-    .section-wrap-career {
-      height: 1480px;
-      .vertical-container {
-        left: 15%;
-        height: 136%;
-      }
-    }
-  }
-  @media (max-width: 428px) {
-    .section-wrap-career {
-      height: 1517px;
-    }
-  }
   @media (max-width: 414px) {
     .section-wrap-bio {
       .container {
         .profile-image-wrap {
           .fab {
-                    font-size: 35px;
+            font-size: 35px;
             margin: 4% 9px 20%;
-            
           }
           .profile-image {
             margin-top: 40px;
@@ -618,7 +524,7 @@ width: 100%;
       }
     }
     .bio {
-      p {      
+      p {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -626,114 +532,22 @@ width: 100%;
         // padding: 0 3rem;
       }
     }
-
-    .section-wrap-career {
-      height:  1260px;
-      width: 100%;
-    }
-    .section-wrap-career {
-      .vertical-container {
-        left: 12%;
-        height: 124%;
-      }
-    }
-    .section-wrap-career {
-      .container {
-        .lambda {
-          .left {
-            width: 153%;
-            left: -12%;
-          }
-        }
-      }
-    }
-    .section-wrap-career {
-      .container {
-        .lambda-left {
-          .left {
-            width: 153%;
-            left: -12%;
-
-          }
-        }
-      }
-    }
-    .section-wrap-career {
-      .container {
-        .tethys-timeline {
-          .left {
-            width: 153%;
-            left: -12%;
-            padding: 11px;
-            margin-top: 33px;
-          }
-        }
-      }
-    }
   }
   @media (max-width: 375px) {
     max-width: 100%;
     text-align: center;
-    .section-wrap-career {
-      height: 1668px;
-      .vertical-container {
-        height: 1082px;
-        left: 12.2%;
-      }
-      .container {
-        .my-career {
-          left: 0;
-        }
-        .navy-line {
-          left: 34.5%;
-        }
-        .tethys-timeline {
-          .icon-wrapper i {
-            left: 41%;
-          }
-        }
-        .lambda-left {
-          .icon-wrapper i {
-            left: 41%;
-            top: 48%;
-          }
-        }
-        .lambda {
-          .icon-wrapper i {
-            left: 40%;
-          }
-        }
-      }
-    }
   }
   @media (max-width: 360px) {
-    .section-wrap-career {
-      .vertical-container {
-        height: 173%;
-        left: 12.2%;
-      }
-    }
     .section-wrap-bio {
       .container {
         margin-top: -58px;
-        .profile-image-wrap {     
-       margin-top: -16px;
-       margin-left: -16px;
-       .fab {
-        font-size: 29px;
+        .profile-image-wrap {
+          margin-top: -16px;
+          margin-left: -16px;
+          .fab {
+            font-size: 29px;
+          }
         }
-        }
-      }
-  }
-  }
-  @media (max-width: 320px) {
-    .section-wrap-career {
-      .career-header {        
-          // margin-top: 104px;
-        }
-      .vertical-container {
-        height: 230%;
-        left: 13%;
       }
     }
   }
