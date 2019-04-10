@@ -81,6 +81,11 @@ class LandingPage extends Component {
                 Projects
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/#Contact" className="" >
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <div data-spy="scroll" data-target="#main-wrap" data-offset="0">
