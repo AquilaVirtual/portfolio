@@ -60,6 +60,7 @@ body {
   color: white;
   text-decoration: none;
   transition: all 1s ease;
+  font-size: 1.2rem;
 }
 .main-container nav ul :hover {
   color: #79838f;

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
 
+import ContactForm from "./ContactForm";
+
 import "../css/LandingPage.css";
 
 import dave from "../img/dave.jpg";
