@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
 }
 .main-container {
+  font-family: "Raleway", sans-serif;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -40,7 +41,6 @@ body {
   box-shadow: 0px 2px 7px -1px;
 }
 .main-container nav ul {
-  font-family: "Raleway", sans-serif;
   display: flex;
   margin: 35px 122px;
   color: white;
