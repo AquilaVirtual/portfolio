@@ -50,7 +50,7 @@ class ContactModal extends React.Component {
           <DialogTitle id="form-dialog-title">
             Get in touch
           </DialogTitle>
-          <div className="login-wrap">
+          <div className="form-wrap">
             <DialogContent>
               <DialogContentText>
                 <div className="form-group">
@@ -91,10 +91,10 @@ class ContactModal extends React.Component {
           </div>
           <DialogActions>
             <div className="buttons-wrap">
-              <button className="signin-buttons" onClick={this.handleClose}>
+              <button className="ctn-buttons" onClick={this.handleClose}>
                 Cancel
               </button>
-              <button className="signin-buttons" onClick={this.handleMessage}>
+              <button className="ctn-buttons" onClick={this.handleMessage}>
                 Submit
               </button>
             </div>

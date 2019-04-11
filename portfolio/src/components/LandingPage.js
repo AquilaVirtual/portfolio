@@ -5,6 +5,7 @@ import $ from "jquery";
 import ContactModal from "./ContactModal";
 
 import "../css/LandingPage.css";
+import "../css/ContactModal.css";
 
 import dave from "../img/dave.jpg";
 import currentaffairs from "../img/currentaffairs.png";
@@ -137,7 +138,7 @@ class LandingPage extends Component {
                   methods, and applying this in software development means an
                   ability to tackle complex challenges. Writing software, to me,
                   is a materialization of logic. Having the knowledge to write
-                  software has given me a sense of purpose.
+                  software has given me a sense of creativity.
                 
               </div>
             </div>
