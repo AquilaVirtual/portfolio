@@ -100,8 +100,7 @@ body {
 .main-container .section-wrap-bio .container .profile-image-wrap {
   display: flex;
   align-items: center;
-  padding-left: 0;
-  margin-top: -9px;
+  margin-top: 27px;
 }
 .main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-left {
   display: flex;
@@ -175,8 +174,8 @@ body {
   width: 80%;
 }
 .main-container .section-wrap-skills .skils-images .skills-image {
-  width: 114px;
-  height: 110px;
+  width: 94px;
+  height: 90px;
   margin: 3px;
 }
 .main-container .section-wrap-skills .skills-header {
@@ -522,9 +521,8 @@ body {
   }
 }
 @media (max-width: 375px) {
-  .main-container {
-    max-width: 100%;
-    text-align: center;
+  .main-container .container .bio {
+    width: 81%;
   }
 }
 @media (max-width: 360px) {
