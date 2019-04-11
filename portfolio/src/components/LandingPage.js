@@ -121,7 +121,7 @@ class LandingPage extends Component {
               </div>              
               </div>
               <div className="bio">
-                <p>
+              
                   The idea that one can use software to build software has been
                   fascinating to me. From my childhood, I have learned things
                   <section id="Skills" />
@@ -130,7 +130,7 @@ class LandingPage extends Component {
                   ability to tackle complex challenges. Writing software, to me,
                   is a materialization of logic. Having the knowledge to write
                   software has given me a sense of purpose.
-                </p>
+                
               </div>
             </div>
           </section>

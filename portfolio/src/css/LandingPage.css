@@ -101,8 +101,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 0;
-  margin-left: -38px;
-  margin-top: 40px;
+  margin-top: -9px;
 }
 .main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-left {
   display: flex;
@@ -394,7 +393,6 @@ body {
 @media (max-width: 908px) {
   .main-container .container {
     transition: all 1s ease;
-    width: 50%;
     margin-top: -50px;
   }
 }
@@ -414,7 +412,7 @@ body {
     width: 100%;
   }
   .main-container .section-wrap-projects {
-    height: 1270px;
+    height: 1295px;
     width: 100%;
     padding: 40px 10% 0 0;
   }
@@ -499,6 +497,9 @@ body {
     display: flex;
     justify-content: center;
   }
+  .main-container .section-wrap-bio .container .bio p {
+    width: 230px;
+  }
   .main-container .section-wrap-bio .container .profile-image-wrap .fab {
     font-size: 35px;
     margin: 4% 9px 20%;
@@ -518,12 +519,6 @@ body {
   .main-container nav ul {
     font-size: 1rem;
     margin: 1.4rem 0.6rem 0.3rem 0;
-  }
-  .main-container .bio p {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
   }
 }
 @media (max-width: 375px) {

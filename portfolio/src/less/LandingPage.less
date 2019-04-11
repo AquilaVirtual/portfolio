@@ -104,9 +104,8 @@ body {
       .profile-image-wrap {
         display: flex;
         align-items: center;
-        padding-left: 0;
-        margin-left: -38px;
-        margin-top: 40px;
+        padding-left: 0;        
+        margin-top: -9px;
         .fontawesome-left {
           display: flex;
         }
@@ -405,8 +404,7 @@ body {
   }
   @media (max-width: 908px) {
     .container {
-      transition: all 1s ease;
-      width: 50%;
+      transition: all 1s ease;  
       margin-top: -50px;
     }
   }
@@ -432,7 +430,7 @@ body {
       }
     }
     .section-wrap-projects {
-      height: 1270px;
+      height: 1295px;
       width: 100%;
       padding: 40px 10% 0 0;
       .projects-header-wrap {
@@ -509,6 +507,9 @@ body {
     }
     .section-wrap-bio {
       .container {
+        .bio p {
+          width: 230px;
+        }
         .profile-image-wrap {
           .fab {
             font-size: 35px;
@@ -532,16 +533,7 @@ body {
         font-size: 1rem;
         margin: 1.4rem 0.6rem 0.3rem 0;
       }
-    }
-    .bio {
-      p {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        // padding: 0 3rem;
-      }
-    }
+    }    
   }
   @media (max-width: 375px) {
     max-width: 100%;
