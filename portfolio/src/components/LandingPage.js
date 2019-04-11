@@ -137,8 +137,8 @@ class LandingPage extends Component {
                   with a concentration in quantitative
                   methods, and applying this in software development means an
                   ability to tackle complex challenges. Writing software, to me,
-                  is a materialization of logic. Having the knowledge to write
-                  software has given me a sense of creativity.
+                  is a materialization of logic. Having knowledge to write
+                  software gives me a sense of creativity.
                 
               </div>
             </div>
