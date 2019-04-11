@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
 
-import ContactForm from "./ContactForm";
+import ContactModal from "./ContactModal";
 
 import "../css/LandingPage.css";
 
@@ -27,6 +27,9 @@ import realbusiness from "../img/realbusiness.png";
 import menue from "../img/menu.png";
 
 class LandingPage extends Component {
+  state = {
+    open: false,
+  }
   componentDidMount = () => {
     let target
     $(document).ready(function() {
@@ -45,6 +48,12 @@ class LandingPage extends Component {
       });
     });        
   };
+
+  handleModalToggle = () => {
+     this.setState({
+       open: !this.state.open
+     })
+  }
   render() {    
     const darkGreyFont = {
       color: "#676a6c"
@@ -81,7 +90,7 @@ class LandingPage extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/#Contact" className="" >
+              <NavLink to="/#Contact" onClick={this.handleModalToggle} >
                 Contact
               </NavLink>
             </li>
@@ -217,7 +226,7 @@ class LandingPage extends Component {
                   </a>
                 </div>
               </div>
-
+             <ContactModal open={this.state.open} handleModalToggle={this.handleModalToggle} />
               <div className="current-affairs-wrap">
                 <a href="https://currentaffairs.netlify.com" target="blank">
                   <img className="project-image" src={currentaffairs} alt="" />
