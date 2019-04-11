@@ -15,7 +15,6 @@ import reactImage from "../img/reactImage.png";
 import lessImage from "../img/lessImage.png";
 import nodeImage from "../img/nodeImage.png";
 import jqueryImage from "../img/jqueryImage.png";
-import cssImage from "../img/cssImage.png";
 import cplus from "../img/cplus.png";
 import htmlImage from "../img/htmlImage.png";
 import express from "../img/express.png";
@@ -51,7 +50,7 @@ class LandingPage extends Component {
       color: "#676a6c"
     };
     const navyFont = {
-      color: "#3385FF"
+      color: "#3c6aad"
     };
     return (
       <div className="main-container">
@@ -265,7 +264,7 @@ class LandingPage extends Component {
             </div>
           </section>
           <section className="footer">
-            <strong>© 2019 David Loveday</strong>
+            <strong style={{color: "lightGrey"}}>© 2019 David Loveday</strong>
             <div className="social-media-footer">
               <ul>                
                 <li>
