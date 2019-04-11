@@ -5,6 +5,8 @@ body {
 }
 .main-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .main-container p {
   font-family: "Raleway", sans-serif;
@@ -23,7 +25,7 @@ body {
   display: flex;
   justify-content: flex-end;
   background: #3c6aad;
-  width: 100%;
+  width: 65%;
   height: 85px;
   opacity: 0.9;
   border-bottom: 2px solid #708199;
@@ -491,6 +493,10 @@ body {
   }
 }
 @media (max-width: 414px) {
+  .main-container nav ul {
+    display: flex;
+    justify-content: center;
+  }
   .main-container .section-wrap-bio .container .profile-image-wrap .fab {
     font-size: 35px;
     margin: 4% 9px 20%;
@@ -525,8 +531,16 @@ body {
   }
 }
 @media (max-width: 360px) {
+  .main-container nav ul li {
+    width: 24%;
+  }
   .main-container .section-wrap-bio .container {
     margin-top: -58px;
+  }
+  .main-container .section-wrap-bio .container .bio {
+    width: 354px;
+    padding: 0 27px;
+    text-align: center;
   }
   .main-container .section-wrap-bio .container .profile-image-wrap {
     margin-top: -16px;
