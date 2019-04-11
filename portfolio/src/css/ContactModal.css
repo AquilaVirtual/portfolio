@@ -7,6 +7,9 @@
   height: 50px;
   margin-left: 10%;
 }
+.form-wrap .form-group {
+  margin: 14px;
+}
 .buttons-wrap {
   padding-right: 72px;
 }
@@ -16,6 +19,10 @@
   border-right: 5px;
   background-color: #5e84a3;
   border-radius: 5px;
-  margin: 10px;
+  margin: 40px 10px;
   color: white;
+}
+#form-dialog-title {
+  padding-top: 0;
+  margin: 26px 0px -34px 53px;
 }
