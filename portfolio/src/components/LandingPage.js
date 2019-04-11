@@ -45,10 +45,7 @@ class LandingPage extends Component {
       });
     });        
   };
-  render() {
-    const bioStyle = {
-      fontSize: "18px"
-    };
+  render() {    
     const darkGreyFont = {
       color: "#676a6c"
     };
@@ -120,40 +117,10 @@ class LandingPage extends Component {
               <div className="name-and-social-media">
               <div className="my-name">
                 <span style={navyFont}>David</span> Loveday
-              </div>
-              <div className="social-media">
-                <ul>
-                  <li>
-                    <a
-                      href="https://resume.creddle.io/resume/aodc6tswpqo"
-                      target="blank"
-                    >
-                      <i className="far fa-file" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/david-loveday-110a8a172/"
-                      target="blank"
-                    >
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/AquilaVirtual" target="blank">
-                      <i className="fab fa-github" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              </div>              
               </div>
               <div className="bio">
-                <p style={bioStyle}>
+                <p>
                   The idea that one can use software to build software has been
                   fascinating to me. From my childhood, I have learned things
                   <section id="Skills" />
