@@ -16,13 +16,14 @@ import lessImage from "../img/lessImage.png";
 import nodeImage from "../img/nodeImage.png";
 import jqueryImage from "../img/jqueryImage.png";
 import cssImage from "../img/cssImage.png";
-import gitImage from "../img/gitImage.png";
+import cplus from "../img/cplus.png";
 import htmlImage from "../img/htmlImage.png";
-import cppImage from "../img/cppImage.png";
+import express from "../img/express.png";
 import mongoImage from "../img/mongoImage.png";
-import expressImage from "../img/expressImage.png";
+import css3 from "../img/css3.png";
 import bootstrapImage from "../img/bootstrapImage.png";
 import javascriptImage from "../img/javascriptImage.png";
+import GitHub from "../img/GitHub.png";
 import realbusiness from "../img/realbusiness.png";
 import menue from "../img/menu.png";
 
@@ -140,16 +141,16 @@ class LandingPage extends Component {
             <span className="skils-images">
             <img className="skills-image" alt="skills" src={javascriptImage} />
             <img className="skills-image" alt="skills" src={htmlImage} />
-            <img className="skills-image" alt="skills" style={{width: "78px"}} src={cssImage} />
+            <img className="skills-image" alt="skills" src={css3} />
             <img className="skills-image" alt="skills" src={jqueryImage} />
             <img className="skills-image" alt="skills" src={reactImage} />
             <img className="skills-image" alt="skills" src={reduxImage} />
             <img className="skills-image" alt="skills" src={nodeImage} />
             <img className="skills-image" alt="skills" src={lessImage} />
-            <img className="skills-image" alt="skills" style={{width: "122px"}} src={gitImage} />
-            <img className="skills-image" alt="skills" src={cppImage} />
+            <img className="skills-image" alt="skills" src={GitHub} />
+            <img className="skills-image" alt="skills" src={cplus} />
             <img className="skills-image" alt="skills" src={mongoImage} />
-            <img className="skills-image" alt="skills" src={expressImage} />
+            <img className="skills-image" alt="skills" src={express} />
             <img className="skills-image" alt="skills" src={bootstrapImage} />
             </span>
             <section id="Projects" />
@@ -266,15 +267,7 @@ class LandingPage extends Component {
           <section className="footer">
             <strong>© 2019 David Loveday</strong>
             <div className="social-media-footer">
-              <ul>
-                <li>
-                  <a
-                    href="https://resume.creddle.io/resume/aodc6tswpqo"
-                    target="blank"
-                  >
-                    <i className="far fa-file" />
-                  </a>
-                </li>
+              <ul>                
                 <li>
                   <a
                     href="https://www.linkedin.com/in/david-loveday-110a8a172/"

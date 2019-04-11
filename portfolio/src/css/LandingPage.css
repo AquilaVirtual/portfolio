@@ -35,7 +35,7 @@ body {
 .main-container nav ul {
   font-family: "Raleway", sans-serif;
   display: flex;
-  margin: 31px 122px;
+  margin: 35px 122px;
   color: white;
   font-size: 1.4rem;
   justify-content: space-between;
@@ -48,7 +48,7 @@ body {
 .main-container nav ul li .home-button {
   position: absolute;
   left: 10%;
-  top: 44%;
+  top: 40%;
   font-size: 1.4rem;
   text-align: center;
   color: whiet;
@@ -138,7 +138,7 @@ body {
 .main-container .section-wrap-bio .container .name-and-social-media .social-media ul i {
   font-size: 0.8rem;
   border-radius: 50%;
-  background-color: #4a90f7;
+  background-color: #3c6aad;
   color: white;
   width: 56%;
   height: 1.7rem;
@@ -166,7 +166,7 @@ body {
   width: 102px;
   border-top: 3px solid #0f6ee6;
   margin-bottom: 14px;
-  margin-top: 40px;
+  margin-top: 28px;
 }
 .main-container .section-wrap-skills .skils-images {
   display: flex;
@@ -188,7 +188,7 @@ body {
   width: 102px;
   border-top: 3px solid #0f6ee6;
   margin-bottom: 14px;
-  margin-top: 40px;
+  margin-top: 28px;
 }
 .main-container .section-wrap-projects {
   display: flex;
@@ -214,7 +214,7 @@ body {
   color: #676a6c;
 }
 .main-container .section-wrap-projects .repo-link:hover {
-  color: #3385ff;
+  color: #3c6aad;
 }
 .main-container .section-wrap-projects .projects-header-wrap {
   display: flex;
@@ -330,7 +330,7 @@ body {
 .main-container .footer .social-media-footer ul i {
   font-size: 0.8rem;
   border-radius: 50%;
-  background-color: #4a90f7;
+  background-color: #3c6aad;
   color: white;
   width: 56%;
   height: 1.7rem;
