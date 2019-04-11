@@ -101,6 +101,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 27px;
+  margin-right: 1.7%;
 }
 .main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-left {
   display: flex;
@@ -114,7 +115,7 @@ body {
   margin: 10% 40px 20%;
 }
 .main-container .section-wrap-bio .container .profile-image-wrap .profile-image {
-  border-radius: 50%;
+  border-radius: 8%;
   height: 150px;
   width: 150px;
 }
