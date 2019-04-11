@@ -29,10 +29,10 @@ import menue from "../img/menu.png";
 
 class LandingPage extends Component {
   state = {
-    open: false,
-  }
+    open: false
+  };
   componentDidMount = () => {
-    let target
+    let target;
     $(document).ready(function() {
       $("a.nav-link").click(function() {
         target = $(this.hash);
@@ -47,15 +47,15 @@ class LandingPage extends Component {
       $("#flip").click(function() {
         $("#nav").slideToggle(500);
       });
-    });        
+    });
   };
 
   handleModalToggle = () => {
-     this.setState({
-       open: !this.state.open
-     })
-  }
-  render() {    
+    this.setState({
+      open: !this.state.open
+    });
+  };
+  render() {
     const darkGreyFont = {
       color: "#676a6c"
     };
@@ -71,27 +71,27 @@ class LandingPage extends Component {
         <nav id="nav">
           <ul className="nav nav-pills">
             <li>
-              <NavLink to="/#Home" className="nav-link home-button" >
+              <NavLink to="/#Home" className="nav-link home-button">
                 David Loveday
-              </NavLink >
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/#About" className="nav-link" >
+              <NavLink to="/#About" className="nav-link">
                 About
               </NavLink>
-            </li>            
+            </li>
             <li>
-              <NavLink to="/#Skills" className="nav-link" >
+              <NavLink to="/#Skills" className="nav-link">
                 Skills
               </NavLink>
             </li>
             <li>
-              <NavLink to="/#Projects" className="nav-link" >
+              <NavLink to="/#Projects" className="nav-link">
                 Projects
               </NavLink>
             </li>
             <li>
-              <NavLink to="/#Contact" onClick={this.handleModalToggle} >
+              <NavLink to="/#Contact" onClick={this.handleModalToggle}>
                 Contact
               </NavLink>
             </li>
@@ -125,21 +125,19 @@ class LandingPage extends Component {
                 </div>
               </div>
               <div className="name-and-social-media">
-              <div className="my-name">
-                <span style={navyFont}>David</span> Loveday
-              </div>              
+                <div className="my-name">
+                  <span style={navyFont}>David</span> Loveday
+                </div>
               </div>
               <div className="bio">
-              
-                  The idea that one can use software to build software has been
-                  fascinating to me. From my childhood, I have learned things
-                  <section id="Skills" />
-                  with a concentration in quantitative
-                  methods, and applying this in software development means an
-                  ability to tackle complex challenges. Writing software, to me,
-                  is a materialization of logic. Having knowledge to write
-                  software gives me a sense of creativity.
-                
+                The idea that one can use software to build software has been
+                fascinating to me. From my childhood, I have learned things
+                <section id="Skills" />
+                with a concentration in quantitative methods, and applying this
+                in software development means an ability to tackle complex
+                challenges. Writing software, to me, is a materialization of
+                logic. Having knowledge to write software gives me a sense of
+                creativity.
               </div>
             </div>
           </section>
@@ -148,19 +146,23 @@ class LandingPage extends Component {
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
             <span className="skils-images">
-            <img className="skills-image" alt="skills" src={javascriptImage} />
-            <img className="skills-image" alt="skills" src={htmlImage} />
-            <img className="skills-image" alt="skills" src={css3} />
-            <img className="skills-image" alt="skills" src={jqueryImage} />
-            <img className="skills-image" alt="skills" src={reactImage} />
-            <img className="skills-image" alt="skills" src={reduxImage} />
-            <img className="skills-image" alt="skills" src={nodeImage} />
-            <img className="skills-image" alt="skills" src={lessImage} />
-            <img className="skills-image" alt="skills" src={GitHub} />
-            <img className="skills-image" alt="skills" src={cplus} />
-            <img className="skills-image" alt="skills" src={mongoImage} />
-            <img className="skills-image" alt="skills" src={express} />
-            <img className="skills-image" alt="skills" src={bootstrapImage} />
+              <img
+                className="skills-image"
+                alt="skills"
+                src={javascriptImage}
+              />
+              <img className="skills-image" alt="skills" src={htmlImage} />
+              <img className="skills-image" alt="skills" src={css3} />
+              <img className="skills-image" alt="skills" src={jqueryImage} />
+              <img className="skills-image" alt="skills" src={reactImage} />
+              <img className="skills-image" alt="skills" src={reduxImage} />
+              <img className="skills-image" alt="skills" src={nodeImage} />
+              <img className="skills-image" alt="skills" src={lessImage} />
+              <img className="skills-image" alt="skills" src={GitHub} />
+              <img className="skills-image" alt="skills" src={cplus} />
+              <img className="skills-image" alt="skills" src={mongoImage} />
+              <img className="skills-image" alt="skills" src={express} />
+              <img className="skills-image" alt="skills" src={bootstrapImage} />
             </span>
             <section id="Projects" />
           </section>
@@ -227,7 +229,10 @@ class LandingPage extends Component {
                   </a>
                 </div>
               </div>
-             <ContactModal open={this.state.open} handleModalToggle={this.handleModalToggle} />
+              <ContactModal
+                open={this.state.open}
+                handleModalToggle={this.handleModalToggle}
+              />
               <div className="current-affairs-wrap">
                 <a href="https://currentaffairs.netlify.com" target="blank">
                   <img className="project-image" src={currentaffairs} alt="" />
@@ -274,9 +279,9 @@ class LandingPage extends Component {
             </div>
           </section>
           <section className="footer">
-            <strong style={{color: "lightGrey"}}>© 2019 David Loveday</strong>
+            <strong style={{ color: "lightGrey" }}>© 2019 David Loveday</strong>
             <div className="social-media-footer">
-              <ul>                
+              <ul>
                 <li>
                   <a
                     href="https://www.linkedin.com/in/david-loveday-110a8a172/"
