@@ -76,8 +76,7 @@ class ContactModal extends React.Component {
                   />
                 </div>
                 <div className="form-group">
-                  <textarea
-                    className="form-control"
+                  <textarea                  
                     placeholder="Message"
                     name="message"                    
                     required
@@ -89,7 +88,8 @@ class ContactModal extends React.Component {
               </DialogContentText>
             </DialogContent>
           </div>
-          <DialogActions>
+          <div className="ctn-wrap">
+          <DialogActions >
             <div className="buttons-wrap">
               <button className="ctn-buttons" onClick={this.handleClose}>
                 Cancel
@@ -98,7 +98,8 @@ class ContactModal extends React.Component {
                 Submit
               </button>
             </div>
-          </DialogActions>          
+          </DialogActions>   
+          </div>       
         </Dialog>
       </div>
     );

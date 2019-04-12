@@ -5,15 +5,26 @@
 .form-wrap .form-control {
   width: 78%;
   height: 50px;
-  margin-left: 10%;
+  border-radius: 4%;
+  padding: 10px;
 }
 .form-wrap .form-group {
   margin: 14px;
 }
-.buttons-wrap {
-  padding-right: 72px;
+.form-wrap textarea {
+  width: 360px;
+  height: 203px;
+  border-radius: 1%;
+  padding: 10px;
 }
-.buttons-wrap .ctn-buttons {
+.ctn-wrap {
+  margin-top: 16px;
+}
+.ctn-wrap .buttons-wrap {
+  padding-right: 72px;
+  margin-top: 184px;
+}
+.ctn-wrap .buttons-wrap .ctn-buttons {
   width: 100px;
   height: 50px;
   border-right: 5px;
@@ -22,11 +33,20 @@
   margin: 40px 10px;
   color: white;
 }
-.buttons-wrap .ctn-buttons:hover {
+.ctn-wrap .buttons-wrap .ctn-buttons:hover {
   cursor: pointer;
   background: #496692;
 }
 #form-dialog-title {
   padding-top: 0;
   margin: 26px 0px -34px 53px;
+}
+@media (max-width: 908px) {
+  .buttons-wrap {
+    padding-right: 0;
+  }
+  textarea {
+    height: 106px;
+    width: 52%;
+  }
 }

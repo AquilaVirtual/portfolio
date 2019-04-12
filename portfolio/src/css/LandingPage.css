@@ -107,8 +107,7 @@ body {
 .main-container .section-wrap-bio .container .profile-image-wrap {
   display: flex;
   align-items: center;
-  margin-top: 27px;
-  margin-right: 1.7%;
+  margin: 27px 1.7% 0 0;
 }
 .main-container .section-wrap-bio .container .profile-image-wrap .fontawesome-left {
   display: flex;
@@ -524,7 +523,6 @@ body {
     margin: 4% 9px 20%;
   }
   .main-container .section-wrap-bio .container .profile-image-wrap .profile-image {
-    margin-top: 40px;
     border-radius: 50%;
     height: 136px;
     width: 136px;
@@ -541,6 +539,15 @@ body {
   }
 }
 @media (max-width: 375px) {
+  .main-container .main-container .profile-image-wrap {
+    margin-right: 10%;
+  }
+  .main-container .container .profile-image-wrap {
+    margin-right: 5%;
+  }
+  .main-container .container .profile-image {
+    margin-top: -11px;
+  }
   .main-container .container .bio {
     width: 81%;
   }

@@ -1,18 +1,30 @@
+
 .form-wrap {
     width: 500px;
     height: 190px;
     .form-control {        
         width: 78%;
         height: 50px;
-        margin-left: 10%;
+        border-radius: 4%;
+        padding: 10px    
     }
     .form-group {
         margin: 14px;
     }
+    textarea {
+    width: 360px;
+    height: 203px;
+    border-radius: 1%;
+    padding: 10px
+    }
 }
+.ctn-wrap {
+    margin-top: 16px;
 .buttons-wrap {
+    
     padding-right: 72px;
-.ctn-buttons {
+    margin-top: 184px;
+    .ctn-buttons {                
     width: 100px;
     height: 50px;
     border-right: 5px;
@@ -26,8 +38,19 @@
     }
   }
 }
+}
 #form-dialog-title {
  padding-top: 0;
  margin: 26px 0px -34px 53px;
 }
 
+@media (max-width: 908px) {
+    .buttons-wrap {
+        padding-right: 0;
+    }
+
+    textarea {
+    height: 106px;
+    width: 52%
+    }
+}
