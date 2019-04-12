@@ -146,23 +146,49 @@ class LandingPage extends Component {
             <div className="navy-line" />
             <div className="skills-header">My Skills</div>
             <span className="skils-images">
+              <div className="image-wrap">
               <img
                 className="skills-image"
                 alt="skills"
                 src={javascriptImage}
               />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={htmlImage} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={css3} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={jqueryImage} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={reactImage} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={reduxImage} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={nodeImage} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={lessImage} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={GitHub} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={cplus} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={mongoImage} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={express} />
+              </div>
+              <div className="image-wrap">
               <img className="skills-image" alt="skills" src={bootstrapImage} />
+              </div>
             </span>
             <section id="Projects" />
           </section>

@@ -22,6 +22,10 @@
   margin: 40px 10px;
   color: white;
 }
+.buttons-wrap .ctn-buttons:hover {
+  cursor: pointer;
+  background: #496692;
+}
 #form-dialog-title {
   padding-top: 0;
   margin: 26px 0px -34px 53px;

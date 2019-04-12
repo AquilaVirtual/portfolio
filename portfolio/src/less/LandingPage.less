@@ -14,14 +14,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  // height: 100%;
-  // width: 100%;
-  // background-image: url("../img/background1.png");
-  // // background-image: 100%;
-  // background-attachment: fixed;
-  // // height: 100vh;
-  // // width: 100vw;
+  background-attachment: fixed;  
 }
 
 .main-container {
@@ -85,7 +78,7 @@ body {
         font-size: 1.1rem;
       }
       :hover {
-        color: #79838f;
+        color: #074a9c;
         cursor: pointer;
         padding-top: 2px;
       }
@@ -110,7 +103,7 @@ body {
           }
           .about-me {
             font-size: 2rem;
-            color: #676a6c;
+            color: #545a5f;
             padding-top: 16px;
           }
         }
@@ -145,7 +138,7 @@ body {
         .my-name {
           font-size: 2rem;
           margin-top: 8px;
-          color: #676a6c;
+          color: #545a5f;
         }
         .social-media {
           ul {
@@ -172,11 +165,10 @@ body {
       }
       .bio {
         display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: wrap;
         font-size: 1.1rem;
-        line-height: 1.6;
-        //text-align: center;
+        line-height: 1.6;        
         color: white;
         width: 56%;
         margin-top: 12px;
@@ -242,16 +234,25 @@ body {
       flex-wrap: wrap;
       margin-top: 28px;
       width: 80%;
-      .skills-image {
-        width: 94px;
-        height: 90px;
-        margin: 3px;
+      .image-wrap {
+        width: 100px;
+        height: 100px;
+        background: white;
+        margin: 5px;
+        text-align: center;
+        padding-top: 15px;
         border-radius: 10%;
+      .skills-image {
+        width: 74px;
+        height: 70px;
+        margin: 3px;
+        opacity: 0.7;
       }
     }
+  }
     .skills-header {
       font-size: 2rem;
-      color: #676a6c;
+      color: #545a5f;
     }
     .navy-line {
       .navy-line();

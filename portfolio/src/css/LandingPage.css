@@ -72,7 +72,7 @@ body {
   font-size: 1.1rem;
 }
 .main-container nav ul :hover {
-  color: #79838f;
+  color: #074a9c;
   cursor: pointer;
   padding-top: 2px;
 }
@@ -101,7 +101,7 @@ body {
 }
 .main-container .section-wrap-bio .container .about-me-wrap .about-inner-wrap .about-me {
   font-size: 2rem;
-  color: #676a6c;
+  color: #545a5f;
   padding-top: 16px;
 }
 .main-container .section-wrap-bio .container .profile-image-wrap {
@@ -134,7 +134,7 @@ body {
 .main-container .section-wrap-bio .container .name-and-social-media .my-name {
   font-size: 2rem;
   margin-top: 8px;
-  color: #676a6c;
+  color: #545a5f;
 }
 .main-container .section-wrap-bio .container .name-and-social-media .social-media ul {
   display: flex;
@@ -183,15 +183,24 @@ body {
   margin-top: 28px;
   width: 80%;
 }
-.main-container .section-wrap-skills .skils-images .skills-image {
-  width: 94px;
-  height: 90px;
-  margin: 3px;
+.main-container .section-wrap-skills .skils-images .image-wrap {
+  width: 100px;
+  height: 100px;
+  background: white;
+  margin: 5px;
+  text-align: center;
+  padding-top: 15px;
   border-radius: 10%;
+}
+.main-container .section-wrap-skills .skils-images .image-wrap .skills-image {
+  width: 74px;
+  height: 70px;
+  margin: 3px;
+  opacity: 0.7;
 }
 .main-container .section-wrap-skills .skills-header {
   font-size: 2rem;
-  color: #676a6c;
+  color: #545a5f;
 }
 .main-container .section-wrap-skills .navy-line {
   width: 102px;
