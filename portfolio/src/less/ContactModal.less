@@ -1,56 +1,70 @@
-
 .form-wrap {
-    width: 500px;
-    height: 190px;
-    .form-control {        
-        width: 78%;
-        height: 50px;
-        border-radius: 4%;
-        padding: 10px    
-    }
-    .form-group {
-        margin: 14px;
-    }
-    textarea {
+  font-family: "Raleway", sans-serif;
+  width: 500px;
+  height: 190px;
+  .form-control {
+    width: 78%;
+    height: 50px;
+    border-radius: 4%;
+    padding: 10px;
+  }
+  .form-group {
+    margin: 14px;
+  }
+  textarea {
     width: 360px;
     height: 203px;
     border-radius: 1%;
-    padding: 10px
-    }
+    padding: 10px;
+  }
 }
-.ctn-wrap {
-    margin-top: 16px;
-.buttons-wrap {
-    
+.cta-wrap {
+  margin-top: 16px;
+  .buttons-wrap {
     padding-right: 72px;
     margin-top: 184px;
-    .ctn-buttons {                
-    width: 100px;
-    height: 50px;
-    border-right: 5px;
-    background-color: #5e84a3;
-    border-radius: 5px;
-    margin: 40px 10px;
-    color: white;
-    &:hover {
+    .cta-buttons {
+      width: 100px;
+      height: 50px;
+      border-right: 5px;
+      background-color: #5e84a3;
+      border-radius: 5px;
+      margin: 40px 10px;
+      color: white;
+      &:hover {
         cursor: pointer;
         background: #496692;
+      }
     }
   }
 }
-}
 #form-dialog-title {
- padding-top: 0;
- margin: 26px 0px -34px 53px;
+  padding-top: 0;
+  margin: 26px 0px -34px 53px;
+  font-size: 18px;
 }
 
 @media (max-width: 908px) {
-    .buttons-wrap {
-        padding-right: 0;
+  .form-wrap {
+    .form-control {
+      width: 52%;
     }
-
     textarea {
-    height: 106px;
-    width: 52%
+      width: 52%;
     }
+  }
+  .cta-wrap {
+    .buttons-wrap {
+      padding-right: 0;
+      margin-top: 148px;
+      .cta-buttons {
+        width: 73px;
+        height: 37px;
+      }
+    }
+  }
+  textarea {
+    height: 106px;
+    width: 52%;
+  }
 }

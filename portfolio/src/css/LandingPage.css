@@ -15,9 +15,6 @@ body {
   display: flex;
   justify-content: center;
 }
-.main-container p {
-  font-family: "Raleway", sans-serif;
-}
 .main-container #flip {
   color: white;
   background: #3c6aad;

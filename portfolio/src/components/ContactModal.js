@@ -88,13 +88,13 @@ class ContactModal extends React.Component {
               </DialogContentText>
             </DialogContent>
           </div>
-          <div className="ctn-wrap">
+          <div className="cta-wrap">
           <DialogActions >
             <div className="buttons-wrap">
-              <button className="ctn-buttons" onClick={this.handleClose}>
+              <button className="cta-buttons" onClick={this.handleClose}>
                 Cancel
               </button>
-              <button className="ctn-buttons" onClick={this.handleMessage}>
+              <button className="cta-buttons" onClick={this.handleMessage}>
                 Submit
               </button>
             </div>
