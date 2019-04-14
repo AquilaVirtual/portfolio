@@ -536,11 +536,8 @@ body {
   }
 }
 @media (max-width: 375px) {
-  .main-container .main-container .profile-image-wrap {
-    margin-right: 10%;
-  }
   .main-container .container .profile-image-wrap {
-    margin-right: 5%;
+    margin: 27px 1.7% 0px -24px;
   }
   .main-container .container .profile-image {
     margin-top: -11px;
@@ -564,6 +561,7 @@ body {
   .main-container .section-wrap-bio .container .profile-image-wrap {
     margin-top: -16px;
     margin-left: -16px;
+    padding-top: 48px;
   }
   .main-container .section-wrap-bio .container .profile-image-wrap .fab {
     font-size: 29px;
