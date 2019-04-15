@@ -55,10 +55,7 @@ class LandingPage extends Component {
       open: !this.state.open
     });
   };
-  render() {
-    const darkGreyFont = {
-      color: "#676a6c"
-    };
+  render() {    
     const navyFont = {
       color: "#3c6aad"
     };
@@ -322,7 +319,7 @@ class LandingPage extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://twitter.com/">
                     <i className="fab fa-twitter" />
                   </a>
                 </li>

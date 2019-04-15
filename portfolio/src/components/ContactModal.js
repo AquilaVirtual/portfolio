@@ -23,12 +23,22 @@ class ContactModal extends React.Component {
   }
 
   handleMessage = event => {
+    if (!this.state.name || !this.state.email || !this.state.message) {
+      this.setState({ error: true})
+    }
     event.preventDefault();
     const contact = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
     };
+
+    this.setState({
+      name: "",
+      email: "",
+      message:""
+    })
+    
     axios
       .post(`${backend}api/users/contact`, contact)
       .then(response => {
@@ -41,11 +51,11 @@ class ContactModal extends React.Component {
           error: true,
           errorMessage: err.response.data.error
         });
-        console.log("Error", err.response.data)
-      });
-
-   // alert("Functionality coming soon!");
-    this.props.handleModalToggle();
+        console.log("Error", this.state.error)
+      });   
+      if(this.state.error) {
+        this.props.handleModalToggle();
+      }
   };
 
   handleClickOpen = () => {
