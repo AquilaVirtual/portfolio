@@ -14,14 +14,14 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
 }
 
 .main-container {
   font-family: "Raleway", sans-serif;
   width: 100%;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   #flip {
     color: white;
     background: #3c6aad;
@@ -108,7 +108,7 @@ body {
       .profile-image-wrap {
         display: flex;
         align-items: center;
-        margin:  27px 1.7% 0 0;
+        margin: 27px 1.7% 0 0;
         .fontawesome-left {
           display: flex;
         }
@@ -164,7 +164,7 @@ body {
         flex-direction: column;
         flex-wrap: wrap;
         font-size: 1.1rem;
-        line-height: 1.6;        
+        line-height: 1.6;
         color: white;
         width: 56%;
         margin-top: 12px;
@@ -238,14 +238,14 @@ body {
         text-align: center;
         padding-top: 15px;
         border-radius: 10%;
-      .skills-image {
-        width: 74px;
-        height: 70px;
-        margin: 3px;
-        opacity: 0.7;
+        .skills-image {
+          width: 74px;
+          height: 70px;
+          margin: 3px;
+          opacity: 0.7;
+        }
       }
     }
-  }
     .skills-header {
       font-size: 2rem;
       color: #545a5f;
@@ -398,16 +398,34 @@ body {
       }
     }
   }
+  @media (max-width: 1290px) {
+    nav ul {
+      margin: 36px 35px;
+    }
+  }
   @media (max-width: 1170px) {
     transition: all 1s ease;
     nav {
       ul {
         li {
           .home-button {
-            left: 11%;
+            left: 2%;
           }
         }
       }
+    }
+  }
+  @media (max-width: 1055px) {
+    nav ul {
+      margin: 36px 3px;
+      a {
+        margin: 0 9px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    nav ul a {
+      margin: 0 7px;
     }
   }
   @media (max-width: 1000px) {
@@ -424,14 +442,20 @@ body {
     }
   }
   @media (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+      a {
+        margin: 0px 47px;
+      }
+    }
     .section-wrap-bio {
       .container {
         .profile-image-wrap {
           .fab {
-          font-size: 50px;
-          margin: 10% 27px 20%;
+            font-size: 50px;
+            margin: 10% 27px 20%;
+          }
         }
-      }
       }
     }
     .projects-header-wrap {
@@ -521,6 +545,9 @@ body {
     nav ul {
       display: flex;
       justify-content: center;
+      a {
+        margin: 0px 22px;
+      }
     }
     .section-wrap-bio {
       .container {
@@ -553,17 +580,19 @@ body {
     }
   }
   @media (max-width: 375px) {
-    .main-container { 
+    .main-container {
       .profile-image-wrap {
       }
     }
+    nav ul a {
+      margin: 0 19px;
+    }
     .container {
       .profile-image-wrap {
-        
-        margin: 27px 1.7% 0px -24px 
+        margin: 27px 1.7% 0px -24px;
       }
       .profile-image {
-      margin-top: -11px;
+        margin-top: -11px;
       }
       .bio {
         width: 81%;
@@ -592,9 +621,8 @@ body {
         }
       }
     }
-  }
+  }  
 }
-
 // .main-container .section-wrap-bio .container .bio {
 //   width: 354px;
 //   color: #aeaeae;
