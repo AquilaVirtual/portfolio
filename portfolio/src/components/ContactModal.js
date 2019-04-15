@@ -1,10 +1,13 @@
 import React from "react";
+import axios from "axios";
 
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
+
+const backend = "https://contact-notes.herokuapp.com/";
 
 class ContactModal extends React.Component {
   constructor(props) {
@@ -21,7 +24,27 @@ class ContactModal extends React.Component {
 
   handleMessage = event => {
     event.preventDefault();
-    alert("Functionality coming soon!")
+    const contact = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
+    };
+    // axios
+    //   .post(`${backend}api/contacts`, contact)
+    //   .then(response => {
+    //     this.setState({
+    //       error: false
+    //     });
+    //   })
+    //   .catch(err => {
+    //     // console.log(err)
+    //     this.setState({
+    //       error: true,
+    //       errorMessage: err.response.data.error
+    //     });
+    //   });
+
+    alert("Functionality coming soon!");
     this.props.handleModalToggle();
   };
 
@@ -41,15 +64,13 @@ class ContactModal extends React.Component {
 
   render() {
     return (
-      <div>        
+      <div>
         <Dialog
           open={this.props.open}
           onClose={this.handleClose}
           aria-labelledby="form-dialog-title"
         >
-          <DialogTitle id="form-dialog-title">
-            Get in touch
-          </DialogTitle>
+          <DialogTitle id="form-dialog-title">Get in touch</DialogTitle>
           <div className="form-wrap">
             <DialogContent>
               <DialogContentText>
@@ -76,30 +97,29 @@ class ContactModal extends React.Component {
                   />
                 </div>
                 <div className="form-group">
-                  <textarea                  
+                  <textarea
                     placeholder="Message"
-                    name="message"                    
+                    name="message"
                     required
                     value={this.state.message}
                     onChange={this.handleInputChange}
-                    >
-                  </textarea>
+                  />
                 </div>
               </DialogContentText>
             </DialogContent>
           </div>
           <div className="cta-wrap">
-          <DialogActions >
-            <div className="buttons-wrap">
-              <button className="cta-buttons" onClick={this.handleClose}>
-                Cancel
-              </button>
-              <button className="cta-buttons" onClick={this.handleMessage}>
-                Submit
-              </button>
-            </div>
-          </DialogActions>   
-          </div>       
+            <DialogActions>
+              <div className="buttons-wrap">
+                <button className="cta-buttons" onClick={this.handleClose}>
+                  Cancel
+                </button>
+                <button className="cta-buttons" onClick={this.handleMessage}>
+                  Submit
+                </button>
+              </div>
+            </DialogActions>
+          </div>
         </Dialog>
       </div>
     );
