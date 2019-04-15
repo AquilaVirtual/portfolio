@@ -29,22 +29,22 @@ class ContactModal extends React.Component {
       email: this.state.email,
       message: this.state.message
     };
-    // axios
-    //   .post(`${backend}api/contacts`, contact)
-    //   .then(response => {
-    //     this.setState({
-    //       error: false
-    //     });
-    //   })
-    //   .catch(err => {
-    //     // console.log(err)
-    //     this.setState({
-    //       error: true,
-    //       errorMessage: err.response.data.error
-    //     });
-    //   });
+    axios
+      .post(`${backend}api/users/contact`, contact)
+      .then(response => {
+        this.setState({
+          error: false
+        });
+      })
+      .catch(err => {
+        this.setState({
+          error: true,
+          errorMessage: err.response.data.error
+        });
+        console.log("Error", err.response.data)
+      });
 
-    alert("Functionality coming soon!");
+   // alert("Functionality coming soon!");
     this.props.handleModalToggle();
   };
 
@@ -73,7 +73,8 @@ class ContactModal extends React.Component {
           <DialogTitle id="form-dialog-title">Get in touch</DialogTitle>
           <div className="form-wrap">
             <DialogContent>
-              <DialogContentText>
+              <DialogContentText>                
+              </DialogContentText>
                 <div className="form-group">
                   <input
                     className="form-control"
@@ -104,8 +105,7 @@ class ContactModal extends React.Component {
                     value={this.state.message}
                     onChange={this.handleInputChange}
                   />
-                </div>
-              </DialogContentText>
+                </div>              
             </DialogContent>
           </div>
           <div className="cta-wrap">
