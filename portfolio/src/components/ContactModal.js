@@ -24,20 +24,17 @@ class ContactModal extends React.Component {
 
   handleMessage = event => {
     if (!this.state.name || !this.state.email || !this.state.message) {
-      this.setState({ error: true})
+      this.setState({ 
+        error: true,
+        errorMessage: "All fields are required!"
+      })
     }
     event.preventDefault();
     const contact = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
-    };
-
-    this.setState({
-      name: "",
-      email: "",
-      message:""
-    })
+    };   
     
     axios
       .post(`${backend}api/users/contact`, contact)
@@ -53,7 +50,12 @@ class ContactModal extends React.Component {
         });
         console.log("Error", this.state.error)
       });   
-      if(this.state.error) {
+      if(!this.state.error) {
+        this.setState({
+          name: "",
+          email: "",
+          message:""
+        })
         this.props.handleModalToggle();
       }
   };
@@ -117,6 +119,7 @@ class ContactModal extends React.Component {
                   />
                 </div>              
             </DialogContent>
+         <div className="error-message"> {this.state.error ? this.state.errorMessage: null}</div>
           </div>
           <div className="cta-wrap">
             <DialogActions>

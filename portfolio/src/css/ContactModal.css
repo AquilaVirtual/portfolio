@@ -18,6 +18,10 @@
   border-radius: 1%;
   padding: 10px;
 }
+.form-wrap .error-message {
+  color: red;
+  padding-left: 40px;
+}
 .cta-wrap {
   margin-top: 16px;
 }
