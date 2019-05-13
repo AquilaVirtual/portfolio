@@ -294,7 +294,7 @@ class LandingPage extends Component {
                   >
                     <button>CODE</button>
                   </a>
-                  <a href="https://lambnotes.netlify.com" target="blank">
+                  <a href="https://movieguide.netlify.com/" target="blank">
                     <button>DEMO</button>
                   </a>
                 </div>
