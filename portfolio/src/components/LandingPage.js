@@ -9,7 +9,7 @@ import "../css/ContactModal.css";
 
 import dave from "../img/dave.jpg";
 import currentaffairs from "../img/currentaffairs.png";
-import notes from "../img/note.png";
+import movieguide from "../img/movieguide.png";
 import familylife from "../img/familylife.png";
 import reduxImage from "../img/reduxImage.png";
 import reactImage from "../img/reactImage.png";
@@ -279,17 +279,17 @@ class LandingPage extends Component {
                 </div>
               </div>
               <div className="notes-wrap">
-                <a href="https://lambnotes.netlify.com" target="blank">
-                  <img className="project-image" src={notes} alt="" />
+                <a href="https://movieguide.netlify.com/" target="blank">
+                  <img className="project-image" src={movieguide} alt="" />
                 </a>
                 <div className="project-description">
-                  This is a note taking app that
-                  <br /> allows users to make notes.
+                  This is an app that allows a user to search
+                  for movies.
                 </div>
                 <div className="buttons-wrap">
                   <a
                     className="repo-link"
-                    href="https://github.com/AquilaVirtual/front-end-project-week"
+                    href="https://github.com/AquilaVirtual/ultimate-moviegoers-guide"
                     target="blank"
                   >
                     <button>CODE</button>
