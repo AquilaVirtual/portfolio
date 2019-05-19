@@ -61,7 +61,7 @@ class ContactModal extends React.Component {
       .post(`${backend}api/users/contact`, contact)
       .then(response => {
         console.log("Posted Data", response)
-        this.displaySuccessBox(response.status, response.data.name)
+        this.displaySuccessBox(response.status, response.data.name.split(" ")[0])
         this.setState({
           error: false
         });
