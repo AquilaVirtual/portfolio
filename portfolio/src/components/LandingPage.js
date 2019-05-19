@@ -122,7 +122,7 @@ class LandingPage extends Component {
                 </div>
               </div>
               <div className="name-and-social-media">
-                <div className="my-name">
+                <div id="textBox" className="my-name">
                   <span style={navyFont}>David</span> Loveday
                 </div>
               </div>

@@ -161,6 +161,14 @@ body {
   width: 56%;
   margin-top: 12px;
 }
+.main-container .section-wrap-bio .success {
+  border: 1px solid #f39389;
+  border-radius: 2px;
+  padding: 10px;
+  position: absolute;
+  background-color: #56cf56;
+  color: white;
+}
 .main-container .section-wrap-skills {
   display: flex;
   flex-direction: column;

@@ -22,14 +22,35 @@ class ContactModal extends React.Component {
     };
   }
 
+   //this fuction displays a dynamically created box with a text informing user of a successful addition of a family member
+   displaySuccessBox = (status, name) => {
+    if (status === 201) {
+      let SuccessTimeout;
+      let successBox = document.createElement("div");
+      successBox.className = "success";
+      successBox.innerHTML = `Hello, ${name}! Thank you for contacting me. I'll get back to you as soon as possible.`;
+      //here we reference textBox ID in Landing page
+      let textBox = document.getElementById("textBox");
+
+      if (document.body.contains(successBox)) {
+        window.clearTimeout(SuccessTimeout);
+      } else {
+        textBox.parentNode.insertBefore(successBox, textBox.nextSibling);
+      }
+      SuccessTimeout = window.setTimeout(function() {
+        successBox.parentNode.removeChild(successBox);
+        SuccessTimeout = -1;
+      }, 6000);
+    }
+  };
   handleMessage = event => {
+    event.preventDefault();
     if (!this.state.name || !this.state.email || !this.state.message) {
       this.setState({ 
         error: true,
         errorMessage: "All fields are required!"
       })
     }
-    event.preventDefault();
     const contact = {
       name: this.state.name,
       email: this.state.email,
@@ -39,6 +60,8 @@ class ContactModal extends React.Component {
     axios
       .post(`${backend}api/users/contact`, contact)
       .then(response => {
+        console.log("Posted Data", response)
+        this.displaySuccessBox(response.status, response.data.name)
         this.setState({
           error: false
         });
@@ -46,9 +69,9 @@ class ContactModal extends React.Component {
       .catch(err => {
         this.setState({
           error: true,
-          errorMessage: err.response.data.error
+          //errorMessage: err.response.data.error
         });
-        console.log("Error", this.state.error)
+        console.log("Error", err)
       });   
       if(!this.state.error) {
         this.setState({
