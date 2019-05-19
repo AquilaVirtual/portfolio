@@ -22,8 +22,8 @@ class ContactModal extends React.Component {
     };
   }
 
-   //this fuction displays a dynamically created box with a text informing user of a successful addition of a family member
-   displaySuccessBox = (status, name) => {
+  //this fuction displays a dynamically created box with a text informing user of a successful addition of a family member
+  displaySuccessBox = (status, name) => {
     if (status === 201) {
       let SuccessTimeout;
       let successBox = document.createElement("div");
@@ -46,22 +46,24 @@ class ContactModal extends React.Component {
   handleMessage = event => {
     event.preventDefault();
     if (!this.state.name || !this.state.email || !this.state.message) {
-      this.setState({ 
+      this.setState({
         error: true,
         errorMessage: "All fields are required!"
-      })
+      });
     }
     const contact = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
-    };   
-    
+    };
+
     axios
       .post(`${backend}api/users/contact`, contact)
       .then(response => {
-        console.log("Posted Data", response)
-        this.displaySuccessBox(response.status, response.data.name.split(" ")[0])
+        this.displaySuccessBox(
+          response.status,
+          response.data.name.split(" ")[0]
+        );
         this.setState({
           error: false
         });
@@ -69,18 +71,17 @@ class ContactModal extends React.Component {
       .catch(err => {
         this.setState({
           error: true,
-          //errorMessage: err.response.data.error
+          errorMessage: err.response.data.errorMessage
         });
-        console.log("Error", err)
-      });   
-      if(!this.state.error) {
-        this.setState({
-          name: "",
-          email: "",
-          message:""
-        })
-        this.props.handleModalToggle();
-      }
+      });
+    if (!this.state.error) {
+      this.setState({
+        name: "",
+        email: "",
+        message: ""
+      });
+      this.props.handleModalToggle();
+    }
   };
 
   handleClickOpen = () => {
@@ -108,41 +109,43 @@ class ContactModal extends React.Component {
           <DialogTitle id="form-dialog-title">Get in touch</DialogTitle>
           <div className="form-wrap">
             <DialogContent>
-              <DialogContentText>                
-              </DialogContentText>
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    placeholder="Name"
-                    name="name"
-                    type="text"
-                    required
-                    value={this.state.name}
-                    onChange={this.handleInputChange}
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    placeholder="Email"
-                    name="email"
-                    type="text"
-                    required
-                    value={this.state.email}
-                    onChange={this.handleInputChange}
-                  />
-                </div>
-                <div className="form-group">
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                    value={this.state.message}
-                    onChange={this.handleInputChange}
-                  />
-                </div>              
+              <DialogContentText />
+              <div className="form-group">
+                <input
+                  className="form-control"
+                  placeholder="Name"
+                  name="name"
+                  type="text"
+                  required
+                  value={this.state.name}
+                  onChange={this.handleInputChange}
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  className="form-control"
+                  placeholder="Email"
+                  name="email"
+                  type="text"
+                  required
+                  value={this.state.email}
+                  onChange={this.handleInputChange}
+                />
+              </div>
+              <div className="form-group">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  required
+                  value={this.state.message}
+                  onChange={this.handleInputChange}
+                />
+              </div>
             </DialogContent>
-         <div className="error-message"> {this.state.error ? this.state.errorMessage: null}</div>
+            <div className="error-message">
+              {" "}
+              {this.state.error ? this.state.errorMessage : null}
+            </div>
           </div>
           <div className="cta-wrap">
             <DialogActions>
