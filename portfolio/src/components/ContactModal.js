@@ -62,6 +62,7 @@ class ContactModal extends React.Component {
       .then(response => {
         this.displaySuccessBox(
           response.status,
+          //Grap only the first name
           response.data.name.split(" ")[0]
         );
         this.setState({
