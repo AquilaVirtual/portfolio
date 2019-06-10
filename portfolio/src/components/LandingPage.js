@@ -127,8 +127,8 @@ class LandingPage extends Component {
                 </div>
               </div>
               <div className="bio">
-                The idea that one can use software to build software has been
-                fascinating to me. From my childhood, I have learned things
+              I am passionate about building great software that improves the 
+              lives of people. From my childhood, I have learned things
                 <section id="Skills" />
                 with a concentration in quantitative methods, and applying this
                 in software development means, an ability to tackle complex

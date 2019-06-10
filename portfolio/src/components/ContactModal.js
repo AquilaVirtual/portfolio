@@ -22,7 +22,7 @@ class ContactModal extends React.Component {
     };
   }
 
-  //this fuction displays a dynamically created box with a text informing user of a successful addition of a family member
+  //this fuction displays a dynamically created box with a text informing visitor that contact message was successfully sent.
   displaySuccessBox = (status, name) => {
     if (status === 201) {
       let SuccessTimeout;
