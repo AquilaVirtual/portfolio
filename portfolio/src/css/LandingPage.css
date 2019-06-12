@@ -263,7 +263,7 @@ body {
   background: #0f0101;
 }
 .main-container .section-wrap-projects .projects-wrap .business-wrap img:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 .main-container .section-wrap-projects .projects-wrap .business-wrap .project-description {
   margin: 10px;
@@ -315,7 +315,7 @@ body {
   background: #154079;
 }
 .main-container .section-wrap-projects .projects-wrap .current-affairs-wrap .project-image:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 .main-container .section-wrap-projects .projects-wrap .notes-wrap {
   color: grey;
@@ -346,7 +346,7 @@ body {
   background: #154079;
 }
 .main-container .section-wrap-projects .projects-wrap .notes-wrap .project-image:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 .main-container .footer {
   display: flex;
@@ -428,7 +428,8 @@ body {
 }
 @media (max-width: 1024px) {
   .main-container nav ul a {
-    margin: 0 7px;
+    margin: 0 9px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 1000px) {
@@ -451,7 +452,7 @@ body {
     justify-content: center;
   }
   .main-container nav ul a {
-    margin: 0px 47px;
+    margin: 0px 38px;
   }
   .main-container .section-wrap-bio .container .profile-image-wrap .fab {
     font-size: 50px;
