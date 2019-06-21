@@ -44,7 +44,7 @@ class ContactModal extends React.Component {
     }
   };
   handleMessage = event => {
-    event.preventDefault();
+    //event.preventDefault();
     if (!this.state.name || !this.state.email || !this.state.message) {
       this.setState({
         error: true,
@@ -66,8 +66,12 @@ class ContactModal extends React.Component {
           response.data.name.split(" ")[0]
         );
         this.setState({
-          error: false
+          error: false,
+          name: "",
+          email: "",
+          message: ""
         });
+        this.props.handleModalToggle();
       })
       .catch(err => {
         this.setState({
@@ -75,14 +79,6 @@ class ContactModal extends React.Component {
           errorMessage: err.response.data.errorMessage
         });
       });
-    if (!this.state.error) {
-      this.setState({
-        name: "",
-        email: "",
-        message: ""
-      });
-      this.props.handleModalToggle();
-    }
   };
 
   handleClickOpen = () => {
