@@ -16,6 +16,7 @@ class ContactModal extends React.Component {
       name: "",
       email: "",
       message: "",
+      empty: false,
       error: false,
       open: true,
       errorMessage: ""
@@ -40,15 +41,15 @@ class ContactModal extends React.Component {
       SuccessTimeout = window.setTimeout(function() {
         successBox.parentNode.removeChild(successBox);
         SuccessTimeout = -1;
-      }, 6000);
+      }, 7000);
     }
   };
   handleMessage = event => {
-    //event.preventDefault();
+    event.preventDefault();
     if (!this.state.name || !this.state.email || !this.state.message) {
       this.setState({
-        error: true,
-        errorMessage: "All fields are required!"
+        empty: true,
+        errorMessage: ""
       });
     }
     const contact = {
@@ -66,7 +67,7 @@ class ContactModal extends React.Component {
           response.data.name.split(" ")[0]
         );
         this.setState({
-          error: false,
+          empty: false,
           name: "",
           email: "",
           message: ""
@@ -86,7 +87,13 @@ class ContactModal extends React.Component {
   };
 
   handleClose = () => {
-    this.setState({ open: false });
+    this.setState({
+      open: false,
+      empty: false,
+      name: "",
+      email: "",
+      message: ""
+    });
     this.props.handleModalToggle();
   };
 
@@ -96,8 +103,7 @@ class ContactModal extends React.Component {
   };
 
   render() {
-    return (
-      <div>
+    return ( 
         <Dialog
           open={this.props.open}
           onClose={this.handleClose}
@@ -133,16 +139,17 @@ class ContactModal extends React.Component {
                 <textarea
                   placeholder="Message"
                   name="message"
+                  type="text"
                   required
                   value={this.state.message}
                   onChange={this.handleInputChange}
                 />
               </div>
+              <div className="error-message">
+                {" "}
+                {this.state.empty ? "All fields are required!": null}
+              </div>
             </DialogContent>
-            <div className="error-message">
-              {" "}
-              {this.state.error ? this.state.errorMessage : null}
-            </div>
           </div>
           <div className="cta-wrap">
             <DialogActions>
@@ -156,8 +163,7 @@ class ContactModal extends React.Component {
               </div>
             </DialogActions>
           </div>
-        </Dialog>
-      </div>
+        </Dialog>    
     );
   }
 }
