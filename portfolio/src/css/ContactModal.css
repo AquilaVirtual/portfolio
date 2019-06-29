@@ -9,6 +9,9 @@
   border-radius: 4%;
   padding: 10px;
 }
+.form-wrap .input-error {
+  border: 1px solid red;
+}
 .form-wrap .form-group {
   margin: 14px;
 }

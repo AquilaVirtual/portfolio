@@ -103,67 +103,72 @@ class ContactModal extends React.Component {
   };
 
   render() {
-    return ( 
-        <Dialog
-          open={this.props.open}
-          onClose={this.handleClose}
-          aria-labelledby="form-dialog-title"
-        >
-          <DialogTitle id="form-dialog-title">Get in touch</DialogTitle>
-          <div className="form-wrap">
-            <DialogContent>
-              <DialogContentText />
-              <div className="form-group">
-                <input
-                  className="form-control"
-                  placeholder="Name"
-                  name="name"
-                  type="text"
-                  required
-                  value={this.state.name}
-                  onChange={this.handleInputChange}
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  className="form-control"
-                  placeholder="Email"
-                  name="email"
-                  type="text"
-                  required
-                  value={this.state.email}
-                  onChange={this.handleInputChange}
-                />
-              </div>
-              <div className="form-group">
-                <textarea
-                  placeholder="Message"
-                  name="message"
-                  type="text"
-                  required
-                  value={this.state.message}
-                  onChange={this.handleInputChange}
-                />
-              </div>
-              <div className="error-message">
-                {" "}
-                {this.state.empty ? "All fields are required!": null}
-              </div>
-            </DialogContent>
-          </div>
-          <div className="cta-wrap">
-            <DialogActions>
-              <div className="buttons-wrap">
-                <button className="cta-buttons" onClick={this.handleClose}>
-                  Cancel
-                </button>
-                <button className="cta-buttons" onClick={this.handleMessage}>
-                  Submit
-                </button>
-              </div>
-            </DialogActions>
-          </div>
-        </Dialog>    
+    return (
+      <Dialog
+        open={this.props.open}
+        onClose={this.handleClose}
+        aria-labelledby="form-dialog-title"
+      >
+        <DialogTitle id="form-dialog-title">Get in touch</DialogTitle>
+        <div className="form-wrap">
+          <DialogContent>
+            <DialogContentText />
+            <div className="form-group">
+              <input
+                className={
+                  this.state.empty ? "form-control input-error" : "form-control"
+                }
+                placeholder="Name"
+                name="name"
+                type="text"
+                required
+                value={this.state.name}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <input
+                className={
+                  this.state.empty ? "form-control input-error" : "form-control"
+                }
+                placeholder="Email"
+                name="email"
+                type="text"
+                required
+                value={this.state.email}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <textarea
+                className={this.state.empty ? "input-error" : null}
+                placeholder="Message"
+                name="message"
+                type="text"
+                required
+                value={this.state.message}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="error-message">
+              {" "}
+              {this.state.empty ? "All fields are required!" : null}
+            </div>
+          </DialogContent>
+        </div>
+        <div className="cta-wrap">
+          <DialogActions>
+            <div className="buttons-wrap">
+              <button className="cta-buttons" onClick={this.handleClose}>
+                Cancel
+              </button>
+              <button className="cta-buttons" onClick={this.handleMessage}>
+                Submit
+              </button>
+            </div>
+          </DialogActions>
+        </div>
+      </Dialog>
     );
   }
 }
