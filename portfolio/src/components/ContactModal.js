@@ -157,9 +157,11 @@ class ContactModal extends React.Component {
                 value={this.state.email}
                 onChange={this.handleInputChange}
               />
+              <div className="error-message">
               {this.state.emailError
                 ? "Please enter a valid email address"
                 : null}
+                </div>
             </div>
             <div className="form-group">
               <textarea
