@@ -18,6 +18,7 @@ class ContactModal extends React.Component {
       message: "",
       empty: false,
       error: false,
+      emailError: false,
       open: true,
       errorMessage: ""
     };
@@ -44,6 +45,14 @@ class ContactModal extends React.Component {
       }, 7000);
     }
   };
+
+  validateEmail = mail => {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+      return true;
+    }
+    return false;
+  };
+
   handleMessage = event => {
     event.preventDefault();
     if (!this.state.name || !this.state.email || !this.state.message) {
@@ -51,37 +60,47 @@ class ContactModal extends React.Component {
         empty: true,
         errorMessage: ""
       });
+    } else if (!this.validateEmail(this.state.email)) {
+      this.setState({
+        emailError: true
+      });
+    } else {
+      this.setState({
+        emailError: false,
+        empty: false
+      });
     }
+
     const contact = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
     };
-
-    axios
-      .post(`${backend}api/users/contact`, contact)
-      .then(response => {
-        this.displaySuccessBox(
-          response.status,
-          //Grap only the first name
-          response.data.name.split(" ")[0]
-        );
-        this.setState({
-          empty: false,
-          name: "",
-          email: "",
-          message: ""
+    if (!this.state.empty && !this.state.emailError) {
+      axios
+        .post(`${backend}api/users/contact`, contact)
+        .then(response => {
+          this.displaySuccessBox(
+            response.status,
+            //Grap only the first name
+            response.data.name.split(" ")[0]
+          );
+          this.setState({
+            empty: false,
+            name: "",
+            email: "",
+            message: ""
+          });
+          this.props.handleModalToggle();
+        })
+        .catch(err => {
+          this.setState({
+            error: true,
+            errorMessage: err.response.data.errorMessage
+          });
         });
-        this.props.handleModalToggle();
-      })
-      .catch(err => {
-        this.setState({
-          error: true,
-          errorMessage: err.response.data.errorMessage
-        });
-      });
+    }
   };
-
   handleClickOpen = () => {
     this.setState({ open: true });
   };
@@ -138,6 +157,9 @@ class ContactModal extends React.Component {
                 value={this.state.email}
                 onChange={this.handleInputChange}
               />
+              {this.state.emailError
+                ? "Please enter a valid email address"
+                : null}
             </div>
             <div className="form-group">
               <textarea
