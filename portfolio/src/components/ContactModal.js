@@ -47,7 +47,7 @@ class ContactModal extends React.Component {
   };
 
   validateEmail = mail => {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+    if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
       return true;
     }
     return false;
@@ -158,10 +158,10 @@ class ContactModal extends React.Component {
                 onChange={this.handleInputChange}
               />
               <div className="error-message">
-              {this.state.emailError
-                ? "Please enter a valid email address"
-                : null}
-                </div>
+                {this.state.emailError
+                  ? "Please enter a valid email address"
+                  : null}
+              </div>
             </div>
             <div className="form-group">
               <textarea
